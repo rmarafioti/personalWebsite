@@ -11,7 +11,7 @@
   font-weight: 400;
 
   color: rgba(225, 20, 20, 0.87);
- 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,9 +32,24 @@ a:hover {
   flex-direction: row;
 }
 
+@media (max-width: 633px) {
+  #workIntro {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+
 #projectThumbnails {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 633px) {
+  #projectThumbnails {
+    display: inline-block;
+    flex-direction: column;
+  }
 }
 
 #projectSketches {
@@ -43,9 +58,23 @@ a:hover {
   justify-content: center;
 }
 
+@media (max-width: 500px) {
+  #projectSketches {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+
 #projectBody {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  #projectBody {
+    display: inline-block;
+    flex-direction: column;
+  }
 }
 
 #aboutIntro {
@@ -53,3 +82,9 @@ a:hover {
   flex-direction: row;
 }
 
+@media (max-width: 650px) {
+  #aboutIntro {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
