@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <h1 id="about">ABOUT</h1>
-      <section>
+      <section id="aboutIntro">
         <img src="https://picsum.photos/seed/picsum/200/300" />
         <p>
           {" "}
@@ -19,7 +19,9 @@ export default function About() {
           nec tincidunt praesent semper feugiat nibh.
         </p>
       </section>
-      <section>CONTACT FORM</section>
+      <section>
+        <div data-getsitecontrol-inline="394541"></div>
+      </section>
     </>
   );
 }

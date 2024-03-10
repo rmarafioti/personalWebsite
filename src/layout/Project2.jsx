@@ -4,17 +4,22 @@ export default function Project2() {
   return (
     <>
       <h1 id="work">PROJECT2</h1>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
-        <p>IMAGES OF UI SKETCHES</p>
-        <button>CLICK THROUGH IMAGES</button>
+      <section id="projectSketches">
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <p>IMAGES OF UI SKETCHES</p>
+          <button>CLICK THROUGH IMAGES</button>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <p>IMAGE OF PROJECT WIREFRAME</p>
+        </div>
       </section>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
-        <p>IMAGE OF PROJECT WIREFRAME</p>
-      </section>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
+      <section id="projectBody">
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <button>LINK TO PROJECT GITHUB</button>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
@@ -28,7 +33,6 @@ export default function Project2() {
           euismod lacinia at quis risus sed vulputate. Fermentum posuere urna
           nec tincidunt praesent semper feugiat nibh.
         </p>
-        <button>LINK TO PROJECT GITHUB</button>
       </section>
       <Link to="/work">BACK TO PORTFOLIO</Link>
     </>

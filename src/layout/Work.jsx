@@ -4,9 +4,9 @@ export default function Work() {
   return (
     <>
       <h1 id="work">WORK</h1>
-      <section>
-        <h1>LARGE TEXT</h1>
+      <section id="workIntro">
         <p>
+          <h1>LARGE TEXT</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
           aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
@@ -19,24 +19,24 @@ export default function Work() {
           euismod lacinia at quis risus sed vulputate. Fermentum posuere urna
           nec tincidunt praesent semper feugiat nibh.
         </p>
-      </section>
-      <section>
         <img src="https://picsum.photos/seed/picsum/200/300" />
       </section>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
-        <p>Some text about the project</p>
-        <Link to="/work/project1">Project 1</Link>
-      </section>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
-        <p>Some text about the project</p>
-        <Link to="/work/project2">Project 2</Link>
-      </section>
-      <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
-        <p>Some text about the project</p>
-        <Link to="/work/project3">Project 3</Link>
+      <section id="projectThumbnails">
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <p>Some text about the project</p>
+          <Link to="/work/project1">Project 1</Link>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <p>Some text about the project</p>
+          <Link to="/work/project2">Project 2</Link>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <p>Some text about the project</p>
+          <Link to="/work/project3">Project 3</Link>
+        </div>
       </section>
     </>
   );
