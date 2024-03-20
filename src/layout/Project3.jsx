@@ -1,14 +1,28 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { galleryPics } from "../images";
 
 export default function Project3() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryPics.length);
+  };
+
+  const currentImageObj =
+    galleryPics.length > 0 ? galleryPics[currentIndex] : null;
+  const imageurl = currentImageObj
+    ? new URL(currentImageObj.image, import.meta.url).href
+    : "";
+
   return (
     <>
       <h1 id="work">PROJECT3</h1>
       <section id="projectSketches">
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img src={imageurl} />
           <p>IMAGES OF UI SKETCHES</p>
-          <button>CLICK THROUGH IMAGES</button>
+          <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
         <div>
           <img src="https://picsum.photos/seed/picsum/200/300" />

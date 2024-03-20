@@ -1,9 +1,24 @@
+import React, { useState } from "react";
+
 export default function Home() {
+  const [blurLevel, setBlurLevel] = useState(50);
+
+  const handleClick = () => {
+    setBlurLevel((prevLevel) => Math.max(prevLevel - 5, 0));
+  };
+
+  const blurClass = `blur-${blurLevel}`;
+
   return (
     <>
       <h1 id="home">HOME</h1>
       <section>
-        <img src="https://picsum.photos/seed/picsum/200/300" />
+        <img
+          id="homePhoto"
+          src="https://picsum.photos/seed/picsum/200/300"
+          className={blurClass}
+        />
+        <button onClick={handleClick}>unblurr</button>
       </section>
       <article>
         <h1>LARGE TEXT</h1>
