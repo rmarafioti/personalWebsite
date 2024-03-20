@@ -1,3 +1,9 @@
+/**
+ *
+ * @component this file features the About page of this personal site
+ * displaying further information and contact info.
+ */
+
 export default function About() {
   return (
     <>

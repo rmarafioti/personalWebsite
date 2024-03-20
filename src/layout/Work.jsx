@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 
+/**
+ *
+ * @component this file features the Work page of this personal site
+ * displaying routes to personal protfolio projects.
+ */
+
 export default function Work() {
   return (
     <>

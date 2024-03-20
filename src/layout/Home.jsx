@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+/**
+ *
+ * @component this file features the Home page of this personal
+ *  site displaying introductory information.
+ */
+
 export default function Home() {
   const [blurLevel, setBlurLevel] = useState(50);
 

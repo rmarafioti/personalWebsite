@@ -2,15 +2,41 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { galleryPics } from "../images";
 
+/**
+ *
+ * @component this file features the Project2 page of this personal site
+ * displaying further information, photos and links about the project.
+ */
+
 export default function Project2() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  /**
+   *
+   * @function handleClick
+   * @returns the function flips through a series of images via 'CLICK THROUGH IMAGES' button.
+   *
+   */
 
   const handleClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryPics.length);
   };
 
+  /**
+   *
+   * @description currentImageObj declares that if there are a series of images display them in order by index number
+   *
+   */
+
   const currentImageObj =
     galleryPics.length > 0 ? galleryPics[currentIndex] : null;
+
+  /**
+   *
+   * @description imageurl declares if there is a currentImageObj use it's key: value image property as the imageurl.
+   *
+   */
+
   const imageurl = currentImageObj
     ? new URL(currentImageObj.image, import.meta.url).href
     : "";
