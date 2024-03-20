@@ -29,7 +29,7 @@ export default function Project1() {
           <p>IMAGE OF PROJECT WIREFRAME</p>
         </div>
       </section>
-      <section id="projectBody">
+      <article id="projectBody">
         <div>
           <img src="https://picsum.photos/seed/picsum/200/300" />
           <button>LINK TO PROJECT GITHUB</button>
@@ -47,7 +47,7 @@ export default function Project1() {
           euismod lacinia at quis risus sed vulputate. Fermentum posuere urna
           nec tincidunt praesent semper feugiat nibh.
         </p>
-      </section>
+      </article>
       <Link to="/work">BACK TO PORTFOLIO</Link>
     </>
   );

@@ -21,7 +21,7 @@ export default function Work() {
         </p>
         <img src="https://picsum.photos/seed/picsum/200/300" />
       </section>
-      <section id="projectThumbnails">
+      <article id="projectThumbnails">
         <div>
           <img src="https://picsum.photos/seed/picsum/200/300" />
           <p>Some text about the project</p>
@@ -37,7 +37,7 @@ export default function Work() {
           <p>Some text about the project</p>
           <Link to="/work/project3">Project 3</Link>
         </div>
-      </section>
+      </article>
     </>
   );
 }

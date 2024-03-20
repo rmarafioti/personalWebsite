@@ -19,9 +19,6 @@ export default function About() {
           nec tincidunt praesent semper feugiat nibh.
         </p>
       </section>
-      <section>
-        <div data-getsitecontrol-inline="394541"></div>
-      </section>
     </>
   );
 }
