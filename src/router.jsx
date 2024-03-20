@@ -7,6 +7,12 @@ import Project1 from "./layout/Project1";
 import Project2 from "./layout/Project2";
 import Project3 from "./layout/Project3";
 
+/**
+ *
+ * @component router indicates the paths of each child component file from the Root component
+ *
+ */
+
 const router = createBrowserRouter([
   {
     path: "/",
