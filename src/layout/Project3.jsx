@@ -58,7 +58,11 @@ export default function Project3() {
       <article id="projectBody">
         <div>
           <img src="https://picsum.photos/seed/picsum/200/300" />
-          <button>LINK TO PROJECT GITHUB</button>
+          <button>
+            <a target="_blank" href="https://github.com/rmarafioti">
+              LINK TO PROJECT GITHUB
+            </a>
+          </button>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
