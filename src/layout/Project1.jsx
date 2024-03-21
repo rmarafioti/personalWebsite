@@ -45,8 +45,8 @@ export default function Project1() {
     <>
       <h1 id="work">PROJECT1</h1>
       <section id="projectSketches">
-        <div>
-          <img src={imageurl} />
+        <div id="sketchContainer">
+          <img src={imageurl} id="sketchImage" />
           <p>IMAGES OF UI SKETCHES</p>
           <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
