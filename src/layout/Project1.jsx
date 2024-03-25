@@ -10,6 +10,8 @@ import { galleryPics } from "../images";
 
 export default function Project1() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [popUp, setPopUp] = useState(false);
+  const [enlargedImage, setEnlargedImage] = useState("");
 
   /**
    *
@@ -41,6 +43,11 @@ export default function Project1() {
     ? new URL(currentImageObj.image, import.meta.url).href
     : "";
 
+  const openOverlay = (imageSrc) => {
+    setEnlargedImage(imageSrc);
+    setPopUp(true);
+  };
+
   return (
     <>
       <h1 id="work">PROJECT1</h1>
@@ -51,7 +58,13 @@ export default function Project1() {
           <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            id="thumbnail"
+            src="https://picsum.photos/seed/picsum/200/300"
+            onClick={() =>
+              openOverlay("https://picsum.photos/seed/picsum/200/300")
+            }
+          />
           <p>IMAGE OF PROJECT WIREFRAME</p>
         </div>
       </section>
@@ -79,6 +92,12 @@ export default function Project1() {
         </p>
       </article>
       <Link to="/work">BACK TO PORTFOLIO</Link>
+
+      {popUp && (
+        <div id="graphModal" onClick={() => setPopUp(false)}>
+          <img src={enlargedImage} alt="Expanded view" />
+        </div>
+      )}
     </>
   );
 }

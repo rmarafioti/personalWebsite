@@ -99,11 +99,39 @@ a:hover {
   display: block;
 }
 
+#thumbnail {
+  max-width: 50%;
+  cursor: pointer; /* Indicates clickable area to close modal */
+}
+
 #footer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
+#graphModal img {
+  max-height: 90vh; /* Scales the image to a maximum of 90% of the viewport's height */
+  object-fit: fill; /* Keeps the image's aspect ratio */
+}
+
+#graphModal {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Ensure it's on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* Semi-transparent black background */
+  cursor: pointer; /* Indicates clickable area to close modal */
+}
+
+
+
+
 
 
 
