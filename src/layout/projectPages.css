@@ -1,0 +1,70 @@
+/*ALL STYLES FOR PROJECT PAGES*/
+
+#projectSketches, #projectBody {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 666px) {
+    #projectSketches {
+      display: inline-block;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #projectBody {
+      display: inline-block;
+      flex-direction: column;
+    }
+  }
+  
+  #projectThumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 633px) {
+    #projectThumbnails {
+      display: inline-block;
+      flex-direction: column;
+    }
+  }
+  
+  #sketchImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  #workImage {
+    max-width: auto;
+    height: 100%;
+    display: block;
+  }
+  
+  #thumbnail {
+    max-width: 50%;
+    cursor: pointer; 
+  }
+  
+  #graphModal img {
+    max-height: 90vh; /*NOT SURE I NEED THIS*/
+    object-fit: fill; /* Keeps the image's aspect ratio */
+  }
+  
+  #graphModal {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Ensure it's on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  

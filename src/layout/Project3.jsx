@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { galleryPics } from "../images";
 
+import "./projectPages.css";
+
 /**
  *
  * @component this file features the Project3 page of this personal site
