@@ -43,7 +43,14 @@ export default function Project1() {
     ? new URL(currentImageObj.image, import.meta.url).href
     : "";
 
-  const openOverlay = (imageSrc) => {
+  /**
+   *
+   * @function openOverlay declares if there is a currentImageObj use it's key: value image property as the imageurl.
+   * @param {string} imageSrc - path of the image file to be set in the pop up.
+   * @returns the enlarged image in the pop up.
+   */
+
+  const openPopUp = (imageSrc) => {
     setEnlargedImage(imageSrc);
     setPopUp(true);
   };
@@ -62,7 +69,7 @@ export default function Project1() {
             id="thumbnail"
             src="https://picsum.photos/seed/picsum/200/300"
             onClick={() =>
-              openOverlay("https://picsum.photos/seed/picsum/200/300")
+              openPopUp("https://picsum.photos/seed/picsum/200/300")
             }
           />
           <p>IMAGE OF PROJECT WIREFRAME</p>
