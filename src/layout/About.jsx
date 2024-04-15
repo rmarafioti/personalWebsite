@@ -12,19 +12,30 @@ export default function About() {
         <div id="aboutImageContainer">
           <img src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198396/personalWebsite/Headshot0406_c3lwlt.jpg" />
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-          aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
-          fermentum dui faucibus in ornare. Amet porttitor eget dolor morbi.
-          Nunc sed augue lacus viverra vitae congue. Sit amet massa vitae tortor
-          condimentum. Tristique senectus et netus et malesuada fames ac turpis.
-          Tellus mauris a diam maecenas sed. Tellus rutrum tellus pellentesque
-          eu tincidunt. Scelerisque purus semper eget duis at tellus at.
-          Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Non odio
-          euismod lacinia at quis risus sed vulputate. Fermentum posuere urna
-          nec tincidunt praesent semper feugiat nibh.
-        </p>
+        <div>
+          <p>
+            RISD Illustration grad and visual artist =&gt; Tattoo artist of 20
+            years =&gt; Business owner of 8 years =&gt; Fullstack developer
+          </p>
+          <p>
+            Whether I'm leading a team, part of a collaboration or working
+            independently I love to help visualize, create and curate ideas into
+            reality and functionality...
+          </p>
+          <p>🔹 FUN FACTS 🔹</p>
+          <ul>
+            <li>-I toured Europe in a band when I was 16.</li>
+            <li>
+              -Ran an old car of mine in a demolition derby and got 2nd place.
+            </li>
+            <li>-4 time Chicago Marathon finisher</li>
+          </ul>
+          <p>
+            Proficient: git | node | html | css | javascript | react | redux |
+            express | prisma | postman | photoshop | procreate | figma |
+          </p>
+          <p>Knowledgeable: python | illustrator |</p>
+        </div>
       </section>
     </>
   );
