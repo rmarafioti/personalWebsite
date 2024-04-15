@@ -18,19 +18,13 @@ export default function Home() {
         />
       </section>
       <article>
-        <h1>LARGE TEXT</h1>
+        <h1>WELCOME!</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-          aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
-          fermentum dui faucibus in ornare. Amet porttitor eget dolor morbi.
-          Nunc sed augue lacus viverra vitae congue. Sit amet massa vitae tortor
-          condimentum. Tristique senectus et netus et malesuada fames ac turpis.
-          Tellus mauris a diam maecenas sed. Tellus rutrum tellus pellentesque
-          eu tincidunt. Scelerisque purus semper eget duis at tellus at.
-          Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Non odio
-          euismod lacinia at quis risus sed vulputate. Fermentum posuere urna
-          nec tincidunt praesent semper feugiat nibh.
+          Rich Marafioti is a Fullstack Developer 🔹 Designer based in Chicago.
+          With over 20 years experience working independently in art & design
+          and 10 years of experience as a small business owner. My mission is
+          deliver a healthy marriage of design and functionality, aesthetics and
+          communication.
         </p>
       </article>
     </>
