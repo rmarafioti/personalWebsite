@@ -12,11 +12,13 @@ export default function Footer() {
       </li>
       <li>
         <a target="_blank" href="https://www.linkedin.com/in/richmarafioti/">
-          LinkedIn
+          <img src="https://res.cloudinary.com/dzpne110u/image/upload/v1713204026/personalWebsite/linkedIn_kfa4tf.png" />
         </a>
       </li>
       <li>
-        <a href="mailto:richmarafioti@gmail.com">Email Me</a>
+        <a href="mailto:richmarafioti@gmail.com">
+          <span class="material-symbols-outlined">mail</span>
+        </a>
       </li>
     </ul>
   );
