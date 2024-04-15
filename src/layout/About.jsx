@@ -10,7 +10,10 @@ export default function About() {
       <h1 id="about">ABOUT</h1>
       <section id="aboutIntro">
         <div id="aboutImageContainer">
-          <img src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198396/personalWebsite/Headshot0406_c3lwlt.jpg" />
+          <img
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198396/personalWebsite/Headshot0406_c3lwlt.jpg"
+            alt="personal headshot for about me page"
+          />
         </div>
         <div>
           <p>

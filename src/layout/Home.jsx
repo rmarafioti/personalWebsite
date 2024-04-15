@@ -11,7 +11,11 @@ export default function Home() {
     <>
       <h1 id="home">HOME</h1>
       <section>
-        <img id="homePhoto" src="https://picsum.photos/seed/picsum/200/300" />
+        <img
+          id="homePhoto"
+          src="https://picsum.photos/seed/picsum/200/300"
+          alt="main image for homepage"
+        />
       </section>
       <article>
         <h1>LARGE TEXT</h1>

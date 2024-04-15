@@ -25,21 +25,34 @@ export default function Work() {
           rhoncus. Non odio euismod lacinia at quis risus sed vulputate.
           Fermentum posuere urna nec tincclassunt praesent semper feugiat nibh.
         </p>
-        <img src="https://picsum.photos/seed/picsum/200/300" id="workImage" />
+        <img
+          src="https://picsum.photos/seed/picsum/200/300"
+          id="workImage"
+          alt="main image for portfolio page"
+        />
       </section>
       <article class="projectThumbnails">
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            src="https://picsum.photos/seed/picsum/200/300"
+            alt="image displaying portfolio web app project"
+          />
           <p>Some text about the project</p>
           <Link to="/work/project1">Project 1</Link>
         </div>
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            src="https://picsum.photos/seed/picsum/200/300"
+            alt="image displaying portfolio web app project"
+          />
           <p>Some text about the project</p>
           <Link to="/work/project2">Project 2</Link>
         </div>
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            src="https://picsum.photos/seed/picsum/200/300"
+            alt="image displaying portfolio web app project"
+          />
           <p>Some text about the project</p>
           <Link to="/work/project3">Project 3</Link>
         </div>

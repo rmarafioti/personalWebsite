@@ -62,7 +62,11 @@ export default function Project2() {
       <h1 id="work">PROJECT2</h1>
       <section id="projectSketches">
         <div id="sketchContainer">
-          <img src={imageurl} id="sketchImage" />
+          <img
+            src={imageurl}
+            id="sketchImage"
+            alt="wireframe images for website project"
+          />
           <p>IMAGES OF UI SKETCHES</p>
           <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
@@ -75,13 +79,17 @@ export default function Project2() {
                 "https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
               )
             }
+            alt="thumbnail of website blueprint which enlarges to full view when clicked"
           />
           <p>IMAGE OF PROJECT WIREFRAME</p>
         </div>
       </section>
       <article id="projectBody">
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            src="https://picsum.photos/seed/picsum/200/300"
+            alt="image of landing page for project"
+          />
           <button>
             <a target="_blank" href="https://github.com/rmarafioti">
               LINK TO PROJECT GITHUB
