@@ -6,12 +6,14 @@ import "./projectPages.css";
 
 /**
  *
- * @component this file features the Project2 page of this personal site
+ * @component this file features the Project1 page of this personal site
  * displaying further information, photos and links about the project.
  */
 
 export default function Project2() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [popUp, setPopUp] = useState(false);
+  const [enlargedImage, setEnlargedImage] = useState("");
 
   /**
    *
@@ -42,17 +44,38 @@ export default function Project2() {
   const imageurl = currentImageObj
     ? new URL(currentImageObj.image, import.meta.url).href
     : "";
+
+  /**
+   *
+   * @function openOverlay declares if there is a currentImageObj use it's key: value image property as the imageurl.
+   * @param {string} imageSrc - path of the image file to be set in the pop up.
+   * @returns the enlarged image in the pop up.
+   */
+
+  const openPopUp = (imageSrc) => {
+    setEnlargedImage(imageSrc);
+    setPopUp(true);
+  };
+
   return (
     <>
       <h1 id="work">PROJECT2</h1>
       <section id="projectSketches">
-        <div>
-          <img src={imageurl} />
+        <div id="sketchContainer">
+          <img src={imageurl} id="sketchImage" />
           <p>IMAGES OF UI SKETCHES</p>
           <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
         <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" />
+          <img
+            id="thumbnail"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713202371/personalWebsite/thumbnailBrainFlex_mqtpl7.png"
+            onClick={() =>
+              openPopUp(
+                "https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
+              )
+            }
+          />
           <p>IMAGE OF PROJECT WIREFRAME</p>
         </div>
       </section>
@@ -80,6 +103,12 @@ export default function Project2() {
         </p>
       </article>
       <Link to="/work">BACK TO PORTFOLIO</Link>
+
+      {popUp && (
+        <div id="graphModal" onClick={() => setPopUp(false)}>
+          <img src={enlargedImage} alt="Expanded view" />
+        </div>
+      )}
     </>
   );
 }

@@ -69,9 +69,11 @@ export default function Project1() {
         <div>
           <img
             id="thumbnail"
-            src="https://picsum.photos/seed/picsum/200/300"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713202360/personalWebsite/thumbnailBookBuddy_rgdgua.png"
             onClick={() =>
-              openPopUp("https://picsum.photos/seed/picsum/200/300")
+              openPopUp(
+                "https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
+              )
             }
           />
           <p>IMAGE OF PROJECT WIREFRAME</p>
