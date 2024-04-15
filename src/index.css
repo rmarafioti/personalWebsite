@@ -66,4 +66,15 @@ a:hover {
   }
 }
 
+#aboutImageContainer {
+  width: 1200px;
+  height: auto;
+}
+
+#aboutImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
 

@@ -9,9 +9,10 @@ export default function About() {
     <>
       <h1 id="about">ABOUT</h1>
       <section id="aboutIntro">
-        <img src="https://picsum.photos/seed/picsum/200/300" />
+        <div id="aboutImageContainer">
+          <img src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198396/personalWebsite/Headshot0406_c3lwlt.jpg" />
+        </div>
         <p>
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
           aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
