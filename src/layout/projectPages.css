@@ -1,15 +1,8 @@
-/*ALL STYLES FOR PROJECT PAGES*/
+/*work page*/
 
 #projectSketches, #projectBody {
     display: flex;
     flex-direction: row;
-  }
-  
-  @media (max-width: 666px) {
-    #projectSketches {
-      display: inline-block;
-      flex-direction: column;
-    }
   }
   
   @media (max-width: 500px) {
@@ -32,21 +25,37 @@
     }
   }
   
-  #sketchImage {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
   #workImage {
     max-width: auto;
     height: 100%;
     display: block;
   }
+
+  /*project pages*/
+  
+  #sketchContainer {
+    width: auto;
+    display: block;
+  }
+  
+  #sketchImage {
+    width: 200px; 
+    height: auto; 
+    display: block; 
+  }
+  
+  #thumbnailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100%; 
+  }
   
   #thumbnail {
-    max-width: 50%;
-    cursor: pointer; 
+    margin-top: 2rem;
+    width: 150px; 
+      height: auto; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
   }
   
   #graphModal img {
