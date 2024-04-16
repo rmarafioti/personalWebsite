@@ -46,8 +46,8 @@ a:hover {
 }
 
 #aboutImageContainer {
-  width: 1200px;
-  height: auto;
+  width: 60%;
+ display:block;
 }
 
 #aboutImageContainer img {
@@ -56,10 +56,10 @@ a:hover {
   display: block; 
 } 
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   #aboutIntro {
-    display: inline-block;
-    flex-direction: column;
+    display: block;
+    text-align: center;
   }
 }
 
