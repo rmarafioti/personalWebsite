@@ -59,8 +59,10 @@
   }
   
   #graphModal img {
-    max-height: 90vh; /*NOT SURE I NEED THIS*/
-    object-fit: fill; /* Keeps the image's aspect ratio */
+    max-height: 80vh;
+    max-width: 90%; /*NOT SURE I NEED THIS*/
+    object-fit: contain; /* Keeps the image's aspect ratio */
+    display: block;
   }
   
   #graphModal {
@@ -75,5 +77,7 @@
     height: 100%; /* Full height */
     background-color: rgba(0,0,0,0.4); 
   }
+
+
   
   
