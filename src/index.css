@@ -36,6 +36,7 @@ a:hover {
 #workIntro, #aboutIntro {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 @media (max-width: 633px) {
@@ -56,7 +57,7 @@ a:hover {
   display: block; 
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   #aboutIntro {
     display: block;
     text-align: center;

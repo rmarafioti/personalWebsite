@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { galleryPics } from "../images";
+import { brainFlexPics } from "../images";
 
 import "./projectPages.css";
 
@@ -23,7 +23,7 @@ export default function Project2() {
    */
 
   const handleClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryPics.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % brainFlexPics.length);
   };
 
   /**
@@ -33,7 +33,7 @@ export default function Project2() {
    */
 
   const currentImageObj =
-    galleryPics.length > 0 ? galleryPics[currentIndex] : null;
+    brainFlexPics.length > 0 ? brainFlexPics[currentIndex] : null;
 
   /**
    *
@@ -67,7 +67,6 @@ export default function Project2() {
             id="sketchImage"
             alt="wireframe images for website project"
           />
-          <p>IMAGES OF UI SKETCHES</p>
           <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
         </div>
         <div>
