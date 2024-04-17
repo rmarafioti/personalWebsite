@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { brainFlexPics } from "../images";
 import { galleryPics } from "../images";
 
-import "./projectPages.css";
+import "./work.css";
 
 /**
  *
