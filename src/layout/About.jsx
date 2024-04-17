@@ -48,11 +48,13 @@ export default function About() {
             <li>Crossed the finish line at the Chicago Marathon four times.</li>
           </ul>
           <h4>Tech Toolkit:</h4>
+          <h4>Proficient In: </h4>
           <p>
-            Proficient In: Git, Node, HTML, CSS, JavaScript, React, Redux,
-            Express, Prisma, Postman, Photoshop, Procreate, Figma.
+            Git, Node, HTML, CSS, JavaScript, React, Redux, Express, Prisma,
+            Postman, Photoshop, Procreate, Figma.
           </p>
-          <p>Knowledgeable In: Python, Illustrator.</p>
+          <h4>Knowledgeable In: </h4>
+          <p>Python, Illustrator.</p>
         </div>
       </section>
     </>

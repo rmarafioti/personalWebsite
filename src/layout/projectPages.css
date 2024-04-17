@@ -33,15 +33,19 @@
 
   /*project pages*/
   
-  #sketchContainer {
+  #sketchContainer, #imageContainer {
     width: auto;
     display: block;
   }
   
-  #sketchImage {
+  #sketchImage, #projectImage {
     width: 200px; 
     height: auto; 
     display: block; 
+  }
+
+  #projectImage {
+    width: 350px;
   }
   
   #thumbnailContainer {
