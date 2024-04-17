@@ -16,28 +16,43 @@ export default function About() {
           />
         </div>
         <div>
+          <h1>From Creativity to Code:</h1>
+          <h3>RISD Illustration Graduate & Visual Artist: </h3>
           <p>
-            RISD Illustration grad and visual artist =&gt; Tattoo artist of 20
-            years =&gt; Business owner of 8 years =&gt; Fullstack developer
+            My professional journey began in the world of visual arts, where I
+            further developed my design skills and aesthetic eye.
           </p>
+          <h3>Tattoo Artist:</h3>
           <p>
-            Whether I'm leading a team, part of a collaboration or working
-            independently I love to help visualize, create and curate ideas into
-            reality and functionality...
+            For 20 years, I've brought stories to life through my work in 2D and
+            3D design, perfecting my technical craft in the art form of
+            tattooing and custom personalized designing.
           </p>
-          <p>🔹 FUN FACTS 🔹</p>
+          <h3>Business Owner:</h3>
+          <p>
+            Managing my own small business for 10 years taught me the ropes of
+            client relations, project management, and strategic planning.
+          </p>
+          <h3>Fullstack Developer:</h3>
+          <p>
+            Today, I blend these experiences to build creative digital
+            solutions. Whether leading a team, collaborating, or flying solo, I
+            thrive on turning thoughtful concepts into functional realities.
+          </p>
+          <h4>Fun Facts About Me:</h4>
           <ul>
-            <li>-I toured Europe in a band when I was 16.</li>
+            <li>Toured Europe in a band at the age of 16.</li>
             <li>
-              -Ran an old car of mine in a demolition derby and got 2nd place.
+              Clinched 2nd place in a demolition derby with an old car of mine.
             </li>
-            <li>-4 time Chicago Marathon finisher</li>
+            <li>Crossed the finish line at the Chicago Marathon four times.</li>
           </ul>
+          <h4>Tech Toolkit:</h4>
           <p>
-            Proficient: git | node | html | css | javascript | react | redux |
-            express | prisma | postman | photoshop | procreate | figma |
+            Proficient In: Git, Node, HTML, CSS, JavaScript, React, Redux,
+            Express, Prisma, Postman, Photoshop, Procreate, Figma.
           </p>
-          <p>Knowledgeable: python | illustrator |</p>
+          <p>Knowledgeable In: Python, Illustrator.</p>
         </div>
       </section>
     </>
