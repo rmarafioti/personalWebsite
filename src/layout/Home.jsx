@@ -20,11 +20,16 @@ export default function Home() {
       <article>
         <h1>WELCOME!</h1>
         <p>
-          Rich Marafioti is a Fullstack Developer 🔹 Designer based in Chicago.
-          With over 20 years experience working independently in art & design
-          and 10 years of experience as a small business owner. My mission is
-          deliver a healthy marriage of design and functionality, aesthetics and
-          communication.
+          I’m Rich Marafioti, a Fullstack Developer and Designer living in
+          Chicago. With 20 years of independence in art and design, and a decade
+          of owning and operating my own small business, I blend creativity with
+          functionality.
+        </p>
+        <h2>MY MISSION?</h2>
+        <p>
+          To seamlessly integrate design and functionality, alongside aesthetics
+          and effective communication, ensuring your digital presence is as
+          vibrant and dynamic as your vision.
         </p>
       </article>
     </>
