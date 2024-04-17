@@ -14,7 +14,7 @@ export default function Footer() {
         <img src="https://res.cloudinary.com/dzpne110u/image/upload/v1713384067/personalWebsite/github-mark_s7lfjs.png" />
       </a>
       <a href="mailto:richmarafioti@gmail.com">
-        <span class="material-symbols-outlined">mail</span>
+        <span className="material-symbols-outlined">mail</span>
       </a>
     </section>
   );

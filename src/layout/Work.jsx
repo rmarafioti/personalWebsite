@@ -12,6 +12,7 @@ import "./work.css";
 
 export default function Work() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
   const [popUp, setPopUp] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState("");
 
@@ -27,7 +28,7 @@ export default function Work() {
   };
 
   const handleClick2 = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryPics.length);
+    setCurrentIndex2((prevIndex) => (prevIndex + 1) % galleryPics.length);
   };
 
   /**
@@ -40,7 +41,7 @@ export default function Work() {
     brainFlexPics.length > 0 ? brainFlexPics[currentIndex] : null;
 
   const currentImageObj2 =
-    galleryPics.length > 0 ? galleryPics[currentIndex] : null;
+    galleryPics.length > 0 ? galleryPics[currentIndex2] : null;
 
   /**
    *
@@ -81,19 +82,16 @@ export default function Work() {
           </div>
         </div>
         <section>
+          <h3>Book Buddy:</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-            aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
-            fermentum dui faucibus in ornare. Amet porttitor eget dolor morbi.
-            Nunc sed augue lacus viverra vitae congue. Sit amet massa vitae
-            tortor condimentum. Tristique senectus et netus et malesuada fames
-            ac turpis. Tellus mauris a diam maecenas sed. Tellus rutrum tellus
-            pellentesque eu tincidunt. Scelerisque purus semper eget duis at
-            tellus at. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus.
-            Non odio euismod lacinia at quis risus sed vulputate. Fermentum
-            posuere urna nec tincidunt praesent semper feugiat nibh.
+            Dive into daily quizzes that blend learning with fun! Choose from a
+            variety of topics to test your knowledge or learn something new. Our
+            unique format reveals pictures and unveils words as you answer
+            correctly, enhancing memory and adding a touch of mystery. Our daily
+            quizzes enrich your knowledge with fun facts while you compete with
+            others for the highest score.
           </p>
+          <p>Created using HTML, CSS, JAVASCRIPT, REACT & REDUX</p>
           <section id="projectSketches">
             <div id="sketchContainer">
               <img
@@ -145,18 +143,22 @@ export default function Work() {
           </div>
         </div>
         <section>
+          <h3>BrainFLEX:</h3>
+          <h5>
+            A fully functional CRUD app with an internally built database &
+            token authentication
+          </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-            aenean pharetra magna ac. Neque convallis a cras semper. Scelerisque
-            fermentum dui faucibus in ornare. Amet porttitor eget dolor morbi.
-            Nunc sed augue lacus viverra vitae congue. Sit amet massa vitae
-            tortor condimentum. Tristique senectus et netus et malesuada fames
-            ac turpis. Tellus mauris a diam maecenas sed. Tellus rutrum tellus
-            pellentesque eu tincidunt. Scelerisque purus semper eget duis at
-            tellus at. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus.
-            Non odio euismod lacinia at quis risus sed vulputate. Fermentum
-            posuere urna nec tincidunt praesent semper feugiat nibh.
+            Dive into daily quizzes that blend learning with fun! Choose from a
+            variety of topics to test your knowledge or learn something new. Our
+            unique format reveals pictures and unveils words as you answer
+            correctly, enhancing memory and adding a touch of mystery. Our daily
+            quizzes enrich your knowledge with fun facts while you compete with
+            others for the highest score.
+          </p>
+          <p>
+            Created using HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN
+            & PRISMA
           </p>
           <section id="projectSketches">
             <div id="sketchContainer">
