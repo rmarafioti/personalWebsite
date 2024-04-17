@@ -18,10 +18,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navHeader {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#navLinks {
+  display: flex;
+}
+
+/* footer styling*/
+
 #footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#footer img, #footer .material-symbols-outlined {
+  height: 50px; /* Sets a fixed height for all icons */
+  width: 50px; /* Sets a fixed width for all icons */
+  object-fit: contain; /* Ensures images are scaled correctly within the dimensions */
+}
+
+#footer .material-symbols-outlined {
+  font-size: 50px; /* Sets the font size to match the height and width for uniformity */
+  display: flex; /* Ensures the span behaves like a flex item */
+  align-items: center; /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  line-height: 1; /* Removes extra line height that may affect vertical alignment */
 }
 
 a {
@@ -33,7 +66,16 @@ a:hover {
   color: #535bf2;
 }
 
-#workIntro, #aboutIntro {
+#footer a {
+  display: inline-flex; /* Makes the link behave like a flex container */
+  align-items: center; /* Centers the icon vertically within the link */
+  justify-content: center; /* Centers the icon horizontally within the link */
+  margin: 0 10px; /* Adds horizontal space between each link */
+  text-decoration: none; /* Optional: removes underline from links */
+}
+
+#workIntro,
+#aboutIntro {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -48,14 +90,14 @@ a:hover {
 
 #aboutImageContainer {
   width: 60%;
- display:block;
+  display: block;
 }
 
 #aboutImageContainer img {
   width: 100%;
   height: auto;
-  display: block; 
-} 
+  display: block;
+}
 
 @media (max-width: 815px) {
   #aboutIntro {
@@ -63,6 +105,3 @@ a:hover {
     text-align: center;
   }
 }
-
-
-
