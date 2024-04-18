@@ -79,7 +79,9 @@ a:hover {
 #aboutIntro {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  text-align: left;
+ 
+  
 }
 
 @media (max-width: 633px) {
@@ -90,20 +92,28 @@ a:hover {
 }
 
 #aboutImageContainer {
-  width: 60%;
+  width: auto;
   display: block;
 }
 
 #aboutImageContainer img {
-  width: 100%;
+  width: 300px;
   height: auto;
   display: block;
 }
 
 @media (max-width: 815px) {
   #aboutIntro {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+  #aboutImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
