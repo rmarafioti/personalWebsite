@@ -3,12 +3,16 @@
   margin: 0;
   box-sizing: border-box;
   border: 0px solid green;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 
   color: rgba(225, 20, 20, 0.87);
 
@@ -18,20 +22,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+p{
+  font-weight: 500;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid grey;
 }
 
 #navHeader {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
 }
 
 #navLinks {
   display: flex;
   flex-direction: row;
+  margin: 1rem;
+}
+
+.navLink {
+  padding-right: 1rem;
 }
 
 /* footer styling*/
@@ -42,9 +58,11 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  border-top: 2px solid grey;
 }
 
-#footer img, #footer .material-symbols-outlined {
+#footer img,
+#footer .material-symbols-outlined {
   height: 50px; /* Sets a fixed height for all icons */
   width: 50px; /* Sets a fixed width for all icons */
   object-fit: contain; /* Ensures images are scaled correctly within the dimensions */
@@ -80,8 +98,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   text-align: left;
- 
-  
 }
 
 @media (max-width: 633px) {
@@ -133,12 +149,12 @@ a:hover {
 #homePhotoContainer {
   width: 35%;
   display: block;
-  max-width: 400px
+  max-width: 400px;
 }
 
 #homePhoto {
   width: 350px;
-  height:auto;
+  height: auto;
   display: block;
 }
 
@@ -146,5 +162,9 @@ a:hover {
   #home {
     display: flex;
     flex-direction: column;
+  }
+  #pitchSection {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
 }

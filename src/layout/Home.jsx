@@ -13,7 +13,7 @@ export default function Home() {
         <section id="homePhotoContainer">
           <img
             id="homePhoto"
-            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713446166/personalWebsite/Untitled_Artwork_3_xm1esg.png"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713451153/personalWebsite/Untitled_Artwork_3_fjb7z0.png"
             alt="main image for homepage"
           />
         </section>

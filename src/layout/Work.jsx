@@ -98,6 +98,21 @@ export default function Work() {
             ensuring a comprehensive and user-friendly service.
           </p>
           <p>Created using HTML, CSS, JAVASCRIPT, REACT & REDUX</p>
+          <div>
+            <button>
+              <a href="https://main--courageous-pithivier-3563c9.netlify.app/">
+                VISIT BOOK BUDDY
+              </a>
+            </button>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/rmarafioti/2401.BookBuddy"
+              >
+                BOOK BUDDY GITHUB REPO
+              </a>
+            </button>
+          </div>
           <section id="projectSketches">
             <div id="sketchContainer">
               <img
@@ -120,14 +135,6 @@ export default function Work() {
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
               <p>click to enlarge</p>
-              <button>
-                <a
-                  target="_blank"
-                  href="https://github.com/rmarafioti/2401.BookBuddy"
-                >
-                  LINK TO PROJECT GITHUB
-                </a>
-              </button>
             </div>
           </section>
         </section>
