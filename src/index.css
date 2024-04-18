@@ -105,3 +105,28 @@ a:hover {
     text-align: center;
   }
 }
+
+/*home page styling*/
+
+#home {
+  display: flex;
+}
+
+#pitchSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+#homePhotoContainer {
+  width: 35%;
+  display: block;
+  max-width: 400px
+}
+
+#homePhoto {
+  width: 350px;
+  height:auto;
+  display: block;
+}
