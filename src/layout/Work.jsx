@@ -82,37 +82,44 @@ export default function Work() {
           </div>
         </div>
         <section>
-          <h3>Book Buddy:</h3>
-          <h5>
-            Front-end developed app using an external API and token
-            authentication
-          </h5>
-          <p>
-            Welcome to BookBuddy, an online public library service that offers a
-            seamless browsing experience. This platform allows users to navigate
-            effortlessly through a collection of books from an external
-            database. BookBuddy enables searches by author or title and in
-            real-time keeps track of books that are available for checkout.
-            Additionally, each user’s account maintains a record of their
-            checked-out books and provides functionalities to return them,
-            ensuring a comprehensive and user-friendly service.
-          </p>
-          <p>Created using HTML, CSS, JAVASCRIPT, REACT & REDUX</p>
-          <div>
-            <button>
-              <a href="https://main--courageous-pithivier-3563c9.netlify.app/">
-                VISIT BOOK BUDDY
-              </a>
-            </button>
-            <button>
-              <a
-                target="_blank"
-                href="https://github.com/rmarafioti/2401.BookBuddy"
-              >
-                BOOK BUDDY GITHUB REPO
-              </a>
-            </button>
-          </div>
+          <section className="projectDescription">
+            <h3 className="projectContent" id="topProject">
+              Book Buddy:
+            </h3>
+            <h5 className="projectContent">
+              Front-end developed app using an external API and token
+              authentication
+            </h5>
+            <p className="projectParagraph">
+              Welcome to BookBuddy, an online public library service that offers
+              a seamless browsing experience. This platform allows users to
+              navigate effortlessly through a collection of books from an
+              external database. BookBuddy enables searches by author or title
+              and in real-time keeps track of books that are available for
+              checkout. Additionally, each user’s account maintains a record of
+              their checked-out books and provides functionalities to return
+              them, ensuring a comprehensive and user-friendly service.
+            </p>
+            <h4 className="projectContent">Created With:</h4>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT & REDUX
+            </p>
+            <div>
+              <button>
+                <a href="https://main--courageous-pithivier-3563c9.netlify.app/">
+                  VISIT BOOK BUDDY
+                </a>
+              </button>
+              <button>
+                <a
+                  target="_blank"
+                  href="https://github.com/rmarafioti/2401.BookBuddy"
+                >
+                  BOOK BUDDY GITHUB REPO
+                </a>
+              </button>
+            </div>
+          </section>
           <section id="projectSketches">
             <div id="sketchContainer">
               <img
@@ -121,7 +128,7 @@ export default function Work() {
                 alt="wireframe images for website project"
               />
 
-              <button onClick={handleClick2}>CLICK THROUGH IMAGES</button>
+              <button onClick={handleClick2}>BROWSE WIREFRAME</button>
             </div>
             <div id="thumbnailContainer">
               <img
@@ -156,31 +163,45 @@ export default function Work() {
           </div>
         </div>
         <section>
-          <h3>BrainFLEX:</h3>
-          <h5>
-            A fully functional CRUD app with an internally built database &
-            token authentication
-          </h5>
-          <p>
-            Dive into daily quizzes that blend learning with fun! Choose from a
-            variety of topics to test your knowledge or learn something new. Our
-            unique format reveals pictures and unveils words as you answer
-            correctly, enhancing memory and adding a touch of mystery. Our daily
-            quizzes enrich your knowledge with fun facts while you compete with
-            others for the highest score.
-          </p>
-          <p>
-            Created using HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN
-            & PRISMA ORM
-          </p>
+          <section className="projectDescription">
+            <h3 className="projectContent" id="topProject">
+              BrainFLEX:
+            </h3>
+            <h5 className="projectContent">
+              A fully functional CRUD app with an internally built database &
+              token authentication
+            </h5>
+            <p className="projectParagraph">
+              Dive into daily quizzes that blend learning with fun! Choose from
+              a variety of topics to test your knowledge or learn something new.
+              Our unique format reveals pictures and unveils words as you answer
+              correctly, enhancing memory and adding a touch of mystery. Our
+              daily quizzes enrich your knowledge with fun facts while you
+              compete with others for the highest score.
+            </p>
+            <h4 className="projectContent">Created With:</h4>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
+            </p>
+            <button>
+              <a target="_blank" href="">
+                VISIT BRAINFLEX
+              </a>
+            </button>
+            <button>
+              <a target="_blank" href="https://github.com/Portals-Team/Game">
+                BRAINFLEX GITHUB REPO
+              </a>
+            </button>
+          </section>
           <section id="projectSketches">
-            <div id="sketchContainer">
+            <div id="sketchContainerBottom">
               <img
                 src={imageurl}
                 id="sketchImage"
                 alt="wireframe images for website project"
               />
-              <button onClick={handleClick}>CLICK THROUGH IMAGES</button>
+              <button onClick={handleClick}>BROWSE WIREFRAME</button>
             </div>
             <div id="thumbnailContainer">
               <img
@@ -194,16 +215,10 @@ export default function Work() {
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
               <p>click to enlarge</p>
-              <button>
-                <a target="_blank" href="https://github.com/Portals-Team/Game">
-                  LINK TO PROJECT GITHUB
-                </a>
-              </button>
             </div>
           </section>
         </section>
       </article>
-
       {popUp && (
         <div id="graphModal" onClick={() => setPopUp(false)}>
           <img src={enlargedImage} alt="Expanded view" />

@@ -22,14 +22,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-p{
+p {
   font-weight: 500;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 #navHeader {
@@ -37,17 +37,13 @@ nav {
   flex-direction: column;
   height: 100%;
   margin-left: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #navLinks {
   display: flex;
   flex-direction: row;
   margin: 1rem;
-}
-
-.navLink {
-  padding-right: 1rem;
 }
 
 /* footer styling*/
@@ -58,7 +54,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  border-top: 2px solid grey;
+  border-top: 1px solid grey;
 }
 
 #footer img,
@@ -107,23 +103,38 @@ a:hover {
   }
 }
 
+#headline {
+  margin-bottom: 1rem;
+}
+
 #aboutImageContainer {
   width: auto;
   display: block;
+  margin: 1rem;
 }
 
 #aboutImageContainer img {
   width: 300px;
   height: auto;
   display: block;
+  border-radius: 25px;
+}
+
+#workTimeline {
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 815px) {
   #aboutIntro {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   #aboutImageContainer {
     display: flex;
@@ -131,6 +142,22 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
+  #workTimeline {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.aboutContent {
+  margin-bottom: 1rem;
+}
+
+#facts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
 /*home page styling*/
@@ -144,6 +171,25 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+
+  border: 1px solid grey;
+  border-radius: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#welcomeLine {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#missionLine {
+  margin-top: 1rem;
 }
 
 #homePhotoContainer {

@@ -14,15 +14,15 @@ export default function Navbar() {
         {/*<p>fullstack developer / designer</p>*/}
       </div>
       <div id="navLinks">
-        <NavLink className="navLink" to="/">
-          HOME{" "}
-        </NavLink>
-        <NavLink className="navLink" to="/work">
-          WORK
-        </NavLink>
-        <NavLink className="navLink" to="/about">
-          ABOUT
-        </NavLink>
+        <button>
+          <NavLink to="/">HOME</NavLink>
+        </button>
+        <button>
+          <NavLink to="/work">WORK</NavLink>
+        </button>
+        <button>
+          <NavLink to="/about">ABOUT</NavLink>
+        </button>
       </div>
     </nav>
   );
