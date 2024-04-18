@@ -83,13 +83,19 @@ export default function Work() {
         </div>
         <section>
           <h3>Book Buddy:</h3>
+          <h5>
+            Front-end developed app using an external API and token
+            authentication
+          </h5>
           <p>
-            Dive into daily quizzes that blend learning with fun! Choose from a
-            variety of topics to test your knowledge or learn something new. Our
-            unique format reveals pictures and unveils words as you answer
-            correctly, enhancing memory and adding a touch of mystery. Our daily
-            quizzes enrich your knowledge with fun facts while you compete with
-            others for the highest score.
+            Welcome to BookBuddy, an online public library service that offers a
+            seamless browsing experience. This platform allows users to navigate
+            effortlessly through a collection of books from an external
+            database. BookBuddy enables searches by author or title and in
+            real-time keeps track of books that are available for checkout.
+            Additionally, each user’s account maintains a record of their
+            checked-out books and provides functionalities to return them,
+            ensuring a comprehensive and user-friendly service.
           </p>
           <p>Created using HTML, CSS, JAVASCRIPT, REACT & REDUX</p>
           <section id="projectSketches">
@@ -158,7 +164,7 @@ export default function Work() {
           </p>
           <p>
             Created using HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN
-            & PRISMA
+            & PRISMA ORM
           </p>
           <section id="projectSketches">
             <div id="sketchContainer">

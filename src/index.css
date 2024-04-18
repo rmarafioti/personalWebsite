@@ -31,6 +31,7 @@ nav {
 
 #navLinks {
   display: flex;
+  flex-direction: row;
 }
 
 /* footer styling*/
@@ -129,4 +130,11 @@ a:hover {
   width: 350px;
   height:auto;
   display: block;
+}
+
+@media (max-width: 976px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
 }

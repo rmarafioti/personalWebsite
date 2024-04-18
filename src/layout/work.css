@@ -5,7 +5,7 @@
     flex-direction: row;
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 736px) {
     #projectBody {
       display: inline-block;
       flex-direction: column;
@@ -18,7 +18,7 @@
     justify-content: space-between;
   }
   
-  @media (max-width: 633px) {
+  @media (max-width: 736px) {
     #projectThumbnails {
       display: inline-block;
       flex-direction: column;
