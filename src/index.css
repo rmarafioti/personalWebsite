@@ -96,6 +96,13 @@ a:hover {
   text-align: left;
 }
 
+#aboutIntro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 930px;
+}
+
 @media (max-width: 633px) {
   #workIntro {
     display: inline-block;
@@ -123,7 +130,7 @@ a:hover {
 #workTimeline {
   border: 1px solid grey;
   border-radius: 25px;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-right: 1rem;
@@ -149,7 +156,19 @@ a:hover {
 }
 
 .aboutContent {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 12.9px;
+}
+
+#funFactsSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 930px;
+}
+
+#funFactsTitle {
+  padding-left: .7rem;
 }
 
 #facts {
@@ -158,6 +177,33 @@ a:hover {
   text-align: left;
   justify-content: center;
   margin-left: 1rem;
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#list {
+  list-style-type: none;
+}
+
+.listItem {
+  font-size: 12.9px;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+#techSection {
+  margin-right: 1rem;
+}
+
+#toolkitTitle {
+  margin-bottom: .5rem;
+}
+
+.subTitle {
+  font-weight: 500;
 }
 
 /*home page styling*/
