@@ -37,7 +37,8 @@
   /*project pages*/
   
   .projectDescription {
-    border: 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(227, 187, 187);
     border-radius: 25px;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -73,8 +74,6 @@
     width: 350px;
   }
 
-
-
   .projectContent, .projectParagraph {
     margin-left: 1rem;
   }
@@ -92,18 +91,39 @@
   }
   
   #thumbnail {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     width: 150px; 
       height: auto; 
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+      box-shadow: 0px 5px 10px rgb(227, 187, 187);
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
   }
 
+  #thumbnail:hover {
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    box-shadow: 0px 8px 15px rgb(139, 117, 117); 
+}
+
   button {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-left: 1rem;
     padding: .5rem;
     border-radius: 10px;
+    box-shadow: 0px 1px 2px rgb(227, 187, 187);
+  }
+
+  #wireFrameButton {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: rgb(162, 106, 105);
+    margin-top: 0;
+    cursor: pointer;
+  }
+
+  a:visited {
+color: rgb(162, 106, 105);
   }
   
   #graphModal img {

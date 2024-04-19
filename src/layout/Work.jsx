@@ -19,7 +19,7 @@ export default function Work() {
   /**
    *
    * @function handleClick
-   * @returns the function flips through a series of images via 'CLICK THROUGH IMAGES' button.
+   * @returns the function flips through a series of images via 'browse wireframe' button.
    *
    */
 
@@ -128,7 +128,9 @@ export default function Work() {
                 alt="wireframe images for website project"
               />
 
-              <button onClick={handleClick2}>BROWSE WIREFRAME</button>
+              <button id="wireFrameButton" onClick={handleClick2}>
+                browse wireframe
+              </button>
             </div>
             <div id="thumbnailContainer">
               <img
@@ -141,7 +143,6 @@ export default function Work() {
                 }
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
-              <p>click to enlarge</p>
             </div>
           </section>
         </section>
@@ -201,7 +202,9 @@ export default function Work() {
                 id="sketchImage"
                 alt="wireframe images for website project"
               />
-              <button onClick={handleClick}>BROWSE WIREFRAME</button>
+              <button id="wireFrameButton" onClick={handleClick}>
+                browse wireframe
+              </button>
             </div>
             <div id="thumbnailContainer">
               <img
@@ -214,7 +217,6 @@ export default function Work() {
                 }
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
-              <p>click to enlarge</p>
             </div>
           </section>
         </section>

@@ -13,7 +13,7 @@ export default function Home() {
         <section id="homePhotoContainer">
           <img
             id="homePhoto"
-            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713451153/personalWebsite/Untitled_Artwork_3_fjb7z0.png"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713550153/personalWebsite/Untitled_Artwork_9_aszsfu.png"
             alt="main image for homepage"
           />
         </section>
@@ -25,7 +25,7 @@ export default function Home() {
             decade of owning and operating my own small business, I blend
             creativity with functionality.
           </p>
-          <h2 id="missionLine">MY MISSION?</h2>
+          <h3 id="missionLine">MY MISSION?</h3>
           <p>
             To seamlessly integrate design and functionality, alongside
             aesthetics and effective communication, ensuring your digital

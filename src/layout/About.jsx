@@ -17,7 +17,7 @@ export default function About() {
         <section>
           <div id="workTimeline">
             <section id="workTimelineHeader">
-              <p id="workTimeLineTag">from creativity to code</p>
+              <p id="workTimeLineTag">From Creativity to Code</p>
               <img
                 src="https://res.cloudinary.com/dzpne110u/image/upload/v1713534663/personalWebsite/Untitled_Artwork_sxtwpl.png"
                 alt="illustration of a rubber duck as an artist with paintbrush and palette"
@@ -50,24 +50,24 @@ export default function About() {
       </section>
       <section id="funFactsSection">
         <div id="facts">
-          <h4 id="funFactsTitle">Fun Facts:</h4>
+          <h3 id="funFactsTitle">FUN FACTS:</h3>
           <ul id="list">
             <li className="listItem">
-              <span class="material-symbols-outlined">family_star</span>Toured
-              Europe in a band at the age of 16.
+              <span className="material-symbols-outlined">family_star</span>
+              Toured Europe in a band at the age of 16.
             </li>
             <li className="listItem">
-              <span class="material-symbols-outlined">family_star</span>
+              <span className="material-symbols-outlined">family_star</span>
               Clinched 2nd place in a demolition derby with an old car of mine.
             </li>
             <li className="listItem">
-              <span class="material-symbols-outlined">family_star</span>
+              <span className="material-symbols-outlined">family_star</span>
               Crossed the finish line at the Chicago Marathon four times.
             </li>
           </ul>
         </div>
         <section id="techSection">
-          <h4 id="toolkitTitle">Tech Toolkit:</h4>
+          <h4 id="toolkitTitle">TECH TOOLKIT:</h4>
           <h4 className="subTitle">Proficient In: </h4>
           <p className="aboutContent">
             Git | Node | HTML | CSS | JavaScript | React | Redux | Express |

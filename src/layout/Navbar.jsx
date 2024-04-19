@@ -24,13 +24,19 @@ export default function Navbar() {
       </div>
       <div id="navLinks">
         <button className="navButton">
-          <NavLink to="/">HOME</NavLink>
+          <NavLink className="navLink" to="/">
+            HOME
+          </NavLink>
         </button>
         <button className="navButtonMiddle">
-          <NavLink to="/work">WORK</NavLink>
+          <NavLink className="navLink" to="/work">
+            WORK
+          </NavLink>
         </button>
         <button className="navButton">
-          <NavLink to="/about">ABOUT</NavLink>
+          <NavLink className="navLink" to="/about">
+            ABOUT
+          </NavLink>
         </button>
       </div>
     </nav>

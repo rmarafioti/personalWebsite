@@ -14,7 +14,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
-  color: rgba(225, 20, 20, 0.87);
+  color: rgb(162, 106, 105);
 
   display: flex;
   flex-direction: column;
@@ -27,7 +27,8 @@
 }
 
 main {
-  flex-grow: 1; /* Allows main content to expand and fill available space */
+  flex-grow: 1;
+  background: linear-gradient(rgba(245, 248, 248, 0.958), white);
 }
 
 p {
@@ -38,7 +39,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(212,196,164);
+  background-color: rgba(245, 248, 248, 0.958);
 }
 
 #navHeader {
@@ -64,6 +66,16 @@ nav {
   margin: 1rem;
   justify-content: center;
   align-items: start;
+}
+
+.navButton, .navButtonMiddle {
+  background-color: white;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  color: rgb(117, 106, 187)
+}
+
+.navLink:visited {
+  color: inherit;
 }
 
 @media (max-width: 576px) {
@@ -102,7 +114,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgb(212,196,164);
 }
 
 #footer img,
@@ -178,7 +190,6 @@ a:hover {
 #workTimeline {
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
   border-radius: 25px;
   padding-top: 0.7rem;
   padding-left: 1rem;
@@ -186,13 +197,15 @@ a:hover {
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  background-color: white;
 }
 
 #workTimelineHeader {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 #workTimelineHeader img {
@@ -202,7 +215,13 @@ a:hover {
 }
 
 #workTimeLineTag {
-  font-size: 30px;
+  color:rgb(117, 106, 187);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h4, h3, span {
+  color: rgb(117, 106, 187);
 }
 
 @media (max-width: 815px) {
@@ -239,16 +258,18 @@ a:hover {
 }
 
 #facts {
+  background-color: white;
   display: flex;
   flex-direction: column;
   text-align: left;
   justify-content: center;
   margin-left: 1rem;
-  border: 1px solid grey;
+ 
   border-radius: 25px;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
 }
 
 #list {
@@ -278,12 +299,12 @@ a:hover {
 #home {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 #pitchSection {
   justify-content: start;
   text-align: left;
-  border: 1px solid grey;
   border-radius: 25px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -292,15 +313,19 @@ a:hover {
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
 }
 
 #welcomeLine {
+  color: rgb(117, 106, 187);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 #missionLine {
-  margin-top: 2rem;
+  color: rgb(117, 106, 187);
+  margin-top: 1rem;
 }
 
 #homePhotoContainer {
