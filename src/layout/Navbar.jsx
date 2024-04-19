@@ -10,17 +10,26 @@ export default function Navbar() {
   return (
     <nav>
       <div id="navHeader">
-        <h1>Rich Marafioti</h1>
-        {/*<p>fullstack developer / designer</p>*/}
+        <img
+          id="headerFirstName"
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533982/personalWebsite/Untitled_Artwork_4_egrdlw.png"
+          alt="image of landing page for project"
+        />
+        <img
+          id="headerLastName"
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533993/personalWebsite/Untitled_Artwork_5_oz5h3m.png"
+          alt="image of landing page for project"
+        />
+        <p>fullstack developer / designer</p>
       </div>
       <div id="navLinks">
-        <button>
+        <button className="navButton">
           <NavLink to="/">HOME</NavLink>
         </button>
-        <button>
+        <button className="navButtonMiddle">
           <NavLink to="/work">WORK</NavLink>
         </button>
-        <button>
+        <button className="navButton">
           <NavLink to="/about">ABOUT</NavLink>
         </button>
       </div>

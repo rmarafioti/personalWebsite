@@ -10,13 +10,19 @@ export default function About() {
       <section id="aboutIntro">
         <div id="aboutImageContainer">
           <img
-            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198396/personalWebsite/Headshot0406_c3lwlt.jpg"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
             alt="personal headshot for about me page"
           />
         </div>
         <section>
           <div id="workTimeline">
-            <h1 id="headline">From Creativity to Code:</h1>
+            <section id="workTimelineHeader">
+              <p id="workTimeLineTag">from creativity to code</p>
+              <img
+                src="https://res.cloudinary.com/dzpne110u/image/upload/v1713534663/personalWebsite/Untitled_Artwork_sxtwpl.png"
+                alt="illustration of a rubber duck as an artist with paintbrush and palette"
+              />
+            </section>
             <h4>RISD Illustration Graduate & Visual Artist: </h4>
             <p className="aboutContent">
               My professional journey began in the world of visual arts, where I
@@ -44,7 +50,7 @@ export default function About() {
       </section>
       <section id="funFactsSection">
         <div id="facts">
-          <h4 id="funFactsTitle">Fun Facts About Me:</h4>
+          <h4 id="funFactsTitle">Fun Facts:</h4>
           <ul id="list">
             <li className="listItem">
               <span class="material-symbols-outlined">family_star</span>Toured

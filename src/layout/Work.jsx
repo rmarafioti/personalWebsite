@@ -76,7 +76,7 @@ export default function Work() {
           <div id="imageContainer">
             <img
               id="projectImage"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713365721/personalWebsite/Untitled_Artwork_2_tbnn76.png"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533942/personalWebsite/Untitled_Artwork_3_fxzlcc.png"
               alt="image of landing page for project"
             />
           </div>
@@ -157,7 +157,7 @@ export default function Work() {
           <div id="imageContainer">
             <img
               id="projectImage"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713381417/personalWebsite/Untitled_Artwork_kxwocn.png"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533928/personalWebsite/Untitled_Artwork_2_sm0puv.png"
               alt="image of landing page for project"
             />
           </div>

@@ -25,7 +25,7 @@ export default function Home() {
             decade of owning and operating my own small business, I blend
             creativity with functionality.
           </p>
-          <h3 id="missionLine">MY MISSION?</h3>
+          <h2 id="missionLine">MY MISSION?</h2>
           <p>
             To seamlessly integrate design and functionality, alongside
             aesthetics and effective communication, ensuring your digital
