@@ -1,153 +1,151 @@
 /*work page*/
 
-#projectSketches, #projectBody {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  @media (max-width: 736px) {
-    #projectBody {
-      display: inline-block;
-      flex-direction: column;
-    }
-  }
-  
-  #projectThumbnails {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  @media (max-width: 736px) {
-    #projectThumbnails {
-      display: inline-block;
-      flex-direction: column;
-    }
-    #projectDescription {
-      margin-left: 1rem;
-    }
-  }
-  
-  #workImage {
-    max-width: auto;
-    height: 100%;
-    display: block;
-  }
-
-  /*project pages*/
-  
-  .projectDescription {
-    background-color: white;
-    box-shadow: 0px 5px 10px rgb(227, 187, 187);
-    border-radius: 25px;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    padding: .5rem;
-  }
-
-  @media (max-width: 736px) {
-    #projectThumbnails {
-      display: inline-block;
-      flex-direction: column;
-    }
-    .projectDescription {
-      margin-left: 1rem;
-    }
-  }
-
-  #sketchContainer, #imageContainer, #sketchContainerBottom {
-    width: auto;
-    display: block;
-  }
-
-  #sketchContainerBottom {
-    margin-bottom: 1rem;
-  }
-  
-  #sketchImage, #projectImage {
-    width: 200px; 
-    height: auto; 
-    display: block; 
-  }
-
-  #projectImage {
-    width: 350px;
-  }
-
-  .projectContent, .projectParagraph {
-    margin-left: 1rem;
-  }
-
-  .projectParagraph {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-  #thumbnailContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    height: 100%; 
-  }
-  
-  #thumbnail {
-    margin-top: 1.5rem;
-    width: 150px; 
-      height: auto; 
-      box-shadow: 0px 5px 10px rgb(227, 187, 187);
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-  }
-
-  #thumbnail:hover {
-    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
-    box-shadow: 0px 8px 15px rgb(139, 117, 117); 
+#projectSketches,
+#projectBody {
+  display: flex;
+  flex-direction: row;
 }
 
-  button {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+@media (max-width: 736px) {
+  #projectBody {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+
+#projectThumbnails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 736px) {
+  #projectThumbnails {
+    display: inline-block;
+    flex-direction: column;
+  }
+  #projectDescription {
     margin-left: 1rem;
-    padding: .5rem;
-    border-radius: 10px;
-    box-shadow: 0px 1px 2px rgb(227, 187, 187);
   }
+}
 
-  #wireFrameButton {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: rgb(162, 106, 105);
-    margin-top: 0;
-    cursor: pointer;
-  }
+#workImage {
+  max-width: auto;
+  height: 100%;
+  display: block;
+}
 
-  a:visited {
-color: rgb(162, 106, 105);
-  }
-  
-  #graphModal img {
-    max-height: 80vh;
-    max-width: 90%; /*NOT SURE I NEED THIS*/
-    object-fit: contain; /* Keeps the image's aspect ratio */
-    display: block;
-    border: 1rem solid white;
-  }
-  
-  #graphModal {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Ensure it's on top of other content */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.4); 
-   
-  }
+.projectDescription {
+  background-color: white;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  border-radius: 25px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
 
+@media (max-width: 736px) {
+  #projectThumbnails {
+    display: inline-block;
+    flex-direction: column;
+  }
+  .projectDescription {
+    margin-left: 1rem;
+  }
+}
 
-  
-  
+#sketchContainer,
+#imageContainer,
+#sketchContainerBottom {
+  width: auto;
+  display: block;
+}
+
+#sketchContainerBottom {
+  margin-bottom: 1rem;
+}
+
+#sketchImage,
+#projectImage {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+#projectImage {
+  width: 350px;
+}
+
+.projectContent,
+.projectParagraph {
+  margin-left: 1rem;
+}
+
+.projectParagraph {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#thumbnailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#thumbnail {
+  margin-top: 1.5rem;
+  width: 150px;
+  height: auto;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#thumbnail:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgb(139, 117, 117);
+}
+
+button {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px rgb(227, 187, 187);
+}
+
+#wireFrameButton {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: rgb(162, 106, 105);
+  margin-top: 0;
+  cursor: pointer;
+}
+
+a:visited {
+  color: rgb(162, 106, 105);
+}
+
+#graphModal img {
+  max-height: 80vh;
+  max-width: 90%;
+  object-fit: contain;
+  display: block;
+  border: 1rem solid white;
+}
+
+#graphModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}

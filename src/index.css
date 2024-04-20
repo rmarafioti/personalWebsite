@@ -1,3 +1,5 @@
+/*main styling*/
+
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +33,8 @@ main {
   background: linear-gradient(rgba(245, 248, 248, 0.958), white);
 }
 
+/* nav bar styling */
+
 p {
   font-weight: 500;
 }
@@ -39,7 +43,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(212,196,164);
+  border-bottom: 1px solid rgb(212, 196, 164);
   background-color: rgba(245, 248, 248, 0.958);
 }
 
@@ -68,10 +72,11 @@ nav {
   align-items: start;
 }
 
-.navButton, .navButtonMiddle {
+.navButton,
+.navButtonMiddle {
   background-color: white;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  color: rgb(117, 106, 187)
+  color: rgb(117, 106, 187);
 }
 
 .navLink:visited {
@@ -106,7 +111,7 @@ nav {
   }
 }
 
-/* footer styling*/
+/* footer styling */
 
 #footer {
   display: flex;
@@ -114,22 +119,22 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  border-top: 1px solid rgb(212,196,164);
+  border-top: 1px solid rgb(212, 196, 164);
 }
 
 #footer img,
 #footer .material-symbols-outlined {
-  height: 50px; /* Sets a fixed height for all icons */
-  width: 50px; /* Sets a fixed width for all icons */
-  object-fit: contain; /* Ensures images are scaled correctly within the dimensions */
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
 }
 
 #footer .material-symbols-outlined {
-  font-size: 50px; /* Sets the font size to match the height and width for uniformity */
-  display: flex; /* Ensures the span behaves like a flex item */
-  align-items: center; /* Centers the icon vertically */
-  justify-content: center; /* Centers the icon horizontally */
-  line-height: 1; /* Removes extra line height that may affect vertical alignment */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 a {
@@ -142,156 +147,11 @@ a:hover {
 }
 
 #footer a {
-  display: inline-flex; /* Makes the link behave like a flex container */
-  align-items: center; /* Centers the icon vertically within the link */
-  justify-content: center; /* Centers the icon horizontally within the link */
-  margin: 0 10px; /* Adds horizontal space between each link */
-  text-decoration: none; /* Optional: removes underline from links */
-}
-
-#workIntro,
-#aboutIntro {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-}
-
-#aboutIntro {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 930px;
-}
-
-@media (max-width: 633px) {
-  #workIntro {
-    display: inline-block;
-    flex-direction: column;
-  }
-}
-
-#headline {
-  margin-bottom: 1rem;
-}
-
-#aboutImageContainer {
-  width: auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin: 1rem;
-}
-
-#aboutImageContainer img {
-  width: 300px;
-  height: auto;
-  display: block;
-}
-
-#workTimeline {
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-  padding-top: 0.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  background-color: white;
-}
-
-#workTimelineHeader {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
-
-#workTimelineHeader img {
-  width: 130px;
-  height: auto;
-  display: block;
-}
-
-#workTimeLineTag {
-  color:rgb(117, 106, 187);
-  font-size: 35px;
-  font-weight: bold;
-}
-
-h4, h3, span {
-  color: rgb(117, 106, 187);
-}
-
-@media (max-width: 815px) {
-  #aboutIntro {
-    display: flex;
-    flex-direction: column;
-  }
-  #aboutImageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #workTimeline {
-    margin-top: 0;
-    margin-left: 1rem;
-  }
-}
-
-.aboutContent {
-  margin-bottom: 0.8rem;
-  font-size: 12.9px;
-}
-
-#funFactsSection {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 800px;
-}
-
-#funFactsTitle {
-  padding-left: 0.7rem;
-}
-
-#facts {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  margin-left: 1rem;
- 
-  border-radius: 25px;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
-}
-
-#list {
-  list-style-type: none;
-}
-
-.listItem {
-  font-size: 12.9px;
-  font-weight: 500;
-  padding: 0.5rem;
-}
-
-#techSection {
-  margin-right: 1rem;
-}
-
-#toolkitTitle {
-  margin-bottom: 0.5rem;
-}
-
-.subTitle {
-  font-weight: 500;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /*home page styling*/
@@ -349,4 +209,147 @@ h4, h3, span {
     margin-left: 1rem;
     margin-bottom: 1rem;
   }
+}
+
+/* about page styling */
+
+#aboutIntro {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+  max-width: 930px;
+}
+
+@media (max-width: 633px) {
+  #workIntro {
+    display: inline-block;
+    flex-direction: column;
+  }
+}
+
+#headline {
+  margin-bottom: 1rem;
+}
+
+#aboutImageContainer {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+#aboutImageContainer img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+#workTimeline {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  background-color: white;
+}
+
+#workTimelineHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#workTimelineHeader img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+#workTimeLineTag {
+  color: rgb(117, 106, 187);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h4,
+h3,
+span {
+  color: rgb(117, 106, 187);
+}
+
+@media (max-width: 815px) {
+  #aboutIntro {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #workTimeline {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.aboutContent {
+  margin-bottom: 0.8rem;
+  font-size: 12.9px;
+}
+
+#funFactsSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+}
+
+#funFactsTitle {
+  padding-left: 0.7rem;
+}
+
+#facts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 1rem;
+
+  border-radius: 25px;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+}
+
+#list {
+  list-style-type: none;
+}
+
+.listItem {
+  font-size: 12.9px;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+#techSection {
+  margin-right: 1rem;
+}
+
+#toolkitTitle {
+  margin-bottom: 0.5rem;
+}
+
+.subTitle {
+  font-weight: 500;
 }
