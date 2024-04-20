@@ -1,3 +1,19 @@
+Personal website made with:
+
+HTML, JAVASCRIPT and REACT
+
+Styled with:
+
+CSS
+
+Design and illustrations created with:
+
+PROCREATE and FIGMA
+
+Additions:
+
+GOOGLE FONTS & ICONS
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
