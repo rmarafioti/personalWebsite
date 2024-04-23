@@ -24,22 +24,35 @@ export default function About() {
               />
             </section>
             <h4>RISD Illustration Graduate & Visual Artist: </h4>
+            <h6 className="jobTag">
+              Bachelor's Degree, Illustration Department: 1999 - 2003
+            </h6>
             <p className="aboutContent">
               My professional journey began in the world of visual arts, where I
               further developed my design skills and aesthetic eye.
             </p>
             <h4>Tattoo Artist:</h4>
+            <h6 className="jobTag">
+              Freelance Tattooer / Graphic Artist: 2005 - 2015
+            </h6>
             <p className="aboutContent">
               For 20 years, I've brought stories to life through my work in 2D
               and 3D design, perfecting my technical craft in the art form of
               tattooing and custom personalized designing.
             </p>
             <h4>Business Owner:</h4>
+            <h6 className="jobTag">
+              Wild Wind Tattoo, Owner / Operator: 2015 - 2024
+            </h6>
             <p className="aboutContent">
               Managing my own small business for 10 years taught me the ropes of
               client relations, project management, and strategic planning.
             </p>
             <h4>Fullstack Developer:</h4>
+            <h6 className="jobTag">
+              Fullstack Academy: 1/24 - 4/24 focused on front / backend
+              development, & databases.
+            </h6>
             <p className="aboutContent">
               Today, I blend these experiences to build creative digital
               solutions. Whether leading a team, collaborating, or flying solo,

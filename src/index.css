@@ -306,6 +306,11 @@ span {
   font-size: 12.9px;
 }
 
+.jobTag {
+  color:  rgba(152, 140, 115, 0.808);
+  margin-bottom: .5rem;
+}
+
 #funFactsSection {
   display: flex;
   flex-direction: row;

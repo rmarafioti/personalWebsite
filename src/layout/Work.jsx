@@ -100,6 +100,9 @@ export default function Work() {
               their checked-out books and provides functionalities to return
               them, ensuring a comprehensive and user-friendly service.
             </p>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
             <h4 className="projectContent">Created With:</h4>
             <p className="projectContent">
               HTML, CSS, JAVASCRIPT, REACT & REDUX

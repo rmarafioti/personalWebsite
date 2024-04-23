@@ -86,6 +86,11 @@
   padding-bottom: 1rem;
 }
 
+.projectParagraphNote {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 #thumbnailContainer {
   display: flex;
   flex-direction: column;
