@@ -101,7 +101,8 @@ export default function Work() {
               them, ensuring a comprehensive and user-friendly service.
             </p>
             <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to load, thanks for your patience
+              *NOTE: Project may take a minute to connect to API, thanks for
+              your patience
             </p>
             <h4 className="projectContent">Created With:</h4>
             <p className="projectContent">
@@ -109,7 +110,10 @@ export default function Work() {
             </p>
             <div>
               <button>
-                <a href="https://main--courageous-pithivier-3563c9.netlify.app/">
+                <a
+                  target="_blank"
+                  href="https://main--courageous-pithivier-3563c9.netlify.app/"
+                >
                   VISIT BOOK BUDDY
                 </a>
               </button>
@@ -183,12 +187,15 @@ export default function Work() {
               daily quizzes enrich your knowledge with fun facts while you
               compete with others for the highest score.
             </p>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
             <h4 className="projectContent">Created With:</h4>
             <p className="projectContent">
               HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
             </p>
             <button>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://brainflex.onrender.com/">
                 VISIT BRAINFLEX
               </a>
             </button>
