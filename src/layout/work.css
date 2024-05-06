@@ -36,9 +36,9 @@
 }
 
 .projectDescription {
-  background-color: white;
+  /*background-color: white;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  border-radius: 25px;
+  border-radius: 25px;*/
   margin-top: 1rem;
   margin-right: 1rem;
   padding: 0.5rem;
@@ -79,6 +79,10 @@
 .projectContent,
 .projectParagraph {
   margin-left: 1rem;
+}
+
+#projectSketches {
+  margin-left: 1.5rem;
 }
 
 .projectParagraph {
@@ -128,6 +132,10 @@ button {
   color: rgb(162, 106, 105);
   margin-top: 0;
   cursor: pointer;
+}
+
+.designHeader {
+  margin-left: 1.5rem;
 }
 
 a:visited {

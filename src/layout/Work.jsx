@@ -120,25 +120,15 @@ export default function Work() {
               <button>
                 <a
                   target="_blank"
-                  href="https://github.com/rmarafioti/2401.BookBuddy"
+                  href="https://github.com/rmarafioti/bookBuddy"
                 >
                   BOOK BUDDY GITHUB REPO
                 </a>
               </button>
             </div>
           </section>
+          <h4 className="designHeader">Design Process:</h4>
           <section id="projectSketches">
-            <div id="sketchContainer">
-              <img
-                src={imageurl2}
-                id="sketchImage"
-                alt="wireframe images for website project"
-              />
-
-              <button id="wireFrameButton" onClick={handleClick2}>
-                browse wireframe
-              </button>
-            </div>
             <div id="thumbnailContainer">
               <img
                 id="thumbnail"
@@ -150,6 +140,17 @@ export default function Work() {
                 }
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
+            </div>
+            <div id="sketchContainer">
+              <img
+                src={imageurl2}
+                id="sketchImage"
+                alt="wireframe images for website project"
+              />
+
+              <button id="wireFrameButton" onClick={handleClick2}>
+                browse wireframe
+              </button>
             </div>
           </section>
         </section>
@@ -205,17 +206,8 @@ export default function Work() {
               </a>
             </button>
           </section>
+          <h4 className="designHeader">Design Process:</h4>
           <section id="projectSketches">
-            <div id="sketchContainerBottom">
-              <img
-                src={imageurl}
-                id="sketchImage"
-                alt="wireframe images for website project"
-              />
-              <button id="wireFrameButton" onClick={handleClick}>
-                browse wireframe
-              </button>
-            </div>
             <div id="thumbnailContainer">
               <img
                 id="thumbnail"
@@ -227,6 +219,16 @@ export default function Work() {
                 }
                 alt="thumbnail of website blueprint which enlarges to full view when clicked"
               />
+            </div>
+            <div id="sketchContainerBottom">
+              <img
+                src={imageurl}
+                id="sketchImage"
+                alt="wireframe images for website project"
+              />
+              <button id="wireFrameButton" onClick={handleClick}>
+                browse wireframe
+              </button>
             </div>
           </section>
         </section>
