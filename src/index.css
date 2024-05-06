@@ -173,8 +173,8 @@ a:hover {
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: white;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  /*background-color: white;
+  box-shadow: 0px 5px 10px rgb(227, 187, 187);*/
 }
 
 #welcomeLine {
@@ -189,7 +189,7 @@ a:hover {
 }
 
 #homePhotoContainer {
-  width: 35%;
+  width: auto;
   display: block;
   max-width: 400px;
 }
@@ -204,6 +204,8 @@ a:hover {
   #home {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #pitchSection {
     margin-left: 1rem;
@@ -235,6 +237,7 @@ a:hover {
 #aboutImageContainer {
   width: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 1rem;
 }
@@ -255,8 +258,8 @@ a:hover {
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  background-color: white;
+  /*box-shadow: 0px 5px 10px rgb(227, 187, 187);
+  background-color: white;*/
 }
 
 #workTimelineHeader {
@@ -284,6 +287,51 @@ span {
   color: rgb(117, 106, 187);
 }
 
+.aboutContent {
+  margin-bottom: 0.8rem;
+  font-size: 12.9px;
+}
+
+.jobTag {
+  color:  rgba(152, 140, 115, 0.808);
+  margin-bottom: .5rem;
+}
+
+#funFactsSection {
+  margin-left: 0rem;
+  display: flex;
+  justify-content: left;
+  /*flex-direction: row;*/
+  width: 100%;
+  max-width: 800px;
+}
+
+#funFactsTitle {
+  padding-left: 0.7rem;
+}
+
+#list {
+  list-style-type: none;
+}
+
+.listItem {
+  font-size: 12.9px;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+#techSection {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#toolkitTitle {
+  margin-bottom: 0.5rem;
+}
+
+.subTitle {
+  font-weight: 500;
+}
 @media (max-width: 815px) {
   #aboutIntro {
     display: flex;
@@ -299,62 +347,12 @@ span {
     margin-top: 0;
     margin-left: 1rem;
   }
-}
-
-.aboutContent {
-  margin-bottom: 0.8rem;
-  font-size: 12.9px;
-}
-
-.jobTag {
-  color:  rgba(152, 140, 115, 0.808);
-  margin-bottom: .5rem;
-}
-
-#funFactsSection {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 800px;
-}
-
-#funFactsTitle {
-  padding-left: 0.7rem;
-}
-
-#facts {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  margin-left: 1rem;
-
-  border-radius: 25px;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
-}
-
-#list {
-  list-style-type: none;
-}
-
-.listItem {
-  font-size: 12.9px;
-  font-weight: 500;
-  padding: 0.5rem;
-}
-
-#techSection {
-  margin-right: 1rem;
-}
-
-#toolkitTitle {
-  margin-bottom: 0.5rem;
-}
-
-.subTitle {
-  font-weight: 500;
+  #funFactsSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  #list, .aboutContent {
+    margin-left: 0rem;
+  }
 }

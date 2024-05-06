@@ -13,8 +13,13 @@ export default function About() {
             src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
             alt="personal headshot for about me page"
           />
+          <h4 id="toolkitTitle">TECH TOOLKIT:</h4>
+          <p className="aboutContent">
+            Git | Node | HTML | CSS | JavaScript | React | Redux | Express |
+            Prisma | Postman | Photoshop | Procreate | Figma
+          </p>
         </div>
-        <section>
+        <article>
           <div id="workTimeline">
             <section id="workTimelineHeader">
               <p id="workTimeLineTag">From Creativity to Code</p>
@@ -59,36 +64,28 @@ export default function About() {
               I thrive on turning thoughtful concepts into functional realities.
             </p>
           </div>
-        </section>
-      </section>
-      <section id="funFactsSection">
-        <div id="facts">
-          <h3 id="funFactsTitle">FUN FACTS:</h3>
-          <ul id="list">
-            <li className="listItem">
-              <span className="material-symbols-outlined">family_star</span>
-              Toured Europe in a band at the age of 16.
-            </li>
-            <li className="listItem">
-              <span className="material-symbols-outlined">family_star</span>
-              Clinched 2nd place in a demolition derby with an old car of mine.
-            </li>
-            <li className="listItem">
-              <span className="material-symbols-outlined">family_star</span>
-              Crossed the finish line at the Chicago Marathon four times.
-            </li>
-          </ul>
-        </div>
-        <section id="techSection">
-          <h4 id="toolkitTitle">TECH TOOLKIT:</h4>
-          <h4 className="subTitle">Proficient In: </h4>
-          <p className="aboutContent">
-            Git | Node | HTML | CSS | JavaScript | React | Redux | Express |
-            Prisma | Postman | Photoshop | Procreate | Figma
-          </p>
-          <h4 className="subTitle">Knowledgeable In: </h4>
-          <p className="aboutContent">Python | Illustrator </p>
-        </section>
+
+          <section id="funFactsSection">
+            <div id="facts">
+              <h3 id="funFactsTitle">FUN FACTS:</h3>
+              <ul id="list">
+                <li className="listItem">
+                  <span className="material-symbols-outlined">family_star</span>
+                  Toured Europe in a band at the age of 16.
+                </li>
+                <li className="listItem">
+                  <span className="material-symbols-outlined">family_star</span>
+                  Clinched 2nd place in a demolition derby with an old car of
+                  mine.
+                </li>
+                <li className="listItem">
+                  <span className="material-symbols-outlined">family_star</span>
+                  Crossed the finish line at the Chicago Marathon four times.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
       </section>
     </>
   );
