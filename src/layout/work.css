@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 736px) {
+  #projectSketches {
+    margin-left: 1rem;
+  }
   #projectThumbnails {
     display: inline-block;
     flex-direction: column;
@@ -161,4 +164,17 @@ a:visited {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 736px) {
+  #projectSketches, .designHeader {
+    margin-left: 2.5rem;
+  }
+  #projectThumbnails {
+    display: inline-block;
+    flex-direction: column;
+  }
+  .projectDescription {
+    margin-left: 1rem;
+  }
 }
