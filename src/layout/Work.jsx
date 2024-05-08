@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Popup from "./PopUp";
 import { brainFlexPics } from "../images";
 import { galleryPics } from "../images";
 
@@ -14,7 +15,17 @@ export default function Work() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentIndex2, setCurrentIndex2] = useState(0);
   const [popUp, setPopUp] = useState(false);
-  const [enlargedImage, setEnlargedImage] = useState("");
+  const [popUpContent, setPopUpContent] = useState(null);
+
+  const openPopUp = (content) => {
+    setPopUpContent(content);
+    setPopUp(true);
+  };
+
+  const closePopUp = () => {
+    setPopUp(false);
+    setPopUpContent(null);
+  };
 
   /**
    *
@@ -57,17 +68,49 @@ export default function Work() {
     ? new URL(currentImageObj2.image, import.meta.url).href
     : "";
 
-  /**
-   *
-   * @function openOverlay declares if there is a currentImageObj use it's key: value image property as the imageurl.
-   * @param {string} imageSrc - path of the image file to be set in the pop up.
-   * @returns the enlarged image in the pop up.
-   */
+  const bookBuddyContent = (
+    <section id="projectSketches">
+      <div id="thumbnailContainer">
+        <img
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
+          alt="website blueprint"
+        />
+      </div>
+      <div id="sketchContainer">
+        <img
+          src={imageurl2}
+          id="sketchImage"
+          alt="wireframe images for website project"
+        />
 
-  const openPopUp = (imageSrc) => {
-    setEnlargedImage(imageSrc);
-    setPopUp(true);
-  };
+        <button id="wireFrameButton" onClick={handleClick2}>
+          browse wireframe
+        </button>
+      </div>
+    </section>
+  );
+
+  const brainFlexContent = (
+    <section id="projectSketches">
+      <div id="thumbnailContainer">
+        <img
+          className="webBluePrint"
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
+          alt="website blueprint"
+        />
+      </div>
+      <div id="sketchContainerBottom">
+        <img
+          src={imageurl}
+          id="sketchImage"
+          alt="wireframe images for website project"
+        />
+        <button id="wireFrameButton" onClick={handleClick}>
+          browse wireframe
+        </button>
+      </div>
+    </section>
+  );
 
   return (
     <>
@@ -127,40 +170,15 @@ export default function Work() {
               </button>
             </div>
           </section>
-          <h4 className="designHeader">Design Process:</h4>
-          <section id="projectSketches">
-            <div id="thumbnailContainer">
-              <img
-                id="thumbnail"
-                src="https://res.cloudinary.com/dzpne110u/image/upload/v1713202360/personalWebsite/thumbnailBookBuddy_rgdgua.png"
-                onClick={() =>
-                  openPopUp(
-                    "https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
-                  )
-                }
-                alt="thumbnail of website blueprint which enlarges to full view when clicked"
-              />
-            </div>
-            <div id="sketchContainer">
-              <img
-                src={imageurl2}
-                id="sketchImage"
-                alt="wireframe images for website project"
-              />
-
-              <button id="wireFrameButton" onClick={handleClick2}>
-                browse wireframe
-              </button>
-            </div>
-          </section>
+          <button
+            className="designHeader"
+            onClick={() => openPopUp(bookBuddyContent)}
+          >
+            Design Process:
+          </button>
         </section>
       </article>
 
-      {popUp && (
-        <div id="graphModal" onClick={() => setPopUp(false)}>
-          <img src={enlargedImage} alt="Expanded view" />
-        </div>
-      )}
       <article id="projectBody">
         <div>
           <div id="imageContainer">
@@ -206,38 +224,18 @@ export default function Work() {
               </a>
             </button>
           </section>
-          <h4 className="designHeader">Design Process:</h4>
-          <section id="projectSketches">
-            <div id="thumbnailContainer">
-              <img
-                id="thumbnail"
-                src="https://res.cloudinary.com/dzpne110u/image/upload/v1713202371/personalWebsite/thumbnailBrainFlex_mqtpl7.png"
-                onClick={() =>
-                  openPopUp(
-                    "https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
-                  )
-                }
-                alt="thumbnail of website blueprint which enlarges to full view when clicked"
-              />
-            </div>
-            <div id="sketchContainerBottom">
-              <img
-                src={imageurl}
-                id="sketchImage"
-                alt="wireframe images for website project"
-              />
-              <button id="wireFrameButton" onClick={handleClick}>
-                browse wireframe
-              </button>
-            </div>
-          </section>
+          <button
+            className="designHeader"
+            onClick={() => openPopUp(brainFlexContent)}
+          >
+            Design Process:
+          </button>
         </section>
       </article>
-      {popUp && (
-        <div id="graphModal" onClick={() => setPopUp(false)}>
-          <img src={enlargedImage} alt="Expanded view" />
-        </div>
-      )}
+
+      <Popup isOpen={popUp} close={closePopUp}>
+        {popUpContent}
+      </Popup>
     </>
   );
 }
