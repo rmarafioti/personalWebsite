@@ -138,6 +138,11 @@ button {
   font-weight: lighter;
 }
 
+.devProcessSection {
+  display: flex;
+  flex-direction: row;
+}
+
 #wireFrameButton {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: normal;

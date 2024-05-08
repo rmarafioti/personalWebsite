@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Popup from "./PopUp";
+import { IoAddCircleOutline } from "react-icons/io5";
 import { brainFlexPics } from "../images";
 import { galleryPics } from "../images";
 
@@ -82,7 +83,6 @@ export default function Work() {
           id="sketchImage"
           alt="wireframe images for website project"
         />
-
         <button id="wireFrameButton" onClick={handleClick2}>
           browse wireframe
         </button>
@@ -114,6 +114,62 @@ export default function Work() {
 
   return (
     <>
+      <article id="projectBody">
+        <div>
+          <div id="imageContainer">
+            <img
+              id="projectImage"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533928/personalWebsite/Untitled_Artwork_2_sm0puv.png"
+              alt="image of landing page for project"
+            />
+          </div>
+        </div>
+        <section>
+          <section className="projectDescription">
+            <h3 className="projectContent" id="topProject">
+              BrainFLEX:
+            </h3>
+            <h5 className="projectContent">
+              A fully functional CRUD app with an internally built database &
+              token authentication
+            </h5>
+            <p className="projectParagraph">
+              Dive into daily quizzes that blend learning with fun! Choose from
+              a variety of topics to test your knowledge or learn something new.
+              Our unique format reveals pictures and unveils words as you answer
+              correctly, enhancing memory and adding a touch of mystery. Our
+              daily quizzes enrich your knowledge with fun facts while you
+              compete with others for the highest score.
+            </p>
+            <button>
+              <a target="_blank" href="https://brainflex.onrender.com/">
+                VISIT BRAINFLEX
+              </a>
+            </button>
+            <button>
+              <a target="_blank" href="https://github.com/Portals-Team/Game">
+                BRAINFLEX GITHUB REPO
+              </a>
+            </button>
+            <h4 className="projectContent">Created With:</h4>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
+            </p>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
+            <div className="devProcessSection">
+              <h4>View development process</h4>
+              <button
+                className="devProcessButton"
+                onClick={() => openPopUp(brainFlexContent)}
+              >
+                <IoAddCircleOutline />
+              </button>
+            </div>
+          </section>
+        </section>
+      </article>
       <article id="projectBody">
         <div>
           <div id="imageContainer">
@@ -164,65 +220,15 @@ export default function Work() {
               *NOTE: Project may take a minute to connect to API, thanks for
               your patience
             </p>
-            <button
-              className="devProcessButton"
-              onClick={() => openPopUp(bookBuddyContent)}
-            >
-              VIEW DEVELOPMENT PROCESS
-            </button>
-          </section>
-        </section>
-      </article>
-      <article id="projectBody">
-        <div>
-          <div id="imageContainer">
-            <img
-              id="projectImage"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533928/personalWebsite/Untitled_Artwork_2_sm0puv.png"
-              alt="image of landing page for project"
-            />
-          </div>
-        </div>
-        <section>
-          <section className="projectDescription">
-            <h3 className="projectContent" id="topProject">
-              BrainFLEX:
-            </h3>
-            <h5 className="projectContent">
-              A fully functional CRUD app with an internally built database &
-              token authentication
-            </h5>
-            <p className="projectParagraph">
-              Dive into daily quizzes that blend learning with fun! Choose from
-              a variety of topics to test your knowledge or learn something new.
-              Our unique format reveals pictures and unveils words as you answer
-              correctly, enhancing memory and adding a touch of mystery. Our
-              daily quizzes enrich your knowledge with fun facts while you
-              compete with others for the highest score.
-            </p>
-            <button>
-              <a target="_blank" href="https://brainflex.onrender.com/">
-                VISIT BRAINFLEX
-              </a>
-            </button>
-            <button>
-              <a target="_blank" href="https://github.com/Portals-Team/Game">
-                BRAINFLEX GITHUB REPO
-              </a>
-            </button>
-            <h4 className="projectContent">Created With:</h4>
-            <p className="projectContent">
-              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
-            </p>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to load, thanks for your patience
-            </p>
-            <button
-              className="devProcessButton"
-              onClick={() => openPopUp(brainFlexContent)}
-            >
-              VIEW DEVELOPMENT PROCESS
-            </button>
+            <div className="devProcessSection">
+              <h4>View development process</h4>
+              <button
+                className="devProcessButton"
+                onClick={() => openPopUp(bookBuddyContent)}
+              >
+                <IoAddCircleOutline />
+              </button>
+            </div>
           </section>
         </section>
       </article>
