@@ -143,42 +143,36 @@ export default function Work() {
               their checked-out books and provides functionalities to return
               them, ensuring a comprehensive and user-friendly service.
             </p>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to connect to API, thanks for
-              your patience
-            </p>
+            <button>
+              <a
+                target="_blank"
+                href="https://main--courageous-pithivier-3563c9.netlify.app/"
+              >
+                VISIT BOOK BUDDY
+              </a>
+            </button>
+            <button>
+              <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
+                BOOK BUDDY GITHUB REPO
+              </a>
+            </button>
             <h4 className="projectContent">Created With:</h4>
             <p className="projectContent">
               HTML, CSS, JAVASCRIPT, REACT & REDUX
             </p>
-            <div>
-              <button>
-                <a
-                  target="_blank"
-                  href="https://main--courageous-pithivier-3563c9.netlify.app/"
-                >
-                  VISIT BOOK BUDDY
-                </a>
-              </button>
-              <button>
-                <a
-                  target="_blank"
-                  href="https://github.com/rmarafioti/bookBuddy"
-                >
-                  BOOK BUDDY GITHUB REPO
-                </a>
-              </button>
-            </div>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to connect to API, thanks for
+              your patience
+            </p>
+            <button
+              className="devProcessButton"
+              onClick={() => openPopUp(bookBuddyContent)}
+            >
+              VIEW DEVELOPMENT PROCESS
+            </button>
           </section>
-          <button
-            className="designHeader"
-            onClick={() => openPopUp(bookBuddyContent)}
-          >
-            Design Process:
-          </button>
         </section>
       </article>
-
       <article id="projectBody">
         <div>
           <div id="imageContainer">
@@ -206,13 +200,6 @@ export default function Work() {
               daily quizzes enrich your knowledge with fun facts while you
               compete with others for the highest score.
             </p>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to load, thanks for your patience
-            </p>
-            <h4 className="projectContent">Created With:</h4>
-            <p className="projectContent">
-              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
-            </p>
             <button>
               <a target="_blank" href="https://brainflex.onrender.com/">
                 VISIT BRAINFLEX
@@ -223,16 +210,22 @@ export default function Work() {
                 BRAINFLEX GITHUB REPO
               </a>
             </button>
+            <h4 className="projectContent">Created With:</h4>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
+            </p>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
+            <button
+              className="devProcessButton"
+              onClick={() => openPopUp(brainFlexContent)}
+            >
+              VIEW DEVELOPMENT PROCESS
+            </button>
           </section>
-          <button
-            className="designHeader"
-            onClick={() => openPopUp(brainFlexContent)}
-          >
-            Design Process:
-          </button>
         </section>
       </article>
-
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}
       </Popup>

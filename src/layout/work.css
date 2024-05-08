@@ -95,12 +95,12 @@
 
 .projectParagraph {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
 }
 
 .projectParagraphNote {
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 #thumbnailContainer {
@@ -132,6 +132,10 @@ button {
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0px 1px 2px rgb(227, 187, 187);
+}
+
+.devProcessButton {
+  font-weight: lighter;
 }
 
 #wireFrameButton {
