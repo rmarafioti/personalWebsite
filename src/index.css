@@ -55,20 +55,17 @@ nav {
   margin-top: 1rem;
 }
 
-#headerFirstName {
-  width: 110px;
-}
-
-#headerLastName {
-  margin-top: 0.5rem;
-  width: 220px;
+#navImg {
+  width: 100px;
+  height: auto;
+  display: block;
 }
 
 #navLinks {
   display: flex;
   margin: 1rem;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .navButton,
@@ -76,6 +73,25 @@ nav {
   background-color: white;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
   color: rgb(117, 106, 187);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  padding: 10px 20px; 
+  margin: 0 5px; 
+  border: none; 
+  cursor: pointer;
+}
+
+.navButton a, .navButtonMiddle a {
+  text-decoration: none; 
+  font-size: 16px; 
+  font-weight: normal; 
+  color: inherit; 
+  display: block; /* Makes the link fill the button for better clickability */
+}
+
+.navButton:hover, .navButtonMiddle:hover,
+.navButton:focus, .navButtonMiddle:focus {
+    background-color: rgb(117, 106, 187); 
+    color: white; 
 }
 
 .navLink:visited {
@@ -83,25 +99,14 @@ nav {
 }
 
 @media (max-width: 576px) {
-  nav,
-  #navHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-bottom: 0;
-  }
 
   #navLinks {
     margin-top: 0.5rem;
-    justify-content: left;
+    justify-content: center;
   }
   .navButton {
-    justify-content: left;
+    justify-content: center;
     margin-left: 0;
-  }
-
-  .navButtonMiddle {
-    margin-right: 1rem;
   }
 
   #navHeader {
@@ -162,16 +167,16 @@ a:hover {
 }
 
 #name {
-  font-size: 40px; /* Larger font size for name */
+  font-size: 40px; 
   color: rgb(117, 106, 187);
-  font-weight: bold; /* Bold font weight for emphasis */
+  font-weight: bold; 
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 #role {
   font-size: 24px;
-  color: #555;
+  color: rgb(162, 106, 105);
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: 0.01em;
