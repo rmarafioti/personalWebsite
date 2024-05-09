@@ -6,14 +6,13 @@
   box-sizing: border-box;
   border: 0px solid green;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 #root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
   color: rgb(162, 106, 105);
@@ -56,20 +55,17 @@ nav {
   margin-top: 1rem;
 }
 
-#headerFirstName {
-  width: 110px;
-}
-
-#headerLastName {
-  margin-top: 0.5rem;
-  width: 220px;
+#navImg {
+  width: 100px;
+  height: auto;
+  display: block;
 }
 
 #navLinks {
   display: flex;
   margin: 1rem;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .navButton,
@@ -77,6 +73,25 @@ nav {
   background-color: white;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
   color: rgb(117, 106, 187);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  padding: 10px 20px; 
+  margin: 0 5px; 
+  border: none; 
+  cursor: pointer;
+}
+
+.navButton a, .navButtonMiddle a {
+  text-decoration: none; 
+  font-size: 16px; 
+  font-weight: normal; 
+  color: inherit; 
+  display: block; /* Makes the link fill the button for better clickability */
+}
+
+.navButton:hover, .navButtonMiddle:hover,
+.navButton:focus, .navButtonMiddle:focus {
+    background-color: rgb(117, 106, 187); 
+    color: white; 
 }
 
 .navLink:visited {
@@ -84,25 +99,14 @@ nav {
 }
 
 @media (max-width: 576px) {
-  nav,
-  #navHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-bottom: 0;
-  }
 
   #navLinks {
     margin-top: 0.5rem;
-    justify-content: left;
+    justify-content: center;
   }
   .navButton {
-    justify-content: left;
+    justify-content: center;
     margin-left: 0;
-  }
-
-  .navButtonMiddle {
-    margin-right: 1rem;
   }
 
   #navHeader {
@@ -159,6 +163,28 @@ a:hover {
 #home {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+#name {
+  font-size: 40px; 
+  color: rgb(117, 106, 187);
+  font-weight: bold; 
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+#role {
+  font-size: 24px;
+  color: rgb(162, 106, 105);
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+#headers {
+  text-align: center;
+  padding: 10px 0;
   margin-top: 2rem;
 }
 
@@ -169,23 +195,30 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  /*background-color: white;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);*/
+  max-width: 480px;
+  padding: 20px;
 }
 
-#welcomeLine {
+#welcomeLine,
+#missionLine, .work {
   color: rgb(117, 106, 187);
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-#missionLine {
-  color: rgb(117, 106, 187);
-  margin-top: 1rem;
+.work {
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.homeContent {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Adds space below each paragraph */
 }
 
 #homePhotoContainer {
@@ -218,9 +251,10 @@ a:hover {
 #aboutIntro {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   text-align: left;
-  width: 100%;
-  max-width: 930px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 633px) {
@@ -239,7 +273,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
 }
 
 #aboutImageContainer img {
@@ -251,34 +284,34 @@ a:hover {
 #workTimeline {
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
-  padding-top: 0.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  text-align: left;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  /*box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  background-color: white;*/
+  margin-right: 1rem;
+  max-width: 480px;
+  padding: 20px;
+}
+
+#aboutIntro {
+  flex-direction: row;
+  justify-content: center;
 }
 
 #workTimelineHeader {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#workTimelineHeader img {
-  width: 130px;
-  height: auto;
-  display: block;
+  justify-content: left;
 }
 
 #workTimeLineTag {
+  font-size: 40px; 
   color: rgb(117, 106, 187);
-  font-size: 35px;
-  font-weight: bold;
+  font-weight: bold; 
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 h4,
@@ -287,62 +320,68 @@ span {
   color: rgb(117, 106, 187);
 }
 
-.aboutContent {
-  margin-bottom: 0.8rem;
-  font-size: 12.9px;
+.aboutContent, .jobTag, #skills {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 480px;
+  padding-bottom: 10px;
 }
 
-.jobTag {
-  color:  rgba(152, 140, 115, 0.808);
-  margin-bottom: .5rem;
+.aboutContent {
+  border-bottom: 1px solid rgb(212, 196, 164);
+}
+
+#skills {
+  text-align: left;
+}
+
+.jobTag, .listItem {
+  color: rgba(152, 140, 115, 0.808);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.listItem {
+  font-style: normal;
 }
 
 #funFactsSection {
-  margin-left: 0rem;
   display: flex;
   justify-content: left;
-  /*flex-direction: row;*/
-  width: 100%;
-  max-width: 800px;
-}
-
-#funFactsTitle {
-  padding-left: 0.7rem;
+  max-width: 480px;
 }
 
 #list {
   list-style-type: none;
 }
 
-.listItem {
-  font-size: 12.9px;
+#toolkitTitle, #funFactsTitle {
+  color: rgb(117, 106, 187);
+  font-size: 16px;
+  line-height: 1.2;
   font-weight: 500;
-  padding: 0.5rem;
-}
-
-#techSection {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#toolkitTitle {
-  margin-bottom: 0.5rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .subTitle {
   font-weight: 500;
 }
-@media (max-width: 815px) {
+@media (max-width: 970px) {
   #aboutIntro {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #aboutImageContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
+
   #workTimeline {
     margin-top: 0;
     margin-left: 1rem;
@@ -350,9 +389,5 @@ span {
   #funFactsSection {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
-  }
-  #list, .aboutContent {
-    margin-left: 0rem;
   }
 }
