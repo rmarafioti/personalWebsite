@@ -6,14 +6,13 @@
   box-sizing: border-box;
   border: 0px solid green;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 #root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
   color: rgb(162, 106, 105);
@@ -159,6 +158,28 @@ a:hover {
 #home {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+#name {
+  font-size: 40px; /* Larger font size for name */
+  color: rgb(117, 106, 187);
+  font-weight: bold; /* Bold font weight for emphasis */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+#role {
+  font-size: 24px;
+  color: #555;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+#headers {
+  text-align: center;
+  padding: 10px 0;
   margin-top: 2rem;
 }
 
@@ -169,23 +190,25 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  /*background-color: white;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);*/
+  max-width: 480px;
+  padding: 20px;
 }
 
-#welcomeLine {
-  color: rgb(117, 106, 187);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
+#welcomeLine,
 #missionLine {
   color: rgb(117, 106, 187);
-  margin-top: 1rem;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.homeContent {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Adds space below each paragraph */
 }
 
 #homePhotoContainer {
@@ -293,8 +316,8 @@ span {
 }
 
 .jobTag {
-  color:  rgba(152, 140, 115, 0.808);
-  margin-bottom: .5rem;
+  color: rgba(152, 140, 115, 0.808);
+  margin-bottom: 0.5rem;
 }
 
 #funFactsSection {
@@ -352,7 +375,8 @@ span {
     flex-direction: column;
     margin-left: 1rem;
   }
-  #list, .aboutContent {
+  #list,
+  .aboutContent {
     margin-left: 0rem;
   }
 }
