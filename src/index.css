@@ -14,13 +14,10 @@
 
 #root {
   line-height: 1.5;
-
   color: rgb(162, 106, 105);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -320,7 +317,7 @@ span {
   color: rgb(117, 106, 187);
 }
 
-.aboutContent, .jobTag, #skills {
+.aboutContent, .jobTag, #skillSection {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
@@ -329,12 +326,13 @@ span {
   padding-bottom: 10px;
 }
 
-.aboutContent {
+.aboutContent, #skillSection {
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
-#skills {
-  text-align: left;
+#skillSection, #factsSection {
+  margin-bottom: 20px;
+  margin-right: 40px;
 }
 
 .jobTag, .listItem {
@@ -345,12 +343,6 @@ span {
 
 .listItem {
   font-style: normal;
-}
-
-#funFactsSection {
-  display: flex;
-  justify-content: left;
-  max-width: 480px;
 }
 
 #list {
