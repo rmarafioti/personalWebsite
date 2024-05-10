@@ -14,13 +14,10 @@
 
 #root {
   line-height: 1.5;
-
   color: rgb(162, 106, 105);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -69,18 +66,19 @@ nav {
 }
 
 .navButton,
-.navButtonMiddle {
+.navButtonMiddle, button, .buttonWork {
   background-color: white;
+  border-radius: 10px;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
   color: rgb(117, 106, 187);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   padding: 10px 20px; 
-  margin: 0 5px; 
+  margin-right: 10px; 
   border: none; 
   cursor: pointer;
 }
 
-.navButton a, .navButtonMiddle a {
+.navButton a, .navButtonMiddle a, button, .buttonWork a{
   text-decoration: none; 
   font-size: 16px; 
   font-weight: normal; 
@@ -88,13 +86,18 @@ nav {
   display: block; /* Makes the link fill the button for better clickability */
 }
 
+button, .buttonWork a{
+  color: rgb(117, 106, 187);
+}
+
 .navButton:hover, .navButtonMiddle:hover,
-.navButton:focus, .navButtonMiddle:focus {
+.navButton:focus, .navButtonMiddle:focus, button:hover, button:focus,
+.buttonWork a:hover, .buttonWork a:focus {
     background-color: rgb(117, 106, 187); 
     color: white; 
 }
 
-.navLink:visited {
+.navLink:visited, .buttonWork a:visited {
   color: inherit;
 }
 
@@ -218,7 +221,9 @@ a:hover {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; /* Adds space below each paragraph */
+  margin-bottom: 20px; 
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(212, 196, 164);
 }
 
 #homePhotoContainer {
@@ -228,7 +233,7 @@ a:hover {
 }
 
 #homePhoto {
-  width: 350px;
+  width: 400px;
   height: auto;
   display: block;
 }
@@ -273,6 +278,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 480px;
 }
 
 #aboutImageContainer img {
@@ -320,7 +326,7 @@ span {
   color: rgb(117, 106, 187);
 }
 
-.aboutContent, .jobTag, #skills {
+.aboutContent, .jobTag, #skillSection {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
@@ -329,12 +335,17 @@ span {
   padding-bottom: 10px;
 }
 
-.aboutContent {
+.jobTag {
+  margin-bottom: 0;
+}
+
+.aboutContent, #skillSection {
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
-#skills {
-  text-align: left;
+#skillSection, #factsSection {
+  margin-bottom: 20px;
+  margin-right: 40px;
 }
 
 .jobTag, .listItem {
@@ -345,12 +356,6 @@ span {
 
 .listItem {
   font-style: normal;
-}
-
-#funFactsSection {
-  display: flex;
-  justify-content: left;
-  max-width: 480px;
 }
 
 #list {

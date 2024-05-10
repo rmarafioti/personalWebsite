@@ -13,33 +13,33 @@ export default function About() {
             src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
             alt="personal headshot for about me page"
           />
-          <div>
+          <div id="skillSection">
             <h4 id="toolkitTitle">Tech Toolkit</h4>
             <p id="skills">
               Git | Node | HTML | CSS | JavaScript | React | Redux | Express |
               Prisma | Postman | Photoshop | Procreate | Figma
             </p>
           </div>
-          <section id="funFactsSection">
-            <div id="facts">
-              <h3 id="funFactsTitle">Fun Facts</h3>
-              <ul id="list">
-                <li className="listItem">
-                  <span className="material-symbols-outlined">family_star</span>
-                  Toured Europe in a band at the age of 16.
-                </li>
-                <li className="listItem">
-                  <span className="material-symbols-outlined">family_star</span>
-                  Clinched 2nd place in a demolition derby with an old car of
-                  mine.
-                </li>
-                <li className="listItem">
-                  <span className="material-symbols-outlined">family_star</span>
-                  Crossed the finish line at the Chicago Marathon four times.
-                </li>
-              </ul>
-            </div>
-          </section>
+
+          <div id="factsSection">
+            <h3 id="funFactsTitle">Fun Facts</h3>
+            <ul id="list">
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Toured Europe in a band at the age of 16.
+              </li>
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Clinched 2nd place in a demolition derby with an old car of
+                mine.
+              </li>
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Crossed the finish line at the Chicago Marathon four times.
+              </li>
+            </ul>
+          </div>
+          <button>View Resume</button>
         </div>
         <article>
           <section id="workTimelineHeader">

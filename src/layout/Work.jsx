@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Popup from "./PopUp";
-import { IoAddCircleOutline } from "react-icons/io5";
 import { brainFlexPics } from "../images";
 import { galleryPics } from "../images";
 
@@ -126,7 +125,7 @@ export default function Work() {
         </div>
         <section>
           <section className="projectDescription">
-            <h3 className="projectContent" id="topProject">
+            <h3 className="projectHeader" id="topProject">
               BrainFLEX:
             </h3>
             <h5 className="projectContent">
@@ -141,36 +140,35 @@ export default function Work() {
               daily quizzes enrich your knowledge with fun facts while you
               compete with others for the highest score.
             </p>
-            <button>
-              <a target="_blank" href="https://brainflex.onrender.com/">
-                VISIT BRAINFLEX
-              </a>
-            </button>
-            <button>
-              <a target="_blank" href="https://github.com/Portals-Team/Game">
-                BRAINFLEX GITHUB REPO
-              </a>
-            </button>
-            <h4 className="projectContent">Created With:</h4>
-            <p className="projectContent">
-              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
-            </p>
+            <div className="buttonSection">
+              <button className="buttonWork">
+                <a target="_blank" href="https://brainflex.onrender.com/">
+                  VISIT BRAINFLEX
+                </a>
+              </button>
+              <button className="buttonWork">
+                <a target="_blank" href="https://github.com/Portals-Team/Game">
+                  BRAINFLEX GITHUB REPO
+                </a>
+              </button>
+            </div>
             <p className="projectParagraphNote">
               *NOTE: Project may take a minute to load, thanks for your patience
             </p>
-            <div className="devProcessSection">
-              <h4>View development process</h4>
-              <button
-                className="devProcessButton"
-                onClick={() => openPopUp(brainFlexContent)}
-              >
-                <IoAddCircleOutline />
-              </button>
-            </div>
+            <h4>Created With:</h4>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
+            </p>
+            <button
+              className="devProcessButton"
+              onClick={() => openPopUp(brainFlexContent)}
+            >
+              VIEW DEVELOPMENT PROCESS
+            </button>
           </section>
         </section>
       </article>
-      <article id="projectBody">
+      <article id="projectBodyTwo">
         <div>
           <div id="imageContainer">
             <img
@@ -182,7 +180,7 @@ export default function Work() {
         </div>
         <section>
           <section className="projectDescription">
-            <h3 className="projectContent" id="topProject">
+            <h3 className="projectHeader" id="topProject">
               Book Buddy:
             </h3>
             <h5 className="projectContent">
@@ -199,34 +197,37 @@ export default function Work() {
               their checked-out books and provides functionalities to return
               them, ensuring a comprehensive and user-friendly service.
             </p>
-            <button>
-              <a
-                target="_blank"
-                href="https://main--courageous-pithivier-3563c9.netlify.app/"
-              >
-                VISIT BOOK BUDDY
-              </a>
-            </button>
-            <button>
-              <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
-                BOOK BUDDY GITHUB REPO
-              </a>
-            </button>
-            <h4 className="projectContent">Created With:</h4>
+            <div className="buttonSection">
+              <button className="buttonWork">
+                <a
+                  target="_blank"
+                  href="https://main--courageous-pithivier-3563c9.netlify.app/"
+                >
+                  VISIT BOOK BUDDY
+                </a>
+              </button>
+              <button className="buttonWork">
+                <a
+                  target="_blank"
+                  href="https://github.com/rmarafioti/bookBuddy"
+                >
+                  BOOK BUDDY GITHUB REPO
+                </a>
+              </button>
+            </div>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
+            <h4>Created With:</h4>
             <p className="projectContent">
               HTML, CSS, JAVASCRIPT, REACT & REDUX
             </p>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to connect to API, thanks for
-              your patience
-            </p>
             <div className="devProcessSection">
-              <h4>View development process</h4>
               <button
                 className="devProcessButton"
                 onClick={() => openPopUp(bookBuddyContent)}
               >
-                <IoAddCircleOutline />
+                VIEW DEVELOPMENT PROCESS
               </button>
             </div>
           </section>
