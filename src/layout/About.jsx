@@ -39,6 +39,7 @@ export default function About() {
               </li>
             </ul>
           </div>
+          <button>View Resume</button>
         </div>
         <article>
           <section id="workTimelineHeader">

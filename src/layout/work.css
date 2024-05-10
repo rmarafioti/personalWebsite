@@ -1,19 +1,26 @@
 /*work page*/
 
 #projectSketches,
-#projectBody {
+#projectBody, #projectBodyTwo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-#projectBody {
+#projectBody, #projectBodyTwo {
+  margin-top: 2rem;
   flex-direction: row;
 }
 
-@media (max-width: 736px) {
-  #projectBody {
-    display: inline-block;
+#projectBodyTwo {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  #projectBody, #projectBodyTwo {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -80,28 +87,39 @@
   width: 350px;
 }
 
-.projectContent,
-.projectParagraph {
-  margin-left: 1rem;
+.projectContent {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  max-width: 480px;
+  color: rgba(152, 140, 115, 0.808);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*KEEP*/
+.projectParagraph {
+  justify-content: start;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 480px;
+  padding-top: 10px;
+}
+
+/*KEEP*/
+.projectHeader {
+  color: rgb(117, 106, 187);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 0px;
 }
 
 #projectSketches {
   padding: 1.5rem;
   margin-left: 1.5rem;
-}
-
-.projectParagraph {
-  padding-top: 1rem;
-  /*padding-bottom: 1rem;*/
-}
-
-.projectParagraphNote {
-  margin-left: 1rem;
-  /*margin-bottom: 1rem;*/
 }
 
 #thumbnailContainer {
@@ -111,32 +129,16 @@
   height: 100%;
 }
 
-#thumbnail {
-  margin-top: 1.5rem;
-  width: 150px;
-  height: auto;
-  box-shadow: 0px 5px 10px rgb(227, 187, 187);
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
+.buttonSection {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
 }
 
-#thumbnail:hover {
-  cursor: pointer;
-  box-shadow: 0px 8px 15px rgb(139, 117, 117);
-}
-
-button {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0px 1px 2px rgb(227, 187, 187);
-}
-
-.devProcessButton {
-  font-weight: lighter;
+.projectParagraphNote {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(212, 196, 164);
 }
 
 .devProcessSection {
@@ -154,10 +156,6 @@ button {
 
 .designHeader {
   margin-left: 1.5rem;
-}
-
-a:visited {
-  color: rgb(162, 106, 105);
 }
 
 .popUpOverlay {
