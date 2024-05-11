@@ -70,12 +70,14 @@ export default function Work() {
 
   const bookBuddyContent = (
     <section id="projectSketches">
+      <h1>App Outline</h1>
       <div id="thumbnailContainer">
         <img
           src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
           alt="website blueprint"
         />
       </div>
+      <h1>Wireframe</h1>
       <div id="sketchContainer">
         <img
           src={imageurl2}
@@ -91,6 +93,7 @@ export default function Work() {
 
   const brainFlexContent = (
     <section id="projectSketches">
+      <h1>App Outline</h1>
       <div id="thumbnailContainer">
         <img
           className="webBluePrint"
@@ -98,6 +101,7 @@ export default function Work() {
           alt="website blueprint"
         />
       </div>
+      <h1>Wireframe</h1>
       <div id="sketchContainerBottom">
         <img
           src={imageurl}
