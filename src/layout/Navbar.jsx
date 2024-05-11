@@ -13,7 +13,7 @@ export default function Navbar() {
         <NavLink to="/">
           <img
             id="navImg"
-            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713534663/personalWebsite/Untitled_Artwork_sxtwpl.png"
+            src="https://res.cloudinary.com/dzpne110u/image/upload/t_switch/v1713534663/personalWebsite/Untitled_Artwork_sxtwpl.png"
             alt="illustration of a rubber duck as an artist with paintbrush and palette"
           />
         </NavLink>
