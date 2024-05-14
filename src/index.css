@@ -165,8 +165,8 @@ a:hover {
 
 #home {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #name {
@@ -192,14 +192,20 @@ a:hover {
 }
 
 #pitchSection {
+  display: flex;
+  flex-direction: row;
   justify-content: start;
   text-align: left;
-  border-radius: 25px;
+  margin-left: .5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-right: 1rem;
+}
+
+.pitchSectionParagraph, .pitchSectionParagraphOne {
+  display: flex;
+  flex-direction: column;
   max-width: 480px;
-  padding: 20px;
+  margin-bottom: 2rem;
 }
 
 #welcomeLine,
@@ -221,21 +227,14 @@ a:hover {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; 
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(212, 196, 164);
+  margin-right: 10px;
+  margin-bottom: 10px; 
 }
 
-#homePhotoContainer {
+#homePhotoContainer, #homePhoto {
   width: auto;
   display: block;
-  max-width: 400px;
-}
-
-#homePhoto {
-  width: 400px;
-  height: auto;
-  display: block;
+  max-width: 550px;
 }
 
 @media (max-width: 976px) {
@@ -246,8 +245,20 @@ a:hover {
     align-items: center;
   }
   #pitchSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 1rem;
     margin-bottom: 1rem;
+  }
+  #homePhotoContainer, #homePhoto {
+    width: auto;
+    display: block;
+    max-width: 380px;
+  }
+  .pitchSectionParagraphOne {
+    border-bottom: 1px solid rgb(212, 196, 164);
+    margin-bottom: 20px;
   }
 }
 
