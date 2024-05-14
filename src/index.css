@@ -39,83 +39,118 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
   border-bottom: 1px solid rgb(212, 196, 164);
   background-color: rgba(245, 248, 248, 0.958);
 }
 
-#navHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-#navImg {
-  width: 100px;
-  height: auto;
-  display: block;
-}
-
-#navLinks {
-  display: flex;
-  margin: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.navButton,
-.navButtonMiddle, button, .buttonWork {
+button,
+.buttonWork {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgb(227, 187, 187);
   color: rgb(117, 106, 187);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  padding: 10px 20px; 
-  margin-right: 10px; 
-  border: none; 
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
   cursor: pointer;
 }
 
-.navButton a, .navButtonMiddle a, button, .buttonWork a{
-  text-decoration: none; 
-  font-size: 16px; 
-  font-weight: normal; 
-  color: inherit; 
-  display: block; /* Makes the link fill the button for better clickability */
+button,
+.buttonWork a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: inherit;
+  display: block;
 }
 
-button, .buttonWork a{
+button,
+.buttonWork a {
   color: rgb(117, 106, 187);
 }
 
-.navButton:hover, .navButtonMiddle:hover,
-.navButton:focus, .navButtonMiddle:focus, button:hover, button:focus,
-.buttonWork a:hover, .buttonWork a:focus {
-    background-color: rgb(117, 106, 187); 
-    color: white; 
+button:hover,
+button:focus,
+.buttonWork a:hover,
+.buttonWork a:focus {
+  background-color: rgb(117, 106, 187);
+  color: white;
 }
 
-.navLink:visited, .buttonWork a:visited {
+.buttonWork a:visited {
   color: inherit;
 }
 
-@media (max-width: 576px) {
+#hamMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(162, 106, 105);
+  border-radius: 10px;
+  font-size: 40px;
+  position: relative;
 
-  #navLinks {
-    margin-top: 0.5rem;
-    justify-content: center;
-  }
-  .navButton {
-    justify-content: center;
-    margin-left: 0;
-  }
+  flex-grow: 0; /* Don't allow it to grow */
+  flex-shrink: 0; /* Don't allow it to shrink */
+}
 
-  #navHeader {
-    justify-content: left;
-    align-items: left;
-  }
+.menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu.active {
+  display: block;
+}
+
+.navItem {
+  list-style-type: none;
+}
+
+.navItem a {
+  color: rgb(117, 106, 187);
+  font-size: 18px;
+  display: block;
+  margin: 10px;
+}
+
+.navItem a:link,
+.navItem a:visited {
+  color: rgb(117, 106, 187);
+}
+
+#headers {
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#name {
+  font-size: 40px;
+  color: rgb(117, 106, 187);
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+#role {
+  font-size: 24px;
+  color: rgb(162, 106, 105);
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 /* footer styling */
@@ -165,45 +200,31 @@ a:hover {
 
 #home {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#name {
-  font-size: 40px; 
-  color: rgb(117, 106, 187);
-  font-weight: bold; 
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-#role {
-  font-size: 24px;
-  color: rgb(162, 106, 105);
-  font-weight: normal;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-}
-
-#headers {
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 #pitchSection {
+  display: flex;
+  flex-direction: row;
   justify-content: start;
   text-align: left;
-  border-radius: 25px;
+  margin-left: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-right: 1rem;
+}
+
+.pitchSectionParagraph,
+.pitchSectionParagraphOne {
+  display: flex;
+  flex-direction: column;
   max-width: 480px;
-  padding: 20px;
+  margin-bottom: 2rem;
 }
 
 #welcomeLine,
-#missionLine, .work {
+#missionLine,
+.work {
   color: rgb(117, 106, 187);
   font-size: 24px;
   line-height: 1.2;
@@ -221,21 +242,19 @@ a:hover {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; 
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(212, 196, 164);
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #homePhotoContainer {
-  width: auto;
-  display: block;
-  max-width: 400px;
+  margin: 2rem;
 }
 
+#homePhotoContainer,
 #homePhoto {
-  width: 400px;
-  height: auto;
+  width: auto;
   display: block;
+  max-width: 550px;
 }
 
 @media (max-width: 976px) {
@@ -246,8 +265,21 @@ a:hover {
     align-items: center;
   }
   #pitchSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 1rem;
     margin-bottom: 1rem;
+  }
+  #homePhotoContainer,
+  #homePhoto {
+    width: auto;
+    display: block;
+    max-width: 380px;
+  }
+  .pitchSectionParagraphOne {
+    border-bottom: 1px solid rgb(212, 196, 164);
+    margin-bottom: 20px;
   }
 }
 
@@ -274,29 +306,15 @@ a:hover {
 }
 
 #aboutImageContainer {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 480px;
 }
 
 #aboutImageContainer img {
   width: 300px;
   height: auto;
   display: block;
-}
-
-#workTimeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  max-width: 480px;
-  padding: 20px;
 }
 
 #aboutIntro {
@@ -310,13 +328,12 @@ a:hover {
   justify-content: left;
 }
 
-#workTimeLineTag {
-  font-size: 40px; 
+#workTimeLineTag, #skillsTitle {
+  font-size: 26px;
   color: rgb(117, 106, 187);
-  font-weight: bold; 
+  font-weight: bold;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   margin-top: 1rem;
 }
 
@@ -326,7 +343,9 @@ span {
   color: rgb(117, 106, 187);
 }
 
-.aboutContent, .jobTag, #skillSection {
+.aboutContent,
+.jobTag,
+#skillSection {
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.5;
@@ -339,16 +358,27 @@ span {
   margin-bottom: 0;
 }
 
-.aboutContent, #skillSection {
+.aboutContent {
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
-#skillSection, #factsSection {
+#skillSection,
+#factsSection {
   margin-bottom: 20px;
-  margin-right: 40px;
 }
 
-.jobTag, .listItem {
+#skillSection {
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#skills {
+  margin-bottom: 10px;
+}
+
+.jobTag,
+.listItem {
   color: rgba(152, 140, 115, 0.808);
   font-weight: bold;
   font-style: italic;
@@ -362,7 +392,8 @@ span {
   list-style-type: none;
 }
 
-#toolkitTitle, #funFactsTitle {
+#toolkitTitle,
+#funFactsTitle {
   color: rgb(117, 106, 187);
   font-size: 16px;
   line-height: 1.2;
@@ -389,10 +420,15 @@ span {
 
   #workTimeline {
     margin-top: 0;
-    margin-left: 1rem;
   }
   #funFactsSection {
     display: flex;
     flex-direction: column;
+  }
+  #skillSection {
+    border-bottom: 1px solid rgb(212, 196, 164);
+  }
+  #resumeButton {
+    margin-bottom: 20px;
   }
 }

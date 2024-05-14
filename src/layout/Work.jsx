@@ -70,30 +70,27 @@ export default function Work() {
 
   const bookBuddyContent = (
     <section id="projectSketches">
-      <h1>App Outline</h1>
+      <h3 className="popUpHeader">App Outline</h3>
       <div id="thumbnailContainer">
         <img
           src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
           alt="website blueprint"
         />
       </div>
-      <h1>Wireframe</h1>
+      <h3 className="popUpHeader">Wireframe</h3>
       <div id="sketchContainer">
         <img
           src={imageurl2}
           id="sketchImage"
           alt="wireframe images for website project"
         />
-        <button id="wireFrameButton" onClick={handleClick2}>
-          browse wireframe
-        </button>
       </div>
     </section>
   );
 
   const brainFlexContent = (
     <section id="projectSketches">
-      <h1>App Outline</h1>
+      <h3 className="popUpHeader">App Outline</h3>
       <div id="thumbnailContainer">
         <img
           className="webBluePrint"
@@ -101,16 +98,21 @@ export default function Work() {
           alt="website blueprint"
         />
       </div>
-      <h1>Wireframe</h1>
+      <h3 className="popUpHeader">Database Schema</h3>
+      <div id="thumbnailContainer">
+        <img
+          className="webBluePrint"
+          src="src/images/brainFLEX_schema.jpg"
+          alt="database schema for brainflex project"
+        />
+      </div>
+      <h3 className="popUpHeader">Wireframe</h3>
       <div id="sketchContainerBottom">
         <img
           src={imageurl}
           id="sketchImage"
           alt="wireframe images for website project"
         />
-        <button id="wireFrameButton" onClick={handleClick}>
-          browse wireframe
-        </button>
       </div>
     </section>
   );

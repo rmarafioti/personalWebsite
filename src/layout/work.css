@@ -1,6 +1,5 @@
 /*work page*/
 
-#projectSketches,
 #projectBody, #projectBodyTwo {
   display: flex;
   flex-direction: column;
@@ -109,7 +108,7 @@
 }
 
 /*KEEP*/
-.projectHeader {
+.projectHeader, .popUpHeader {
   color: rgb(117, 106, 187);
   font-size: 24px;
   line-height: 1.2;
@@ -117,9 +116,10 @@
   margin-top: 0px;
 }
 
-#projectSketches {
-  padding: 1.5rem;
-  margin-left: 1.5rem;
+.popUpHeader {
+  border-bottom: 1px solid rgb(212, 196, 164);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #thumbnailContainer {
@@ -146,14 +146,6 @@
   flex-direction: row;
 }
 
-#wireFrameButton {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: rgb(162, 106, 105);
-  margin-top: 0;
-  cursor: pointer;
-}
-
 .designHeader {
   margin-left: 1.5rem;
 }
@@ -168,7 +160,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(162, 106, 105, 0.4);
 }
 
 .popUpContent {
@@ -177,32 +169,11 @@
   object-fit: contain;
   display: block;
   background-color: white;
-  /*border: 1rem solid white; /* Optional: styling for the content border */
+  border-radius: 10px;
   overflow-y: auto;
   overflow-x: hidden;
-  /*box-sizing: border-box; /* Makes sure padding and borders are included in width/height */
 }
 
-#graphModal img {
-  max-height: 80vh;
-  max-width: 90%;
-  object-fit: contain;
-  display: block;
-  border: 1rem solid white;
-}
-
-#graphModal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
 #projectSketches img {
   max-width: 100%;  /* Ensures the image is never wider than its container */
@@ -211,9 +182,9 @@
 }
 
 #projectSketches {
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Centers the images in the container */
 }
 
 #thumbnailContainer, #sketchContainerBottom {
@@ -227,7 +198,7 @@
 }
 
 @media (max-width: 736px) {
-  #projectSketches, .designHeader {
+  .designHeader {
     margin-left: 2.5rem;
   }
   #projectThumbnails {
