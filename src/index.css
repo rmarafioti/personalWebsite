@@ -38,7 +38,7 @@ p {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   border-bottom: 1px solid rgb(212, 196, 164);
@@ -118,13 +118,14 @@ button:focus,
 }
 
 .navItem a {
-  color:rgb(117, 106, 187);
+  color: rgb(117, 106, 187);
   font-size: 18px;
   display: block;
   margin: 10px;
 }
 
-.navItem a:link, .navItem a:visited {
+.navItem a:link,
+.navItem a:visited {
   color: rgb(117, 106, 187);
 }
 
@@ -305,29 +306,15 @@ a:hover {
 }
 
 #aboutImageContainer {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 480px;
 }
 
 #aboutImageContainer img {
   width: 300px;
   height: auto;
   display: block;
-}
-
-#workTimeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  max-width: 480px;
-  padding: 20px;
 }
 
 #aboutIntro {
@@ -341,13 +328,12 @@ a:hover {
   justify-content: left;
 }
 
-#workTimeLineTag {
-  font-size: 40px;
+#workTimeLineTag, #skillsTitle {
+  font-size: 26px;
   color: rgb(117, 106, 187);
   font-weight: bold;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   margin-top: 1rem;
 }
 
@@ -372,15 +358,23 @@ span {
   margin-bottom: 0;
 }
 
-.aboutContent,
-#skillSection {
+.aboutContent {
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
 #skillSection,
 #factsSection {
   margin-bottom: 20px;
-  margin-right: 40px;
+}
+
+#skillSection {
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#skills {
+  margin-bottom: 10px;
 }
 
 .jobTag,
@@ -426,10 +420,15 @@ span {
 
   #workTimeline {
     margin-top: 0;
-    margin-left: 1rem;
   }
   #funFactsSection {
     display: flex;
     flex-direction: column;
+  }
+  #skillSection {
+    border-bottom: 1px solid rgb(212, 196, 164);
+  }
+  #resumeButton {
+    margin-bottom: 20px;
   }
 }

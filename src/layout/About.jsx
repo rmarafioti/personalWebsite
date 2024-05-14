@@ -8,42 +8,26 @@ export default function About() {
   return (
     <>
       <section id="aboutIntro">
-        <div id="aboutImageContainer">
-          <img
-            src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
-            alt="personal headshot for about me page"
-          />
+        <article>
+          <div id="aboutImageContainer">
+            <img
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
+              alt="personal headshot for about me page"
+            />
+          </div>
           <div id="skillSection">
-            <h4 id="toolkitTitle">Tech Toolkit</h4>
+            <h4 id="skillsTitle">SKILLS</h4>
             <p id="skills">
               Git | Node | HTML | CSS | JavaScript | React | Redux | Express |
               Prisma | Postman | Photoshop | Procreate | Figma
             </p>
-          </div>
 
-          <div id="factsSection">
-            <h3 id="funFactsTitle">Fun Facts</h3>
-            <ul id="list">
-              <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
-                Toured Europe in a band at the age of 16.
-              </li>
-              <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
-                Clinched 2nd place in a demolition derby with an old car of
-                mine.
-              </li>
-              <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
-                Crossed the finish line at the Chicago Marathon four times.
-              </li>
-            </ul>
+            <button id="resumeButton">View Resume</button>
           </div>
-          <button>View Resume</button>
-        </div>
+        </article>
         <article>
           <section id="workTimelineHeader">
-            <p id="workTimeLineTag">From creativity to code</p>
+            <p id="workTimeLineTag">EXPERIENCE</p>
           </section>
           <header className="work">
             RISD Illustration Graduate & Visual Artist:{" "}
@@ -82,6 +66,24 @@ export default function About() {
             solutions. Whether leading a team, collaborating, or flying solo, I
             thrive on turning thoughtful concepts into functional realities.
           </p>
+          <div id="factsSection">
+            <h3 id="funFactsTitle">Fun Facts</h3>
+            <ul id="list">
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Toured Europe in a band at the age of 16.
+              </li>
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Clinched 2nd place in a demolition derby with an old car of
+                mine.
+              </li>
+              <li className="listItem">
+                <span className="material-symbols-outlined">family_star</span>
+                Crossed the finish line at the Chicago Marathon four times.
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </>
