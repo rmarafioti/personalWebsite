@@ -1,6 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import { brainFlexPics } from "../images";
+import { galleryPics } from "../images";
+import Popup from "./PopUp";
 
 export default function Project1() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
+  const [popUp, setPopUp] = useState(false);
+  const [popUpContent, setPopUpContent] = useState(null);
+
+  const handleClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % brainFlexPics.length);
+  };
+
+  const handleClick2 = () => {
+    setCurrentIndex2((prevIndex) => (prevIndex + 1) % galleryPics.length);
+  };
+
+  const currentImageObj =
+    brainFlexPics.length > 0 ? brainFlexPics[currentIndex] : null;
+
+  const currentImageObj2 =
+    galleryPics.length > 0 ? galleryPics[currentIndex2] : null;
+
+  const imageurl = currentImageObj
+    ? new URL(currentImageObj.image, import.meta.url).href
+    : "";
+
+  const openPopUp = (content) => {
+    setPopUpContent(content);
+    setPopUp(true);
+  };
+
+  const closePopUp = () => {
+    setPopUp(false);
+    setPopUpContent(null);
+  };
+
+  const brainFlexContent = (
+    <section id="projectSketches">
+      <h3 className="popUpHeader">App Outline</h3>
+      <div id="thumbnailContainer">
+        <img
+          className="webBluePrint"
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
+          alt="website blueprint"
+        />
+      </div>
+      <h3 className="popUpHeader">Database Schema</h3>
+      <div id="thumbnailContainer">
+        <img
+          className="webBluePrint"
+          src="src/images/brainFLEX_schema.jpg"
+          alt="database schema for brainflex project"
+        />
+      </div>
+      <h3 className="popUpHeader">Wireframe</h3>
+      <div id="sketchContainerBottom">
+        <img
+          src={imageurl}
+          id="sketchImage"
+          alt="wireframe images for website project"
+        />
+      </div>
+    </section>
+  );
+
   return (
     <>
       <article id="projectBody">
@@ -58,6 +123,9 @@ export default function Project1() {
           </section>
         </section>
       </article>
+      <Popup isOpen={popUp} close={closePopUp}>
+        {popUpContent}
+      </Popup>
     </>
   );
 }
