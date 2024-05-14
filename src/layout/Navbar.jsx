@@ -1,4 +1,6 @@
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 /**
  *
@@ -7,29 +9,33 @@ import { NavLink } from "react-router-dom";
  */
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <nav>
-      <div id="navHeader">
-        <NavLink to="/">
-          <img
-            id="navImg"
-            src="https://res.cloudinary.com/dzpne110u/image/upload/t_switch/v1713534663/personalWebsite/Untitled_Artwork_sxtwpl.png"
-            alt="illustration of a rubber duck as an artist with paintbrush and palette"
-          />
-        </NavLink>
+      <div id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
+        <RxHamburgerMenu />
       </div>
-      <div id="navLinks">
-        <button className="navButton">
-          <NavLink className="navLink" to="/work">
-            WORK
-          </NavLink>
-        </button>
-        <button className="navButton">
-          <NavLink className="navLink" to="/about">
-            ABOUT
-          </NavLink>
-        </button>
-      </div>
+      <menu className={`menu ${menuOpen ? "active" : ""}`}>
+        <li className="navItem">
+          <NavLink to="/">HOME</NavLink>
+        </li>
+        <li className="navItem">
+          <NavLink to="/work">WORK</NavLink>
+        </li>
+        <li className="navItem">
+          <NavLink to="/about">ABOUT ME</NavLink>
+        </li>
+      </menu>
+      <section id="headers">
+        <h1 id="name">Rich Marafioti</h1>
+        <h1 id="role"> Fullstack Developer</h1>
+      </section>
     </nav>
   );
 }

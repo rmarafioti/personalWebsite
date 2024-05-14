@@ -9,10 +9,6 @@ import React, { useState } from "react";
 export default function Home() {
   return (
     <>
-      <section id="headers">
-        <h1 id="name">Rich Marafioti</h1>
-        <h1 id="role"> Fullstack Developer</h1>
-      </section>
       <article id="home">
         <section id="homePhotoContainer">
           <img
