@@ -1,6 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+import Popup from "./PopUp";
 
 export default function Project2() {
+  const [popUp, setPopUp] = useState(false);
+  const [popUpContent, setPopUpContent] = useState(null);
+
+  const openPopUp = (content) => {
+    setPopUpContent(content);
+    setPopUp(true);
+  };
+
+  const closePopUp = () => {
+    setPopUp(false);
+    setPopUpContent(null);
+  };
+
+  const bookBuddyContent = (
+    <section id="projectSketches">
+      <h3 className="popUpHeader">App Outline</h3>
+      <div id="thumbnailContainer">
+        <img
+          className="webBluePrint"
+          src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
+          alt="website blueprint"
+        />
+      </div>
+      <h3 className="popUpHeader">Wireframe</h3>
+      <div id="sketchContainerBottom">
+        <img
+          src="src/images/bBwF.png"
+          id="sketchImage"
+          alt="wireframe images for website project"
+        />
+      </div>
+    </section>
+  );
+
   return (
     <>
       <article id="projectBodyTwo">
@@ -68,6 +103,9 @@ export default function Project2() {
           </section>
         </section>
       </article>
+      <Popup isOpen={popUp} close={closePopUp}>
+        {popUpContent}
+      </Popup>
     </>
   );
 }

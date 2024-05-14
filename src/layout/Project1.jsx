@@ -1,31 +1,9 @@
 import React, { useState } from "react";
-import { brainFlexPics } from "../images";
-import { galleryPics } from "../images";
 import Popup from "./PopUp";
 
 export default function Project1() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentIndex2, setCurrentIndex2] = useState(0);
   const [popUp, setPopUp] = useState(false);
   const [popUpContent, setPopUpContent] = useState(null);
-
-  const handleClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % brainFlexPics.length);
-  };
-
-  const handleClick2 = () => {
-    setCurrentIndex2((prevIndex) => (prevIndex + 1) % galleryPics.length);
-  };
-
-  const currentImageObj =
-    brainFlexPics.length > 0 ? brainFlexPics[currentIndex] : null;
-
-  const currentImageObj2 =
-    galleryPics.length > 0 ? galleryPics[currentIndex2] : null;
-
-  const imageurl = currentImageObj
-    ? new URL(currentImageObj.image, import.meta.url).href
-    : "";
 
   const openPopUp = (content) => {
     setPopUpContent(content);
@@ -50,7 +28,6 @@ export default function Project1() {
       <h3 className="popUpHeader">Database Schema</h3>
       <div id="thumbnailContainer">
         <img
-          className="webBluePrint"
           src="src/images/brainFLEX_schema.jpg"
           alt="database schema for brainflex project"
         />
@@ -58,7 +35,7 @@ export default function Project1() {
       <h3 className="popUpHeader">Wireframe</h3>
       <div id="sketchContainerBottom">
         <img
-          src={imageurl}
+          src="src/images/bFwF.png"
           id="sketchImage"
           alt="wireframe images for website project"
         />
