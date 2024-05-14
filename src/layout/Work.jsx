@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Popup from "./PopUp";
+
+import { Carousel } from "./Carousel";
+import { CarouselContent } from "../CarouselContent";
+
 import { brainFlexPics } from "../images";
 import { galleryPics } from "../images";
 
@@ -119,7 +123,8 @@ export default function Work() {
 
   return (
     <>
-      <article id="projectBody">
+      <Carousel data={CarouselContent} />
+      {/*<article id="projectBody">
         <div>
           <div id="imageContainer">
             <img
@@ -238,7 +243,7 @@ export default function Work() {
             </div>
           </section>
         </section>
-      </article>
+  </article>*/}
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}
       </Popup>
