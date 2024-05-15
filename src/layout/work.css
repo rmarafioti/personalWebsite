@@ -1,48 +1,13 @@
 /*work page*/
 
-#projectBody, #projectBodyTwo {
+#projectBody {
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-}
-
-#projectBody, #projectBodyTwo {
   margin-top: 2rem;
-  flex-direction: row;
-}
-
-#projectBodyTwo {
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 900px) {
-  #projectBody, #projectBodyTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-#projectThumbnails {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media (max-width: 736px) {
-  #projectThumbnails {
-    display: inline-block;
-    flex-direction: column;
-  }
-  #projectDescription {
-    margin-left: 1rem;
-  }
-}
-
-#workImage {
-  max-width: auto;
-  height: 100%;
-  display: block;
+  margin-bottom: 20px;
 }
 
 .projectDescription {
@@ -51,39 +16,8 @@
   padding: 0.5rem;
 }
 
-@media (max-width: 736px) {
-  #projectSketches {
-    margin-left: 1rem;
-  }
-  #projectThumbnails {
-    display: inline-block;
-    flex-direction: column;
-  }
-  .projectDescription {
-    margin-left: 1rem;
-  }
-}
-
-#sketchContainer,
-#imageContainer,
-#sketchContainerBottom {
-  width: auto;
-  display: block;
-}
-
-#sketchContainerBottom {
-  margin-bottom: 1rem;
-}
-
-#sketchImage,
 #projectImage {
-  width: 200px;
-  height: auto;
-  display: block;
-}
-
-#projectImage {
-  width: 350px;
+  width: 400px;
 }
 
 .projectContent {
@@ -97,7 +31,6 @@
   font-style: italic;
 }
 
-/*KEEP*/
 .projectParagraph {
   justify-content: start;
   text-align: left;
@@ -107,8 +40,8 @@
   padding-top: 10px;
 }
 
-/*KEEP*/
-.projectHeader, .popUpHeader {
+.projectHeader,
+.popUpHeader {
   color: rgb(117, 106, 187);
   font-size: 24px;
   line-height: 1.2;
@@ -120,13 +53,6 @@
   border-bottom: 1px solid rgb(212, 196, 164);
   padding-bottom: 10px;
   margin-bottom: 20px;
-}
-
-#thumbnailContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
 }
 
 .buttonSection {
@@ -141,15 +67,6 @@
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
-.devProcessSection {
-  display: flex;
-  flex-direction: row;
-}
-
-.designHeader {
-  margin-left: 1.5rem;
-}
-
 .popUpOverlay {
   display: flex;
   justify-content: center;
@@ -159,13 +76,13 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgb(162, 106, 105, 0.4);
 }
 
 .popUpContent {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: contain;
   display: block;
   background-color: white;
@@ -174,38 +91,43 @@
   overflow-x: hidden;
 }
 
-
-#projectSketches img {
-  max-width: 100%;  /* Ensures the image is never wider than its container */
-  height: auto;     /* Maintains the aspect ratio of the image */
-  display: block;   /* Removes any extra space below the image */
-}
-
 #projectSketches {
   margin: 20px;
   display: flex;
   flex-direction: column;
 }
 
-#thumbnailContainer, #sketchContainerBottom {
-  width: 100%;  /* Use the full width of the parent, adjust as necessary */
-  text-align: center;  /* Centers content like buttons and images if not already handled by flex */
-  margin-bottom: 20px;  /* Adds some space between your elements */
+#projectSketches img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-#thumbnailContainer img, #sketchContainerBottom img {
-  max-height: 80vh;  /* Limits the height of the image to 80% of the viewport height */
+.wireFrameContainer {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#wireFrameImage {
+  width: 700px;
+}
+
+#thumbnailContainer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 736px) {
-  .designHeader {
-    margin-left: 2.5rem;
-  }
-  #projectThumbnails {
-    display: inline-block;
-    flex-direction: column;
-  }
   .projectDescription {
     margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  #projectBody {
+    flex-direction: column;
+    align-items: center;
   }
 }

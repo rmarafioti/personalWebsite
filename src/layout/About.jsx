@@ -1,3 +1,5 @@
+import { IoCheckmark } from "react-icons/io5";
+
 /**
  *
  * @component this file features the About page of this personal site
@@ -70,16 +72,16 @@ export default function About() {
             <h3 id="funFactsTitle">Fun Facts</h3>
             <ul id="list">
               <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
+                <IoCheckmark />
                 Toured Europe in a band at the age of 16.
               </li>
               <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
+                <IoCheckmark />
                 Clinched 2nd place in a demolition derby with an old car of
                 mine.
               </li>
               <li className="listItem">
-                <span className="material-symbols-outlined">family_star</span>
+                <IoCheckmark />
                 Crossed the finish line at the Chicago Marathon four times.
               </li>
             </ul>

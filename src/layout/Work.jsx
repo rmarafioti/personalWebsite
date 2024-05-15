@@ -1,39 +1,50 @@
 import React, { useState } from "react";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { FaCircle } from "react-icons/fa6";
 
-import Carousel from "./Carousel";
 import { CarouselContent } from "../CarouselContent";
-
+import "./carousel.css";
 import "./work.css";
 
-/**
- *
- * @component this file features the Project1 page of this personal site
- * displaying further information, photos and links about the project.
- */
-
 export default function Work() {
-  /**
-   *
-   * @function handleClick
-   * @returns the function flips through a series of images via 'browse wireframe' button.
-   *
-   */
+  const [activeSlide, setActiveSlide] = useState(0);
 
-  /**
-   *
-   * @description currentImageObj declares that if there are a series of images display them in order by index number
-   *
-   */
+  const handleNext = () => {
+    setActiveSlide((prev) => (prev + 1) % CarouselContent.length);
+  };
 
-  /**
-   *
-   * @description imageurl declares if there is a currentImageObj use it's key: value image property as the imageurl.
-   *
-   */
+  const handlePrev = () => {
+    setActiveSlide(
+      (prev) => (prev - 1 + CarouselContent.length) % CarouselContent.length
+    );
+  };
 
   return (
     <>
-      <Carousel data={CarouselContent} />
+      <div id="slide">{CarouselContent[activeSlide].content()}</div>
+      <section id="arrowSection">
+        <BsArrowLeftCircleFill
+          className="arrow arrow-left"
+          onClick={handleNext}
+        />{" "}
+        <div className="indicators">
+          {CarouselContent.map((item, index) => (
+            <FaCircle
+              key={index}
+              className={`indicator ${index === activeSlide ? "active" : ""}`}
+              onClick={() => setActiveSlide(index)}
+              style={{
+                color:
+                  index === activeSlide ? "rgb(162, 106, 105)" : "lightgrey",
+              }}
+            />
+          ))}
+        </div>
+        <BsArrowRightCircleFill
+          className="arrow arrow-right"
+          onClick={handleNext}
+        />
+      </section>
     </>
   );
 }
