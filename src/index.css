@@ -88,12 +88,12 @@ button:focus,
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin: 10px;
+  margin: 15px;
   padding: 5px;
   color: white;
   background-color: rgb(162, 106, 105);
   border-radius: 10px;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
 
   flex-grow: 0; /* Don't allow it to grow */
