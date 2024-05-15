@@ -1,20 +1,10 @@
 import React, { useState } from "react";
 import { brainFlexContent } from "./ProjectContent";
 import Popup from "./PopUp";
+import usePopUp from "./usePopUp";
 
 export default function Project1() {
-  const [popUp, setPopUp] = useState(false);
-  const [popUpContent, setPopUpContent] = useState(null);
-
-  const openPopUp = (content) => {
-    setPopUpContent(content);
-    setPopUp(true);
-  };
-
-  const closePopUp = () => {
-    setPopUp(false);
-    setPopUpContent(null);
-  };
+  const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
 
   return (
     <>
