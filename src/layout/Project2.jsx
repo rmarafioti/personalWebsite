@@ -8,7 +8,7 @@ export default function Project2() {
 
   return (
     <>
-      <article id="projectBodyTwo">
+      <article id="projectBody">
         <div>
           <div id="imageContainer">
             <img
@@ -20,9 +20,7 @@ export default function Project2() {
         </div>
         <section>
           <section className="projectDescription">
-            <h3 className="projectHeader" id="topProject">
-              Book Buddy:
-            </h3>
+            <h3 className="projectHeader">Book Buddy:</h3>
             <h5 className="projectContent">
               Front-end developed app using an external API and token
               authentication
@@ -62,14 +60,12 @@ export default function Project2() {
             <p className="projectContent">
               HTML, CSS, JAVASCRIPT, REACT & REDUX
             </p>
-            <div className="devProcessSection">
-              <button
-                className="devProcessButton"
-                onClick={() => openPopUp(bookBuddyContent)}
-              >
-                VIEW DEVELOPMENT PROCESS
-              </button>
-            </div>
+            <button
+              className="devProcessButton"
+              onClick={() => openPopUp(bookBuddyContent)}
+            >
+              VIEW DEVELOPMENT PROCESS
+            </button>
           </section>
         </section>
       </article>
