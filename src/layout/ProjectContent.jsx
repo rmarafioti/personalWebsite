@@ -1,8 +1,8 @@
 import React from "react";
+import { SlClose } from "react-icons/sl";
 
 export const brainFlexContent = (
   <section id="projectSketches">
-    <h3 className="popUpHeader">App Outline</h3>
     <div id="thumbnailContainer">
       <img
         src="https://res.cloudinary.com/dzpne110u/image/upload/v1713198523/personalWebsite/brainFlexWireframe_d5ebvb.jpg"
@@ -29,7 +29,6 @@ export const brainFlexContent = (
 
 export const bookBuddyContent = (
   <section id="projectSketches">
-    <h3 className="popUpHeader">App Outline</h3>
     <div id="sketchContainer">
       <img
         src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
