@@ -1,36 +1,50 @@
-.carousel {
-    position: relative;
-    width: 100%; /* Set the width as per your design */
-    overflow: hidden; /* Hides slides that overflow the visible area */
-  }
-  
-  .slides-container {
-    display: flex;
-    transition: transform 0.5s ease; /* Smooth transition for the sliding effect */
-  }
-  
-  .slide {
-    min-width: 100%; /* Each slide takes full width of the carousel */
-    transition: opacity 0.5s ease; /* Smooth transition for fading in/out */
-    opacity: 0; /* Default all slides to be transparent */
-  }
-  
-  .slide.active {
-    opacity: 1; /* Only the active slide is fully visible */
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 50%; /* Centers the arrow vertically */
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .arrow-left {
-    left: 10px;
-  }
-  
-  .arrow-right {
-    right: 10px;
-  }
+#carouselContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 65vh;
+  overflow-y: auto;
+}
+
+#slide {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#arrowSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(117, 106, 187);
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  margin: 2rem;
+}
+
+.indicator {
+  width: .5rem; /* Set width */
+  height: .5rem; /* Set height */
+  border-radius: 50%; /* Make it a circle */
+  border: none;
+  outline: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}

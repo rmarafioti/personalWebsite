@@ -1,10 +1,13 @@
 /*work page*/
 
 #projectBody {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 20px;
 }
 
 .projectDescription {
@@ -37,7 +40,8 @@
   padding-top: 10px;
 }
 
-.projectHeader, .popUpHeader {
+.projectHeader,
+.popUpHeader {
   color: rgb(117, 106, 187);
   font-size: 24px;
   line-height: 1.2;
@@ -72,13 +76,13 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vp;
+  height: 100vh;
   background-color: rgb(162, 106, 105, 0.4);
 }
 
 .popUpContent {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: contain;
   display: block;
   background-color: white;
@@ -94,9 +98,9 @@
 }
 
 #projectSketches img {
-  max-width: 100%;  
-  height: auto;    
-  display: block;   
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .wireFrameContainer {
@@ -110,14 +114,10 @@
 }
 
 #thumbnailContainer {
-  width: 100%;  
-  text-align: center; 
-  margin-bottom: 20px; 
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
-/*NOTSURE*/
-/*#sketchContainer img, #sketchContainerBottom img {
-  max-height: 100vh;  /* Limits the height of the image to 80% of the viewport height 
-}*/
 
 @media (max-width: 736px) {
   .projectDescription {
@@ -125,9 +125,8 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
   #projectBody {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }

@@ -20,9 +20,7 @@ export default function Project1() {
         </div>
         <section>
           <section className="projectDescription">
-            <h3 className="projectHeader" id="topProject">
-              BrainFLEX:
-            </h3>
+            <h3 className="projectHeader">BrainFLEX:</h3>
             <h5 className="projectContent">
               A fully functional CRUD app with an internally built database &
               token authentication
