@@ -28,7 +28,6 @@ export default function Home() {
             </p>
           </div>
           <div className="pitchSectionParagraph">
-            {/*<header id="missionLine">My mission</header>*/}
             <p className="homeContentTwo">
               My mission? To seamlessly integrate design and functionality,
               alongside aesthetics and effective communication, ensuring your
