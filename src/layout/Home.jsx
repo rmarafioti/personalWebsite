@@ -21,17 +21,18 @@ export default function Home() {
           <div className="pitchSectionParagraphOne">
             <header id="welcomeLine">Welcome!</header>
             <p className="homeContentOne">
-              I’m Rich Marafioti, a Fullstack Developer and Designer living in
-              Chicago. With 20 years of independence in art and design, and a
-              decade of owning and operating my own small business, I blend
-              creativity with functionality.
+              I’m <em>Rich Marafioti</em>, a Fullstack Developer and Designer
+              living in Chicago. With 20 years of independence in art and
+              design, and a decade of owning and operating my own small
+              business, I blend creativity with functionality.
             </p>
           </div>
           <div className="pitchSectionParagraph">
             <p className="homeContentTwo">
-              My mission? To seamlessly integrate design and functionality,
-              alongside aesthetics and effective communication, ensuring your
-              digital presence is as vibrant and dynamic as your vision.
+              <em>My mission?</em> To seamlessly integrate design and
+              functionality, alongside aesthetics and effective communication,
+              ensuring your digital presence is as vibrant and dynamic as your
+              vision.
             </p>
           </div>
         </section>
