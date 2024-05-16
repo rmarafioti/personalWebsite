@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
 
-import PdfLoad from "./PdfLoad";
 /**
  *
  * @component this file features the About page of this personal site
