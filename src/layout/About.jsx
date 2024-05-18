@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
+import resume from "../images/resume.pdf";
 
 /**
  *
@@ -8,12 +9,10 @@ import { IoCheckmark } from "react-icons/io5";
  */
 
 export default function About() {
-  const pdfUrl =
-    "https://drive.google.com/file/d/1J8bMFy44hyFeVpfjSR-3S_Q9S83lVUAZ/preview";
   const [pdfWindow, setPdfWindow] = useState(null);
 
   const openPdfInNewTab = () => {
-    const newWindow = window.open(pdfUrl, "_blank");
+    const newWindow = window.open(resume, "_blank");
     setPdfWindow(newWindow);
   };
 
@@ -39,8 +38,7 @@ export default function About() {
             </button>
           </div>
         </article>
-        <article>
-          {/*{showPdf && <PdfLoad />}*/}
+        <article id="experienceSection">
           <section id="workTimelineHeader">
             <p id="workTimeLineTag">EXPERIENCE</p>
           </section>

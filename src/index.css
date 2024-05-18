@@ -110,6 +110,7 @@ button:focus,
 }
 
 .menu.active {
+  margin-left: .5rem;
   display: block;
 }
 
@@ -122,6 +123,8 @@ button:focus,
   font-size: 18px;
   display: block;
   margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .navItem a:link,
@@ -151,6 +154,19 @@ button:focus,
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: 0.01em;
+}
+
+@media (max-width: 976px) {
+  #headers {
+    text-align: right;
+    margin-right: 1rem;
+  }
+  #name {
+    font-size: 24px;
+  }
+  #role {
+    font-size: 18px;
+  }
 }
 
 /* footer styling */
@@ -288,6 +304,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
   }
   #homePhotoContainer,
@@ -436,6 +453,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   #aboutImageContainer {
     display: flex;
@@ -451,7 +470,11 @@ span {
     flex-direction: column;
   }
   #skillSection {
+    margin-left: 1rem;
     border-bottom: 1px solid rgb(212, 196, 164);
+  }
+  #experienceSection {
+    margin-left: 1rem;
   }
   #resumeButton {
     margin-bottom: 20px;
