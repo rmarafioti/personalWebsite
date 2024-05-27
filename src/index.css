@@ -13,6 +13,8 @@
 }
 
 #root {
+  width: 100%;
+  overflow: hidden;
   line-height: 1.5;
   color: rgb(162, 106, 105);
   display: flex;
@@ -29,6 +31,10 @@ main {
   background: linear-gradient(rgba(245, 248, 248, 0.958), white);
 }
 
+body {
+  padding-top: 60px;
+}
+
 /* nav bar styling */
 
 p {
@@ -39,10 +45,14 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
+  align-items: center; /* Ensure this is 'center' to align items properly in the middle */
+  position: fixed;
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Stretch across the left edge */
+  right: 0; /* Stretch across the right edge */
   border-bottom: 1px solid rgb(212, 196, 164);
-  background-color: rgba(245, 248, 248, 0.958);
+  background-color: rgba(245, 248, 248);
+  z-index: 1000; /* High z-index to keep it above other content */
 }
 
 button,
@@ -86,7 +96,6 @@ button:focus,
 
 #hamMenu {
   display: flex;
-  align-items: center;
   cursor: pointer;
   margin: 15px;
   padding: 5px;
@@ -95,23 +104,33 @@ button:focus,
   border-radius: 10px;
   font-size: 30px;
   position: relative;
-
-  flex-grow: 0; /* Don't allow it to grow */
-  flex-shrink: 0; /* Don't allow it to shrink */
+  margin-right: 2rem;
 }
 
 .menu {
+  background-color: rgba(245, 248, 248, 0.958);
   position: absolute;
+  margin-top: 2.5rem;
   display: none;
   top: 100%;
-  width: 100%;
-  left: 0;
+  right: 0px;
+  width: 100px;
   z-index: 1000;
 }
 
 .menu.active {
-  margin-left: .5rem;
-  display: block;
+  display: block;  
+}
+
+.overlay {
+  position: fixed;
+  top: 310px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(162, 106, 105, 0.4); /* Semi-transparent reddish overlay */
+  z-index: 999; /* Ensure this is higher than page content but lower than the menu */
+  display: none;
 }
 
 .navItem {
@@ -119,17 +138,25 @@ button:focus,
 }
 
 .navItem a {
-  color: rgb(117, 106, 187);
+  border-radius: 10px;
   font-size: 18px;
   display: block;
+  padding: 10px;
   margin: 10px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 .navItem a:link,
 .navItem a:visited {
   color: rgb(117, 106, 187);
+}
+
+.navItem a:hover {
+  background-color: rgb(117, 106, 187);
+  color: white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 #headers {
@@ -157,9 +184,13 @@ button:focus,
 }
 
 @media (max-width: 976px) {
+  nav {
+    position: fixed;
+  }
+
   #headers {
-    text-align: right;
-    margin-right: 1rem;
+    text-align: left;
+    margin-left: 1rem;
   }
   #name {
     font-size: 24px;
@@ -167,12 +198,43 @@ button:focus,
   #role {
     font-size: 18px;
   }
+
+  #hamMenu {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+ 
+  .menu {
+    margin: 0;
+    position: fixed;           /* Keeps the menu at the top as you scroll */
+    top: 0;                    /* Aligns the menu at the top of the viewport */
+    left: 0;                   /* Aligns the menu to the left edge of the viewport */
+    right: 0;                  /* Ensures the menu stretches to the right edge */
+    width: 100vw;              /* Ensures the menu spans the full viewport width */
+    background-color: rgba(245, 248, 248);
+    z-index: 1000;               /* Ensures it's on top of other content */
+    flex-direction: column;    /* Stacks items vertically */
+    justify-content: center;
+    margin-top: 4.7rem;
+  }
+
+  .navItem a {
+    margin: 1rem;
+    display: flex;             /* Uses flex to center and stretch items */
+    justify-content: center;   /* Centers content horizontally */
+    padding: 15px;             /* Adds padding for better touch targets */
+  }
+
+  .menu.active + .overlay {
+    display: block;
+  }
+
 }
 
 /* footer styling */
 
 #footer {
-  position: sticky;
+  margin-top: auto;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -219,6 +281,7 @@ a:hover {
 /*home page styling*/
 
 #home {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,11 +352,12 @@ a:hover {
 #homePhoto {
   width: auto;
   display: block;
-  max-width: 550px;
+  max-width: 450px;
 }
 
 @media (max-width: 976px) {
   #home {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,9 +373,10 @@ a:hover {
   }
   #homePhotoContainer,
   #homePhoto {
+    
     width: auto;
     display: block;
-    max-width: 380px;
+    max-width: 320px;
   }
   .pitchSectionParagraphOne {
     border-bottom: 1px solid rgb(212, 196, 164);
@@ -332,7 +397,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -354,14 +419,9 @@ a:hover {
 }
 
 #aboutImageContainer img {
-  width: 350px;
+  width: 300px;
   height: auto;
   display: block;
-}
-
-#aboutIntro {
-  flex-direction: row;
-  justify-content: center;
 }
 
 #workTimelineHeader {
@@ -453,6 +513,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
