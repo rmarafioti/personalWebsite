@@ -10,6 +10,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuButton, setMenuButton] = React.useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -23,7 +24,7 @@ export default function Navbar() {
         <h1 id="role"> Fullstack Developer</h1>
       </section>
       <div id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
-        <RxHamburgerMenu />
+        <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
           <li className="navItem">
             <NavLink to="/">HOME</NavLink>
