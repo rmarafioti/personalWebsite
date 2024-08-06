@@ -20,7 +20,7 @@ export default function Work() {
   };
 
   return (
-    <>
+    <article id="work">
       <div id="slide">{CarouselContent[activeSlide].content()}</div>
       <section id="arrowSection">
         <BsArrowLeftCircleFill
@@ -45,6 +45,6 @@ export default function Work() {
           onClick={handleNext}
         />
       </section>
-    </>
+    </article>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import "./navbar.css";
 /**
@@ -28,16 +28,22 @@ export default function Navbar() {
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
           <li className="navItem">
-            <Link to="/" spy={true} smooth={true} offset={-100} duration={500}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               HOME
             </Link>
           </li>
           <li className="navItem">
             <Link
-              to="/work"
+              to="work"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-80}
               duration={500}
             >
               WORK
@@ -45,10 +51,10 @@ export default function Navbar() {
           </li>
           <li className="navItem">
             <Link
-              to="/about"
+              to="about"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-80}
               duration={500}
             >
               ABOUT

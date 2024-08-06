@@ -19,7 +19,7 @@ export default function About() {
   };
 
   return (
-    <>
+    <article id="about">
       <section id="aboutIntro">
         <article>
           <div id="aboutImageContainer">
@@ -101,6 +101,6 @@ export default function About() {
           </div>
         </article>
       </section>
-    </>
+    </article>
   );
 }
