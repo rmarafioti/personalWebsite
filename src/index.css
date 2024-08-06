@@ -18,28 +18,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  background: linear-gradient(rgba(245, 248, 248, 0.958), white);
-}
 
-p {
-  font-weight: 500;
-}
 
-/*@media (max-width: 633px) {
-  #workIntro {
-    display: inline-block;
-    flex-direction: column;
-  }
-}
-
-#headline {
-  margin-bottom: 1rem;
-}*/
 

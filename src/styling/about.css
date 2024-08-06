@@ -1,56 +1,57 @@
-/* about page styling */
-
-#aboutIntro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  #aboutImageContainer {
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 3rem 0rem 2rem 0rem;
   }
-  
-  #aboutImageContainer img {
+
+ .headshot {
     width: 300px;
     height: auto;
-    display: block;
   }
-  
-  #workTimelineHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+
+  .aboutSection {
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 480px;
+    margin: 0px 10px 10px 0px;
   }
-  
-  #workTimeLineTag, #skillsTitle {
+
+  .skills {
+    margin-bottom: 10px;
+  }
+
+  .resumeButton {
+    width: 480px;
+  }
+
+  .title {
     font-size: 26px;
     color: rgb(117, 106, 187);
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 10px;
-    margin-top: 1rem;
-  }
-  
-  h4,
-  h3,
-  span {
-    color: rgb(117, 106, 187);
+    margin: 10px 0px 10px 0px;
   }
   
   .aboutContent,
-  .jobTag,
-  #skillSection {
-    font-weight: lighter;
+  .jobTag {
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     max-width: 480px;
     padding-bottom: 10px;
+  }
+
+  .work {
+    padding-top: 15px;
+  }
+
+  #topWorkTitle {
+    padding-top: 0px;
   }
   
   .jobTag {
@@ -60,22 +61,7 @@
   .aboutContent {
     border-bottom: 1px solid rgb(212, 196, 164);
   }
-  
-  #skillSection,
-  #factsSection {
-    margin-bottom: 20px;
-  }
-  
-  #skillSection {
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-  }
-  
-  #skills {
-    margin-bottom: 10px;
-  }
-  
+    
   .jobTag,
   .listItem {
     color: rgba(152, 140, 115, 0.808);
@@ -84,60 +70,40 @@
   }
   
   .listItem {
+    display: flex;
     font-style: normal;
+    padding-bottom: 10px;
   }
   
-  #list {
+  .list {
     list-style-type: none;
   }
   
-  #toolkitTitle,
-  #funFactsTitle {
+  .funFactsTitle {
     color: rgb(117, 106, 187);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 500;
-    margin-top: 0px;
+    padding-top: 10px;
     margin-bottom: 10px;
     text-align: left;
   }
-  
-  .subTitle {
-    font-weight: 500;
+
+  .checkmark {
+    font-size: 20px;
   }
+
   @media (max-width: 970px) {
-    #aboutIntro {
+    .about {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin: 2rem 1rem 2rem 1rem;
     }
-    #aboutImageContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #workTimeline {
-      margin-top: 0;
-    }
-    #funFactsSection {
-      display: flex;
-      flex-direction: column;
-    }
-    #skillSection {
-      margin-left: 1rem;
-      border-bottom: 1px solid rgb(212, 196, 164);
-    }
-    #experienceSection {
+    .aboutSection {
       margin-left: 1rem;
     }
-    #resumeButton {
-      margin-bottom: 20px;
-    }
-    .pitchSectionParagraph {
-      margin-top: 0;
+    .resumeButton {
+      width: 100%;
     }
   }
