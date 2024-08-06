@@ -1,5 +1,5 @@
-import Project1 from "./layout/Project1";
-import Project2 from "./layout/Project2";
+import Project1 from "./Project1";
+import Project2 from "./Project2";
 
 export const CarouselContent = [
   {

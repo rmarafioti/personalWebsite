@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { bookBuddyContent } from "./ProjectContent";
-import Popup from "./PopUp";
-import usePopUp from "./usePopUp";
+import Popup from "../hooks/PopUp";
+import usePopUp from "../hooks/usePopUp";
 
 export default function Project2() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();

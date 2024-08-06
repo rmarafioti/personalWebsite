@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./layout/Root";
 import Home from "./layout/Home";
-import About from "./layout/About";
-import Work from "./layout/Work";
+import About from "./features/About";
+import Work from "./features/Work";
 
 /**
  *
