@@ -28,12 +28,12 @@ export default function Navbar() {
         id="headers"
       >
         <h1 id="name">Rich Marafioti</h1>
-        <h1 id="role"> Fullstack Developer</h1>
+        <h2 id="role"> Fullstack Developer</h2>
       </Link>
-      <div id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
+      <section id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
-          <li className="navItem">
+          <p className="navItem">
             <Link
               to="home"
               spy={true}
@@ -44,8 +44,8 @@ export default function Navbar() {
             >
               HOME
             </Link>
-          </li>
-          <li className="navItem">
+          </p>
+          <p className="navItem">
             <Link
               to="work"
               spy={true}
@@ -56,8 +56,8 @@ export default function Navbar() {
             >
               WORK
             </Link>
-          </li>
-          <li className="navItem">
+          </p>
+          <p className="navItem">
             <Link
               to="about"
               spy={true}
@@ -68,10 +68,10 @@ export default function Navbar() {
             >
               ABOUT
             </Link>
-          </li>
+          </p>
         </menu>
         <div className={`overlay ${menuOpen ? "active" : ""}`}></div>
-      </div>
+      </section>
     </nav>
   );
 }
