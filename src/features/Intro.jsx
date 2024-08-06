@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-/**
- *
- * @component this file features the Home page of this personal
- *  site displaying introductory information.
- */
+import "../styling/intro.css";
 
-export default function Home() {
+export default function Intro() {
   return (
     <>
       <article id="home">

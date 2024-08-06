@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa6";
 
-import { CarouselContent } from "../CarouselContent";
-import "./carousel.css";
-import "./work.css";
+import { CarouselContent } from "./CarouselContent";
+import "../styling/carousel.css";
+import "../styling/work.css";
 
 export default function Work() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -20,7 +20,7 @@ export default function Work() {
   };
 
   return (
-    <>
+    <article id="work">
       <div id="slide">{CarouselContent[activeSlide].content()}</div>
       <section id="arrowSection">
         <BsArrowLeftCircleFill
@@ -45,6 +45,6 @@ export default function Work() {
           onClick={handleNext}
         />
       </section>
-    </>
+    </article>
   );
 }

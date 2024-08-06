@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { brainFlexContent } from "./ProjectContent";
-import Popup from "./PopUp";
-import usePopUp from "./usePopUp";
+import Popup from "../hooks/PopUp";
+import usePopUp from "../hooks/usePopUp";
 
 export default function Project1() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();

@@ -1,8 +1,8 @@
-import { createBrowserRouter } from "react-router-dom";
+/*import { createBrowserRouter } from "react-router-dom";
 import Root from "./layout/Root";
 import Home from "./layout/Home";
-import About from "./layout/About";
-import Work from "./layout/Work";
+import About from "./features/About";
+import Work from "./features/Work";
 
 /**
  *
@@ -10,7 +10,7 @@ import Work from "./layout/Work";
  *
  */
 
-const router = createBrowserRouter([
+/*const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
@@ -31,4 +31,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default router;*/

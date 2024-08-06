@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
 import resume from "../images/resume.pdf";
 
+import "../styling/about.css";
+
 /**
  *
  * @component this file features the About page of this personal site
@@ -17,7 +19,7 @@ export default function About() {
   };
 
   return (
-    <>
+    <article id="about">
       <section id="aboutIntro">
         <article>
           <div id="aboutImageContainer">
@@ -99,6 +101,6 @@ export default function About() {
           </div>
         </article>
       </section>
-    </>
+    </article>
   );
 }

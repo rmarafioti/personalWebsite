@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
+import "./navbar.css";
 /**
  *
  * @component this file features the Navbar for the site which is displayed on every page of our site by importing it in the return of our Root file.
@@ -10,7 +11,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const [menuButton, setMenuButton] = React.useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -19,21 +19,55 @@ export default function Navbar() {
 
   return (
     <nav>
-      <section id="headers">
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+        id="headers"
+      >
         <h1 id="name">Rich Marafioti</h1>
         <h1 id="role"> Fullstack Developer</h1>
-      </section>
+      </Link>
       <div id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
           <li className="navItem">
-            <NavLink to="/">HOME</NavLink>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              HOME
+            </Link>
           </li>
           <li className="navItem">
-            <NavLink to="/work">WORK</NavLink>
+            <Link
+              to="work"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              WORK
+            </Link>
           </li>
           <li className="navItem">
-            <NavLink to="/about">ABOUT</NavLink>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              ABOUT
+            </Link>
           </li>
         </menu>
         <div className={`overlay ${menuOpen ? "active" : ""}`}></div>
