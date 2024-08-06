@@ -31,9 +31,9 @@ main {
   background: linear-gradient(rgba(245, 248, 248, 0.958), white);
 }
 
-body {
+/*body {
   padding-top: 60px;
-}
+}*/
 
 /* nav bar styling */
 
@@ -45,14 +45,9 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* Ensure this is 'center' to align items properly in the middle */
-  position: fixed;
-  top: 0; /* Align to the top of the viewport */
-  left: 0; /* Stretch across the left edge */
-  right: 0; /* Stretch across the right edge */
+  align-items: center; 
   border-bottom: 1px solid rgb(212, 196, 164);
   background-color: rgba(245, 248, 248);
-  z-index: 1000; /* High z-index to keep it above other content */
 }
 
 button,
@@ -166,7 +161,7 @@ button:focus,
 }
 
 .menu {
-  background-color: rgba(245, 248, 248, 0.958);
+  /*background-color: rgba(245, 248, 248, 0.958);*/
   position: absolute;
   margin-top: 2.5rem;
   display: none;
@@ -243,9 +238,9 @@ button:focus,
 }
 
 @media (max-width: 976px) {
-  nav {
+  /*nav {
     position: fixed;
-  }
+  }*/
 
   #headers {
     text-align: left;
