@@ -11,6 +11,7 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const [activeSection, setActiveSection] = React.useState("home");
   const location = useLocation();
 
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onSetActive={() => setActiveSection("home")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               HOME
@@ -52,6 +54,8 @@ export default function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
+              className={activeSection === "work" ? "active" : ""}
+              onSetActive={() => setActiveSection("work")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               WORK
@@ -64,6 +68,8 @@ export default function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
+              className={activeSection === "about" ? "active" : ""}
+              onSetActive={() => setActiveSection("about")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               ABOUT
