@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styling/intro.css";
+
 export default function Intro() {
   return (
     <>

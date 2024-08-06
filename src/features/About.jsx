@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
 import resume from "../images/resume.pdf";
 
+import "../styling/about.css";
+
 /**
  *
  * @component this file features the About page of this personal site
