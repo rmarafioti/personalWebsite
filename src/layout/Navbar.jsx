@@ -11,7 +11,6 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const [menuButton, setMenuButton] = React.useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -20,10 +19,17 @@ export default function Navbar() {
 
   return (
     <nav>
-      <section id="headers">
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+        id="headers"
+      >
         <h1 id="name">Rich Marafioti</h1>
         <h1 id="role"> Fullstack Developer</h1>
-      </section>
+      </Link>
       <div id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
@@ -34,6 +40,7 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
             >
               HOME
             </Link>
@@ -45,6 +52,7 @@ export default function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
             >
               WORK
             </Link>
@@ -56,6 +64,7 @@ export default function Navbar() {
               smooth={true}
               offset={-80}
               duration={500}
+              onClick={() => setMenuOpen(!menuOpen)}
             >
               ABOUT
             </Link>
