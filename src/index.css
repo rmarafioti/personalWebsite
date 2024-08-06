@@ -25,7 +25,6 @@
 }
 
 main {
-  flex-grow: 1;
   background: linear-gradient(rgba(245, 248, 248, 0.958), white);
 }
 
