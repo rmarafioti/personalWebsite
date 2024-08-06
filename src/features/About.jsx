@@ -36,47 +36,47 @@ export default function About() {
         </button>
       </div>
       <section className="aboutSection">
-        <p className="title">EXPERIENCE</p>
+        <h2 className="title">EXPERIENCE</h2>
         <header className="work" id="topWorkTitle">
           RISD Illustration Graduate & Visual Artist:{" "}
         </header>
-        <h6 className="jobTag">
+        <h3 className="jobTag">
           Bachelor's Degree, Illustration Department 1999 - 2003
-        </h6>
+        </h3>
         <p className="aboutContent">
           My professional journey began in the world of visual arts, where I
           further developed my design skills and aesthetic eye.
         </p>
         <header className="work">Tattoo Artist:</header>
-        <h6 className="jobTag">
+        <h3 className="jobTag">
           Freelance Tattooer / Graphic Artist 2005 - 2015
-        </h6>
+        </h3>
         <p className="aboutContent">
           For 20 years, I've brought stories to life through my work in 2D and
           3D design, perfecting my technical craft in the art form of tattooing
           and custom personalized designing.
         </p>
         <header className="work">Business Owner:</header>
-        <h6 className="jobTag">
+        <h3 className="jobTag">
           Wild Wind Tattoo, Owner / Operator 2015 - 2024
-        </h6>
+        </h3>
         <p className="aboutContent">
           Managing my own small business for 10 years taught me the ropes of
           client relations, project management, and strategic planning.
         </p>
         <header className="work">Fullstack Developer:</header>
-        <h6 className="jobTag">
+        <h3 className="jobTag">
           Fullstack Academy 1/24 - 4/24 focused on front / backend development,
           & databases.
-        </h6>
+        </h3>
         <p className="aboutContent">
           Today, I blend these experiences to build creative digital solutions.
           Whether leading a team, collaborating, or flying solo, I thrive on
           turning thoughtful concepts into functional realities.
         </p>
       </section>
-      <div className="aboutSection">
-        <h3 className="funFactsTitle">Fun Facts</h3>
+      <section className="aboutSection">
+        <h4 className="funFactsTitle">Fun Facts</h4>
         <ul className="list">
           <li className="listItem">
             <IoCheckmark className="checkmark" />
@@ -91,7 +91,7 @@ export default function About() {
             Crossed the finish line at the Chicago Marathon four times.
           </li>
         </ul>
-      </div>
+      </section>
     </article>
   );
 }
