@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa6";
 
@@ -7,6 +9,7 @@ import "../styling/carousel.css";
 import "../styling/work.css";
 
 export default function Work() {
+  const { ref, controls, sectionVariants } = useScrollAnimation();
   const [activeSlide, setActiveSlide] = useState(0);
 
   const handleNext = () => {
@@ -20,31 +23,39 @@ export default function Work() {
   };
 
   return (
-    <article id="work">
-      <div id="slide">{CarouselContent[activeSlide].content()}</div>
-      <section id="arrowSection">
-        <BsArrowLeftCircleFill
-          className="arrow arrow-left"
-          onClick={handleNext}
-        />{" "}
-        <div className="indicators">
-          {CarouselContent.map((item, index) => (
-            <FaCircle
-              key={index}
-              className={`indicator ${index === activeSlide ? "active" : ""}`}
-              onClick={() => setActiveSlide(index)}
-              style={{
-                color:
-                  index === activeSlide ? "rgb(162, 106, 105)" : "lightgrey",
-              }}
-            />
-          ))}
-        </div>
-        <BsArrowRightCircleFill
-          className="arrow arrow-right"
-          onClick={handleNext}
-        />
-      </section>
-    </article>
+    <motion.section
+      ref={ref}
+      className="work"
+      variants={sectionVariants}
+      initial="hidden"
+      animate={controls}
+    >
+      <article id="work">
+        <div id="slide">{CarouselContent[activeSlide].content()}</div>
+        <section id="arrowSection">
+          <BsArrowLeftCircleFill
+            className="arrow arrow-left"
+            onClick={handleNext}
+          />{" "}
+          <div className="indicators">
+            {CarouselContent.map((item, index) => (
+              <FaCircle
+                key={index}
+                className={`indicator ${index === activeSlide ? "active" : ""}`}
+                onClick={() => setActiveSlide(index)}
+                style={{
+                  color:
+                    index === activeSlide ? "rgb(162, 106, 105)" : "lightgrey",
+                }}
+              />
+            ))}
+          </div>
+          <BsArrowRightCircleFill
+            className="arrow arrow-right"
+            onClick={handleNext}
+          />
+        </section>
+      </article>
+    </motion.section>
   );
 }

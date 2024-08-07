@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./navbar.css";
 
@@ -12,6 +13,7 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const location = useLocation();
 
   useEffect(() => {
@@ -34,7 +36,7 @@ export default function Navbar() {
       <section id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
-          <p className="navItem">
+          <li className="navItem">
             <Link
               to="home"
               spy={true}
@@ -42,11 +44,16 @@ export default function Navbar() {
               offset={-100}
               duration={500}
               onClick={() => setMenuOpen(!menuOpen)}
+              className={activeSection === "home" ? "active" : ""}
+              onSetActive={() => setActiveSection("home")}
             >
               HOME
+              {activeSection === "home" ? (
+                <motion.div className="underline" layoutId="underline" />
+              ) : null}
             </Link>
-          </p>
-          <p className="navItem">
+          </li>
+          <li className="navItem">
             <Link
               to="work"
               spy={true}
@@ -54,22 +61,32 @@ export default function Navbar() {
               offset={0}
               duration={500}
               onClick={() => setMenuOpen(!menuOpen)}
+              className={activeSection === "work" ? "active" : ""}
+              onSetActive={() => setActiveSection("work")}
             >
               WORK
+              {activeSection === "work" ? (
+                <motion.div className="underline" layoutId="underline" />
+              ) : null}
             </Link>
-          </p>
-          <p className="navItem">
+          </li>
+          <li className="navItem">
             <Link
               to="about"
               spy={true}
               smooth={true}
-              offset={20}
+              offset={100}
               duration={500}
               onClick={() => setMenuOpen(!menuOpen)}
+              className={activeSection === "about" ? "active" : ""}
+              onSetActive={() => setActiveSection("about")}
             >
               ABOUT
+              {activeSection === "about" ? (
+                <motion.div className="underline" layoutId="underline" />
+              ) : null}
             </Link>
-          </p>
+          </li>
         </menu>
         <div className={`overlay ${menuOpen ? "active" : ""}`}></div>
       </section>

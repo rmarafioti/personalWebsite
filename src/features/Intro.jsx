@@ -1,10 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 import "../styling/intro.css";
 
 export default function Intro() {
+  const { ref, controls, sectionVariants } = useScrollAnimation();
+
   return (
-    <>
+    <motion.section
+      ref={ref}
+      className="home"
+      variants={sectionVariants}
+      initial="hidden"
+      animate={controls}
+    >
       <article id="home">
         <section id="homePhotoContainer">
           <img
@@ -33,6 +43,6 @@ export default function Intro() {
           </div>
         </section>
       </article>
-    </>
+    </motion.section>
   );
 }
