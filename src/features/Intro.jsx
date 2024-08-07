@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 import "../styling/intro.css";
 
 export default function Intro() {
+  const controls = useAnimation();
+  // Set up intersection observer to trigger animations
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.2 });
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 2, ease: "easeOut" },
+    },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, isInView]);
+
   return (
-    <>
+    <motion.section
+      ref={ref}
+      className="home"
+      variants={sectionVariants}
+      initial="hidden"
+      animate={controls}
+    >
       <article id="home">
         <section id="homePhotoContainer">
           <img
@@ -33,6 +62,6 @@ export default function Intro() {
           </div>
         </section>
       </article>
-    </>
+    </motion.section>
   );
 }

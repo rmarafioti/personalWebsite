@@ -15,6 +15,7 @@ nav {
 }
 
 .navItem a {
+  position: relative;
   color: rgb(117, 106, 187);
   font-size: 20px;
   font-weight: 500;
@@ -22,8 +23,13 @@ nav {
   padding: 0rem 1rem 0.5rem 1rem;
 }
 
-.navItem a.active {
-  border-bottom: 3px solid rgb(212, 196, 164);
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: rgb(212, 196, 164);
 }
 
 #headers {
