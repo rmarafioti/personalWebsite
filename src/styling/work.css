@@ -1,3 +1,6 @@
+#work {
+  padding-top: 7rem;
+}
 #projectBody {
   position: relative;
   width: 100%;
@@ -139,6 +142,9 @@
 @media (max-width: 736px) {
   .projectDescription {
     margin-left: 1rem;
+  }
+  #work {
+    padding-top: 3rem;
   }
 }
 
