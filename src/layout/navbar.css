@@ -12,6 +12,7 @@ nav {
 
 .menu {
   display: flex;
+  list-style-type: none;
 }
 
 .navItem a {
@@ -174,5 +175,8 @@ nav {
   }
   .menu.active + .overlay {
     display: block;
+  }
+  .underline {
+    display: none;
   }
 }

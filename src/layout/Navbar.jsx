@@ -36,7 +36,7 @@ export default function Navbar() {
       <section id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
-          <p className="navItem">
+          <li className="navItem">
             <Link
               to="home"
               spy={true}
@@ -52,8 +52,8 @@ export default function Navbar() {
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
             </Link>
-          </p>
-          <p className="navItem">
+          </li>
+          <li className="navItem">
             <Link
               to="work"
               spy={true}
@@ -69,8 +69,8 @@ export default function Navbar() {
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
             </Link>
-          </p>
-          <p className="navItem">
+          </li>
+          <li className="navItem">
             <Link
               to="about"
               spy={true}
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
             </Link>
-          </p>
+          </li>
         </menu>
         <div className={`overlay ${menuOpen ? "active" : ""}`}></div>
       </section>
