@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa6";
 
@@ -8,28 +9,8 @@ import "../styling/carousel.css";
 import "../styling/work.css";
 
 export default function Work() {
+  const { ref, controls, sectionVariants } = useScrollAnimation();
   const [activeSlide, setActiveSlide] = useState(0);
-  const controls = useAnimation();
-  // Set up intersection observer to trigger animations
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.2 });
-
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 2, ease: "easeOut" },
-    },
-  };
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [controls, isInView]);
 
   const handleNext = () => {
     setActiveSlide((prev) => (prev + 1) % CarouselContent.length);

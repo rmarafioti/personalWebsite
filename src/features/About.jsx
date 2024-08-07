@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import { IoCheckmark } from "react-icons/io5";
 import resume from "../images/resume.pdf";
 
@@ -12,28 +13,8 @@ import "../styling/about.css";
  */
 
 export default function About() {
+  const { ref, controls, sectionVariants } = useScrollAnimation();
   const [pdfWindow, setPdfWindow] = useState(null);
-  const controls = useAnimation();
-  // Set up intersection observer to trigger animations
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.2 });
-
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 2, ease: "easeOut" },
-    },
-  };
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [controls, isInView]);
 
   const openPdfInNewTab = () => {
     const newWindow = window.open(resume, "_blank");
