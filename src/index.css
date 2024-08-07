@@ -44,20 +44,8 @@ button,
   display: block;
 }
 
-button,
-.buttonWork a {
-  color: rgb(117, 106, 187);
-}
 
-button:hover,
-button:focus,
-.buttonWork a:hover,
-.buttonWork a:focus {
-  background-color: rgb(117, 106, 187);
-  color: white;
-}
-
-.buttonWork a:visited {
+.buttonWork a:visited, .button a:visited {
   color: inherit;
 }
 
