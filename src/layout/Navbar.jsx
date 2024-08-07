@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { useLocation } from "react-router-dom";
 
 import "./navbar.css";
+
 /**
  *
  * @component this file features the Navbar for the site which is displayed on every page of our site by importing it in the return of our Root file.
@@ -10,8 +11,7 @@ import "./navbar.css";
  */
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const [activeSection, setActiveSection] = React.useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -41,7 +41,6 @@ export default function Navbar() {
               smooth={true}
               offset={-100}
               duration={500}
-              onSetActive={() => setActiveSection("home")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               HOME
@@ -52,10 +51,8 @@ export default function Navbar() {
               to="work"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={0}
               duration={500}
-              className={activeSection === "work" ? "active" : ""}
-              onSetActive={() => setActiveSection("work")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               WORK
@@ -66,10 +63,8 @@ export default function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={20}
               duration={500}
-              className={activeSection === "about" ? "active" : ""}
-              onSetActive={() => setActiveSection("about")}
               onClick={() => setMenuOpen(!menuOpen)}
             >
               ABOUT
