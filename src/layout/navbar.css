@@ -15,6 +15,10 @@ nav {
   list-style-type: none;
 }
 
+.navItem {
+  cursor: pointer;
+}
+
 .navItem a {
   position: relative;
   color: rgb(117, 106, 187);

@@ -1,16 +1,17 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: left;
     padding-top: 7rem;
     margin-bottom: 2rem;
   }
 
  .headshot {
-    width: 300px;
+    width: 350px;
     height: auto;
+    margin-left: 4rem;
   }
 
   .aboutSection {
@@ -18,7 +19,7 @@
     font-size: 16px;
     line-height: 1.5;
     max-width: 480px;
-    margin: 0px 10px 10px 0px;
+    margin-bottom: 10px;
   }
 
   .skills {
@@ -42,7 +43,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 0px;
     max-width: 480px;
     padding-bottom: 10px;
   }
@@ -53,10 +53,6 @@
 
   #topWorkTitle {
     padding-top: 0px;
-  }
-  
-  .jobTag {
-    margin-bottom: 0;
   }
   
   .aboutContent {
@@ -96,11 +92,11 @@
 
   @media (max-width: 970px) {
     .about {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       padding-top: 6rem;
-      margin: 2rem 1rem 2rem 1rem;
+      margin: 0rem 1rem 0rem 1rem;
+    }
+    .headshot {
+      margin: 0rem;
     }
     .resumeButton {
       width: 100%;

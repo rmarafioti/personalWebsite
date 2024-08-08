@@ -19,7 +19,7 @@ export default function Work() {
       duration: 500,
       delay: 0,
       smooth: "easeInOutQuart",
-      offset: -10, // Adjust offset if needed for header
+      offset: -10,
     });
   };
 

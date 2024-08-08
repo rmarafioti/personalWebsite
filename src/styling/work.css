@@ -8,17 +8,19 @@
   flex-direction: row;
   justify-content: center;
   margin-top: .5rem;
-  margin-bottom: 20px;
 }
 
 .projectDescription {
-  margin-top: 1rem;
-  margin-right: 1rem;
-  padding: 0.5rem;
+ margin: 1rem 1rem 0rem 1rem;
 }
 
 #projectImage {
   width: 400px;
+}
+
+.buttonWork {
+  width: 400px;
+  margin-bottom: 1rem;
 }
 
 .projectContent {
@@ -34,11 +36,13 @@
 
 .projectParagraph {
   justify-content: start;
+  font-size: 16px;
+  font-weight: 500;
   text-align: left;
   margin-bottom: 1rem;
   margin-right: 1rem;
   max-width: 480px;
-  padding-top: 10px;
+  
 }
 
 .projectHeader,
@@ -74,16 +78,11 @@
   border-bottom: 1px solid rgb(212, 196, 164);
 }
 
-.buttonSection {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 20px;
-}
-
 .projectParagraphNote {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgb(212, 196, 164);
+  font-size: 16px;
+  font-weight: normal;
+  width: 480px;
+  padding-bottom: 5px;
 }
 
 .popUpOverlay {
@@ -140,15 +139,18 @@
 }
 
 @media (max-width: 736px) {
-  .projectDescription {
-    margin-left: 1rem;
-  }
   #work {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
 }
 
 @media (max-width: 980px) {
+  #work {
+  
+    width: 100%;
+  }
+
+
   #projectBody {
     margin-top: 2rem;
     flex-direction: column;
@@ -157,7 +159,14 @@
   #projectImage {
     width: 300px;
   }
+  .buttonWork {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   .popUpContent {
     margin-top: 6rem;
+  }
+  .projectParagraphNote {
+    width: 100%;
   }
 }

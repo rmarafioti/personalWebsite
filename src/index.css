@@ -23,20 +23,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-button,
-.buttonWork {
-  background-color: wheat;
+.buttonWork, .resumeButton {
+  background-color: rgb(237, 234, 234);
   border-radius: 10px;
   color: rgb(117, 106, 187);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  width: 250px;
   padding: 10px 20px;
   margin-right: 10px;
   border: none;
   cursor: pointer;
 }
 
-button,
-.buttonWork a {
+.buttonWork,
+.buttonWork a, .resumeButton {
   text-decoration: none;
   font-size: 16px;
   font-weight: normal;
@@ -44,10 +44,10 @@ button,
   display: block;
 }
 
-
-.buttonWork a:visited, .button a:visited {
-  color: inherit;
+.buttonWork:hover {
+  background-color: wheat;
 }
+
 
 
 
