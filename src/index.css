@@ -23,44 +23,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-button,
-.buttonWork {
-  background-color: wheat;
+.buttonWork,
+.resumeButton {
+  background-color: rgb(237, 234, 234);
   border-radius: 10px;
   color: rgb(117, 106, 187);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   padding: 10px 20px;
-  margin-right: 10px;
   border: none;
   cursor: pointer;
 }
 
-button,
-.buttonWork a {
+.buttonWork,
+.buttonWork a,
+.resumeButton {
   text-decoration: none;
   font-size: 16px;
   font-weight: normal;
-  color: inherit;
+  color: rgb(117, 106, 187);
   display: block;
 }
 
-button,
-.buttonWork a {
-  color: rgb(117, 106, 187);
+.buttonWork:hover,
+.resumeButton:hover {
+  background-color: wheat;
 }
-
-button:hover,
-button:focus,
-.buttonWork a:hover,
-.buttonWork a:focus {
-  background-color: rgb(117, 106, 187);
-  color: white;
-}
-
-.buttonWork a:visited {
-  color: inherit;
-}
-
-
-
-

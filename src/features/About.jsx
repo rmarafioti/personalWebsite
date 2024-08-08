@@ -29,7 +29,7 @@ export default function About() {
       initial="hidden"
       animate={controls}
     >
-      <article className="about">
+      <article>
         <img
           className="headshot"
           src="https://res.cloudinary.com/dzpne110u/image/upload/v1713531473/personalWebsite/webShot_in9bq6.png"
@@ -46,7 +46,9 @@ export default function About() {
           </button>
         </div>
         <section className="aboutSection">
-          <h2 className="title">EXPERIENCE</h2>
+          <h2 className="title" id="experience">
+            EXPERIENCE
+          </h2>
           <header className="work" id="topWorkTitle">
             RISD Illustration Graduate & Visual Artist:{" "}
           </header>
