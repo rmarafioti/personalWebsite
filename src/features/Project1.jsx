@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { brainFlexContent } from "./ProjectContent";
 import Popup from "../hooks/PopUp";
 import usePopUp from "../hooks/usePopUp";
+import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 
 export default function Project1() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
@@ -36,12 +37,13 @@ export default function Project1() {
           <p className="projectContent">
             HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
           </p>
-          <button
-            className="buttonWork"
+          <div
+            className="devProcess"
             onClick={() => openPopUp(brainFlexContent)}
           >
-            DEVELOPMENT PROCESS
-          </button>
+            VIEW DEVELOPMENT PROCESS
+            <HiMagnifyingGlassPlus className="magnify" />
+          </div>
           <button className="buttonWork">
             <a target="_blank" href="https://github.com/Portals-Team/Game">
               BRAINFLEX GITHUB REPO

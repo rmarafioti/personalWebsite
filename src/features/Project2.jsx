@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { bookBuddyContent } from "./ProjectContent";
 import Popup from "../hooks/PopUp";
 import usePopUp from "../hooks/usePopUp";
+import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 
 export default function Project2() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
@@ -36,12 +37,13 @@ export default function Project2() {
           </p>
           <p>Created With:</p>
           <p className="projectContent">HTML, CSS, JAVASCRIPT, REACT & REDUX</p>
-          <button
-            className="buttonWork"
+          <div
+            className="devProcess"
             onClick={() => openPopUp(bookBuddyContent)}
           >
-            DEVELOPMENT PROCESS
-          </button>
+            VIEW DEVELOPMENT PROCESS
+            <HiMagnifyingGlassPlus className="magnify" />
+          </div>
           <button className="buttonWork">
             <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
               BOOK BUDDY GITHUB REPO

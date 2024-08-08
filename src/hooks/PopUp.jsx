@@ -5,7 +5,7 @@ const Popup = ({ isOpen, close, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="popUpOverlay" onClick={close}>
+    <div className="popUpOverlay">
       <div className="popUpContent" onClick={(e) => e.stopPropagation()}>
         <div id="topPopUpSection">
           <h3 className="popUpHeaderTop">App Outline</h3>

@@ -29,9 +29,7 @@
   border-radius: 10px;
   color: rgb(117, 106, 187);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  width: 250px;
   padding: 10px 20px;
-  margin-right: 10px;
   border: none;
   cursor: pointer;
 }
