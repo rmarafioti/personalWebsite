@@ -1,5 +1,4 @@
 import React from "react";
-import { SlClose } from "react-icons/sl";
 
 export const brainFlexContent = (
   <section id="projectSketches">

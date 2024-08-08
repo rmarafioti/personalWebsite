@@ -72,6 +72,7 @@
 }
 
 .popUpHeaderTop {
+  color: rgb(117, 106, 187);
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -85,6 +86,7 @@
 }
 
 #closeButton {
+  color: rgb(117, 106, 187);
   font-size: 32px;
 }
 
@@ -115,13 +117,11 @@
 }
 
 .popUpContent {
-  margin-top: 9rem;
   max-width: 90%;
   max-height: 90vh;
   object-fit: contain;
   display: block;
   background-color: white;
-  border-radius: 10px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -174,9 +174,6 @@
   .buttonWork {
     width: 100%;
     margin-bottom: 1rem;
-  }
-  .popUpContent {
-    margin-top: 6rem;
   }
   .projectParagraphNote {
     width: 100%;
