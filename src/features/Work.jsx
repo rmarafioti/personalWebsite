@@ -43,12 +43,9 @@ export default function Work() {
       animate={controls}
     >
       <article id="work">
-        <div id="slide">{CarouselContent[activeSlide].content()}</div>
+        <div>{CarouselContent[activeSlide].content()}</div>
         <section id="arrowSection">
-          <BsArrowLeftCircleFill
-            className="arrow arrow-left"
-            onClick={handleNext}
-          />{" "}
+          <BsArrowLeftCircleFill className="arrow" onClick={handleNext} />{" "}
           <div className="indicators">
             {CarouselContent.map((item, index) => (
               <FaCircle
@@ -65,10 +62,7 @@ export default function Work() {
               />
             ))}
           </div>
-          <BsArrowRightCircleFill
-            className="arrow arrow-right"
-            onClick={handleNext}
-          />
+          <BsArrowRightCircleFill className="arrow" onClick={handleNext} />
         </section>
       </article>
     </motion.section>

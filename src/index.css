@@ -23,7 +23,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.buttonWork, .resumeButton {
+.buttonWork,
+.resumeButton {
   background-color: rgb(237, 234, 234);
   border-radius: 10px;
   color: rgb(117, 106, 187);
@@ -36,19 +37,16 @@
 }
 
 .buttonWork,
-.buttonWork a, .resumeButton {
+.buttonWork a,
+.resumeButton {
   text-decoration: none;
   font-size: 16px;
   font-weight: normal;
-  color: inherit;
+  color: rgb(117, 106, 187);
   display: block;
 }
 
-.buttonWork:hover {
+.buttonWork:hover,
+.resumeButton:hover {
   background-color: wheat;
 }
-
-
-
-
-

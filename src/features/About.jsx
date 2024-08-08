@@ -46,7 +46,9 @@ export default function About() {
           </button>
         </div>
         <section className="aboutSection">
-          <h2 className="title">EXPERIENCE</h2>
+          <h2 className="title" id="experience">
+            EXPERIENCE
+          </h2>
           <header className="work" id="topWorkTitle">
             RISD Illustration Graduate & Visual Artist:{" "}
           </header>

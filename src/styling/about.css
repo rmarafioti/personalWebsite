@@ -1,104 +1,108 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding-top: 7rem;
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+}
 
- .headshot {
-    width: 350px;
-    height: auto;
-    margin-left: 4rem;
-  }
+.headshot {
+  width: 350px;
+  height: auto;
+  margin-left: 4rem;
+}
 
-  .aboutSection {
-    font-weight: lighter;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 480px;
-    margin-bottom: 10px;
-  }
+.aboutSection {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 480px;
+  margin-bottom: 10px;
+}
 
-  .skills {
-    margin-bottom: 10px;
-  }
+.skills {
+  margin-bottom: 10px;
+}
 
+.resumeButton {
+  width: 480px;
+}
+
+.title {
+  font-size: 26px;
+  color: rgb(117, 106, 187);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 10px 0px 10px 0px;
+}
+
+#experience {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.aboutContent,
+.jobTag {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 480px;
+  padding-bottom: 10px;
+}
+
+.work {
+  padding-top: 15px;
+}
+
+#topWorkTitle {
+  padding-top: 0px;
+}
+
+.aboutContent {
+  border-bottom: 1px solid rgb(212, 196, 164);
+}
+
+.jobTag,
+.listItem {
+  color: rgba(152, 140, 115, 0.808);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.listItem {
+  display: flex;
+  font-style: normal;
+  padding-bottom: 10px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.funFactsTitle {
+  color: rgb(117, 106, 187);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.checkmark {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 6rem;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .headshot {
+    margin: 0rem;
+  }
   .resumeButton {
-    width: 480px;
+    width: 100%;
   }
-
-  .title {
-    font-size: 26px;
-    color: rgb(117, 106, 187);
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 10px 0px 10px 0px;
-  }
-  
-  .aboutContent,
-  .jobTag {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 480px;
-    padding-bottom: 10px;
-  }
-
-  .work {
-    padding-top: 15px;
-  }
-
-  #topWorkTitle {
-    padding-top: 0px;
-  }
-  
-  .aboutContent {
-    border-bottom: 1px solid rgb(212, 196, 164);
-  }
-    
-  .jobTag,
-  .listItem {
-    color: rgba(152, 140, 115, 0.808);
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  .listItem {
-    display: flex;
-    font-style: normal;
-    padding-bottom: 10px;
-  }
-  
-  .list {
-    list-style-type: none;
-  }
-  
-  .funFactsTitle {
-    color: rgb(117, 106, 187);
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 500;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  .checkmark {
-    font-size: 20px;
-  }
-
-  @media (max-width: 970px) {
-    .about {
-      padding-top: 6rem;
-      margin: 0rem 1rem 0rem 1rem;
-    }
-    .headshot {
-      margin: 0rem;
-    }
-    .resumeButton {
-      width: 100%;
-    }
-  }
+}

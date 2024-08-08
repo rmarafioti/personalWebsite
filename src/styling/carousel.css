@@ -1,50 +1,29 @@
-/*#carouselContainer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 65vh;
-  overflow-y: auto;
-}*/
-
-#slide {
-  position: relative;
-  overflow: hidden;
-  overflow-y: auto;
-}
-
 #arrowSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .arrow {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: rgb(117, 106, 187);
   cursor: pointer;
 }
 
-.arrow-left {
-  left: 1rem;
-}
-
-.arrow-right {
-  right: 1rem;
-}
-
 .indicators {
   display: flex;
-  margin: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 .indicator {
-  width: .5rem; /* Set width */
-  height: .5rem; /* Set height */
-  border-radius: 50%; /* Make it a circle */
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
   border: none;
   outline: none;
-  margin: 0 0.2rem;
+  margin: 0rem 0.2rem 0rem 0.2rem;
   cursor: pointer;
 }
