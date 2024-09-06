@@ -14,17 +14,49 @@ export default function Project2() {
           <div id="imageContainer">
             <img
               id="projectImage"
-              src=""
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1725586812/personalWebsite/wildWindLandingPage2_j1b9b8.png"
               alt="image of landing page for project"
             />
           </div>
         </div>
         <section className="projectDescription">
-          <h1 className="projectHeader">Wild Wind Tattoo: business website</h1>
+          <h1 className="projectHeader">Wild Wind Tattoo Website</h1>
           <p className="projectContent">
-            Front-end developed app using an external Stripe API and token
-            authentication
+            Fully responsive custom website built using the Next.js, the site
+            features SEO customization, ensuring optimal search engine
+            performance.
           </p>
+          <p>Features:</p>
+          <ul>
+            <li>
+              <p>Email.js Integration</p>
+              <p className="projectContent">
+                A custom contact form streamlines communication and appointment
+                booking.
+              </p>
+            </li>
+            <li>
+              <p>Stripe API</p>
+              <p className="projectContent">
+                Enables easy purchase of gift certificates, with potential for
+                future online store expansion.
+              </p>
+            </li>
+            <li>
+              <p>DocuSign Integration</p>
+              <p className="projectContent">
+                Electronic waivers reduce paper waste and improve the client
+                experience.
+              </p>
+            </li>
+            <li>
+              <p>Accessibility & Performance</p>
+              <p className="projectContent">
+                Achieved perfect scores for SEO and Accessibility with
+                Lighthouse, and zero accessibility issues with Axe DevTools.
+              </p>
+            </li>
+          </ul>
           <p className="projectParagraph"></p>
           <p>Created With:</p>
           <p className="projectContent">HTML, CSS, JAVASCRIPT, NEXT.JS</p>
@@ -48,9 +80,6 @@ export default function Project2() {
               VISIT WEBSITE
             </a>
           </button>
-          {/*<p className="projectParagraphNote">
-            *NOTE: Project may take a minute to load, thanks for your patience
-          </p>*/}
         </section>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>
