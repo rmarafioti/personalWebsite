@@ -26,37 +26,37 @@ export default function Project2() {
             features SEO customization, ensuring optimal search engine
             performance.
           </p>
-          <p>Features:</p>
-          <ul>
-            <li>
+          <h2 className="projectHeader">Features:</h2>
+          <section>
+            <div>
               <p>Email.js Integration</p>
               <p className="projectContent">
                 A custom contact form streamlines communication and appointment
                 booking.
               </p>
-            </li>
-            <li>
+            </div>
+            <div>
               <p>Stripe API</p>
               <p className="projectContent">
                 Enables easy purchase of gift certificates, with potential for
                 future online store expansion.
               </p>
-            </li>
-            <li>
+            </div>
+            <div>
               <p>DocuSign Integration</p>
               <p className="projectContent">
                 Electronic waivers reduce paper waste and improve the client
                 experience.
               </p>
-            </li>
-            <li>
+            </div>
+            <div>
               <p>Accessibility & Performance</p>
               <p className="projectContent">
                 Achieved perfect scores for SEO and Accessibility with
                 Lighthouse, and zero accessibility issues with Axe DevTools.
               </p>
-            </li>
-          </ul>
+            </div>
+          </section>
           <p className="projectParagraph"></p>
           <p>Created With:</p>
           <p className="projectContent">HTML, CSS, JAVASCRIPT, NEXT.JS</p>
