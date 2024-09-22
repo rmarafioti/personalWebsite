@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { wildWindContent } from "./ProjectContent";
 import Popup from "../hooks/PopUp";
 import usePopUp from "../hooks/usePopUp";
+import { TbPointFilled } from "react-icons/tb";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
+
+import "../styling/project3.css";
 
 export default function Project2() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
@@ -13,8 +16,8 @@ export default function Project2() {
         <div>
           <div id="imageContainer">
             <img
-              id="projectImage"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1725586812/personalWebsite/wildWindLandingPage2_j1b9b8.png"
+              id="projectImageWWT"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1726971932/wildWindSite/screencapture-wildwindtattoo-2024-09-21-21_23_34-edit_wttdum.png"
               alt="image of landing page for project"
             />
           </div>
@@ -26,37 +29,49 @@ export default function Project2() {
             features SEO customization, ensuring optimal search engine
             performance.
           </p>
-          <p>Features:</p>
-          <ul>
-            <li>
-              <p>Email.js Integration</p>
+          <h2 id="features">Features:</h2>
+          <section>
+            <div>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Email.js Integration
+              </p>
               <p className="projectContent">
                 A custom contact form streamlines communication and appointment
                 booking.
               </p>
-            </li>
-            <li>
-              <p>Stripe API</p>
+            </div>
+            <div>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Stripe API
+              </p>
               <p className="projectContent">
                 Enables easy purchase of gift certificates, with potential for
                 future online store expansion.
               </p>
-            </li>
-            <li>
-              <p>DocuSign Integration</p>
+            </div>
+            <div>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                DocuSign Integration
+              </p>
               <p className="projectContent">
                 Electronic waivers reduce paper waste and improve the client
                 experience.
               </p>
-            </li>
-            <li>
-              <p>Accessibility & Performance</p>
+            </div>
+            <div>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Accessibility & Performance
+              </p>
               <p className="projectContent">
                 Achieved perfect scores for SEO and Accessibility with
                 Lighthouse, and zero accessibility issues with Axe DevTools.
               </p>
-            </li>
-          </ul>
+            </div>
+          </section>
           <p className="projectParagraph"></p>
           <p>Created With:</p>
           <p className="projectContent">HTML, CSS, JAVASCRIPT, NEXT.JS</p>

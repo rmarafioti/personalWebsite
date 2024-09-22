@@ -1,0 +1,23 @@
+#features {
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+.featureHeaders {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#projectImageWWT {
+    width: 300px;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    #projectImageWWT {
+        margin-right: 0rem;
+      }
+  }
