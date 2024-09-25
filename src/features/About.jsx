@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import { IoCheckmark } from "react-icons/io5";
-import resume from "../images/resume.pdf";
+import richMarafiotiResume from "../images/richMarafiotiResume.pdf";
 
 import "../styling/about.css";
 
@@ -17,7 +17,7 @@ export default function About() {
   const [pdfWindow, setPdfWindow] = useState(null);
 
   const openPdfInNewTab = () => {
-    const newWindow = window.open(resume, "_blank");
+    const newWindow = window.open(richMarafiotiResume, "_blank");
     setPdfWindow(newWindow);
   };
 
