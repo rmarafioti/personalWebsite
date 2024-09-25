@@ -75,5 +75,23 @@ export const wildWindContent = (
         alt="screen shot of axe dev tools accessibility rating"
       />
     </div>
+    <div id="sketchContainer">
+      <img
+        src="https://res.cloudinary.com/dzpne110u/image/upload/v1727271730/personalWebsite/Screen_Shot_2024-09-24_at_10.16.52_AM_oku6y3.png"
+        alt="screen shot of axe dev tools accessibility rating"
+      />
+    </div>
+    <div id="sketchContainer">
+      <img
+        src="https://res.cloudinary.com/dzpne110u/image/upload/v1727271738/personalWebsite/Screen_Shot_2024-09-24_at_10.20.24_AM_qj8hn3.png"
+        alt="screen shot of axe dev tools accessibility rating"
+      />
+    </div>
+    <div id="sketchContainer">
+      <img
+        src="https://res.cloudinary.com/dzpne110u/image/upload/v1727271746/personalWebsite/Screen_Shot_2024-09-24_at_10.21.10_AM_geyrci.png"
+        alt="screen shot of axe dev tools accessibility rating"
+      />
+    </div>
   </section>
 );
