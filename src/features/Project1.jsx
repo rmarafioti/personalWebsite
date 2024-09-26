@@ -39,7 +39,6 @@ export default function Project1() {
                 As users answer questions correctly, a blurred image and
                 corresponding answer word are incrementally revealed.
               </p>
-
               <p className="featureHeaders">
                 <TbPointFilled />
                 Token-Based Authentication
@@ -50,7 +49,6 @@ export default function Project1() {
                 where they left off or track if they’ve already played the daily
                 quiz.
               </p>
-
               <p className="featureHeaders">
                 <TbPointFilled />
                 Dynamic Quiz Generation
@@ -60,7 +58,6 @@ export default function Project1() {
                 answer words to randomly generate a daily quiz based on the
                 user’s chosen topic.
               </p>
-
               <p className="featureHeaders">
                 <TbPointFilled />
                 Knowledge Enrichment and Competition
