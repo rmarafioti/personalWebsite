@@ -13,7 +13,15 @@ export default function Project2() {
   return (
     <>
       <article id="projectBody">
-        <div>
+        <h1 className="projectHeader" id="contentHeader">
+          Wild Wind Tattoo Website
+        </h1>
+        <p className="projectContent" id="contentTag">
+          Fully responsive custom website built using the Next.js, the site
+          features SEO customization, ensuring optimal search engine
+          performance.
+        </p>
+        <section className="contentSection">
           <div id="imageContainer">
             <img
               id="projectImageWWT"
@@ -21,58 +29,43 @@ export default function Project2() {
               alt="image of landing page for project"
             />
           </div>
-        </div>
+        </section>
         <section className="projectDescription">
-          <h1 className="projectHeader">Wild Wind Tattoo Website</h1>
-          <p className="projectContent">
-            Fully responsive custom website built using the Next.js, the site
-            features SEO customization, ensuring optimal search engine
-            performance.
-          </p>
           <h2 id="features">Features:</h2>
-          <section>
-            <div>
-              <p className="featureHeaders">
-                <TbPointFilled />
-                Email.js Integration
-              </p>
-              <p className="projectContent">
-                A custom contact form streamlines communication and appointment
-                booking.
-              </p>
-            </div>
-            <div>
-              <p className="featureHeaders">
-                <TbPointFilled />
-                Stripe API
-              </p>
-              <p className="projectContent">
-                Enables easy purchase of gift certificates, with potential for
-                future online store expansion.
-              </p>
-            </div>
-            <div>
-              <p className="featureHeaders">
-                <TbPointFilled />
-                DocuSign Integration
-              </p>
-              <p className="projectContent">
-                Electronic waivers reduce paper waste and improve the client
-                experience.
-              </p>
-            </div>
-            <div>
-              <p className="featureHeaders">
-                <TbPointFilled />
-                Accessibility & Performance
-              </p>
-              <p className="projectContent">
-                Achieved perfect scores for SEO and Accessibility with
-                Lighthouse, and zero accessibility issues with Axe DevTools.
-              </p>
-            </div>
+          <section className="featureContent">
+            <p className="featureHeaders">
+              <TbPointFilled />
+              Email.js Integration
+            </p>
+            <p className="projectContent">
+              A custom contact form streamlines communication and appointment
+              booking.
+            </p>
+            <p className="featureHeaders">
+              <TbPointFilled />
+              Stripe API
+            </p>
+            <p className="projectContent">
+              Enables easy purchase of gift certificates, with potential for
+              future online store expansion.
+            </p>
+            <p className="featureHeaders">
+              <TbPointFilled />
+              DocuSign Integration
+            </p>
+            <p className="projectContent">
+              Electronic waivers reduce paper waste and improve the client
+              experience.
+            </p>
+            <p className="featureHeaders">
+              <TbPointFilled />
+              Accessibility & Performance
+            </p>
+            <p className="projectContent">
+              Achieved perfect scores for SEO and Accessibility with Lighthouse,
+              and zero accessibility issues with Axe DevTools.
+            </p>
           </section>
-          <p className="projectParagraph"></p>
           <p>Created With:</p>
           <p className="projectContent">HTML, CSS, JAVASCRIPT, NEXT.JS</p>
           <div

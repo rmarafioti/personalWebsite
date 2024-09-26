@@ -13,7 +13,14 @@ export default function Project1() {
   return (
     <>
       <article id="projectBody">
-        <div>
+        <h1 className="projectHeader" id="contentHeader">
+          BrainFLEX:
+        </h1>
+        <p className="projectContent" id="contentTag">
+          A fully functional CRUD app with an internally built database & token
+          authentication
+        </p>
+        <section className="contentSection">
           <div id="imageContainer">
             <img
               id="projectImageWWT"
@@ -21,16 +28,9 @@ export default function Project1() {
               alt="image of landing page for project"
             />
           </div>
-        </div>
-        <section className="projectDescription">
-          <h1 className="projectHeader">BrainFLEX:</h1>
-          <p className="projectContent">
-            A fully functional CRUD app with an internally built database &
-            token authentication
-          </p>
-          <h2 id="features">Features:</h2>
-          <section>
-            <div>
+          <section className="projectDescription">
+            <h2 id="features">Features:</h2>
+            <section className="featureContent">
               <p className="featureHeaders">
                 <TbPointFilled />
                 Interactive Quiz Experience
@@ -39,8 +39,7 @@ export default function Project1() {
                 As users answer questions correctly, a blurred image and
                 corresponding answer word are incrementally revealed.
               </p>
-            </div>
-            <div>
+
               <p className="featureHeaders">
                 <TbPointFilled />
                 Token-Based Authentication
@@ -51,8 +50,7 @@ export default function Project1() {
                 where they left off or track if they’ve already played the daily
                 quiz.
               </p>
-            </div>
-            <div>
+
               <p className="featureHeaders">
                 <TbPointFilled />
                 Dynamic Quiz Generation
@@ -62,8 +60,7 @@ export default function Project1() {
                 answer words to randomly generate a daily quiz based on the
                 user’s chosen topic.
               </p>
-            </div>
-            <div>
+
               <p className="featureHeaders">
                 <TbPointFilled />
                 Knowledge Enrichment and Competition
@@ -72,32 +69,32 @@ export default function Project1() {
                 Daily quizzes come with fun facts and interactive elements to
                 enrich learning while users compete for the highest score.
               </p>
+            </section>
+            <p>Created With:</p>
+            <p className="projectContent">
+              HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
+            </p>
+            <div
+              className="devProcess"
+              onClick={() => openPopUp(brainFlexContent)}
+            >
+              VIEW DEVELOPMENT PROCESS
+              <HiMagnifyingGlassPlus className="magnify" />
             </div>
+            <button className="buttonWork">
+              <a target="_blank" href="https://github.com/Portals-Team/Game">
+                BRAINFLEX GITHUB REPO
+              </a>
+            </button>
+            <button className="buttonWork">
+              <a target="_blank" href="https://brainflex.onrender.com/">
+                VISIT BRAINFLEX
+              </a>
+            </button>
+            <p className="projectParagraphNote">
+              *NOTE: Project may take a minute to load, thanks for your patience
+            </p>
           </section>
-          <p>Created With:</p>
-          <p className="projectContent">
-            HTML, CSS, JAVASCRIPT, REACT, REDUX, EXPRESS, POSTMAN & PRISMA ORM
-          </p>
-          <div
-            className="devProcess"
-            onClick={() => openPopUp(brainFlexContent)}
-          >
-            VIEW DEVELOPMENT PROCESS
-            <HiMagnifyingGlassPlus className="magnify" />
-          </div>
-          <button className="buttonWork">
-            <a target="_blank" href="https://github.com/Portals-Team/Game">
-              BRAINFLEX GITHUB REPO
-            </a>
-          </button>
-          <button className="buttonWork">
-            <a target="_blank" href="https://brainflex.onrender.com/">
-              VISIT BRAINFLEX
-            </a>
-          </button>
-          <p className="projectParagraphNote">
-            *NOTE: Project may take a minute to load, thanks for your patience
-          </p>
         </section>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>

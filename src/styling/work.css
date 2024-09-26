@@ -4,7 +4,8 @@
 #projectBody {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 0.5rem;
@@ -29,8 +30,24 @@
   font-weight: bold;
   font-style: italic;
   line-height: 1.5;
-  max-width: 480px;
+  width: 480px;
   margin-bottom: 10px;
+}
+
+#contentHeader {
+  font-size: 40px;
+}
+
+#contentTag {
+  text-align: center;
+  font-size: 32px;
+  width: 700px;
+  margin-bottom: 0rem;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: row;
 }
 
 .projectParagraph {
@@ -163,6 +180,18 @@
     margin-top: 2rem;
     flex-direction: column;
     align-items: center;
+  }
+  #contentTag {
+    width: 100%;
+    font-size: 22px;
+  }
+  .contentSection {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .projectDescription, .projectContent {
+    width: 100%;
   }
   #projectImage {
     width: 300px;
