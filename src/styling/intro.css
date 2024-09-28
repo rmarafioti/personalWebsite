@@ -69,13 +69,13 @@
   #homePhoto {
     width: auto;
     display: block;
-    max-width: 320px;
+    max-width: 380px;
   }
   #welcomeLine {
-    font-size: 24px;
+    font-size: 40px;
   }
   .homeContentOne,
   .homeContentTwo {
-    font-size: 16px;
+    font-size: 20px;
   }
 }

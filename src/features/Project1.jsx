@@ -78,21 +78,21 @@ export default function Project1() {
               VIEW DEVELOPMENT PROCESS
               <HiMagnifyingGlassPlus className="magnify" />
             </div>
-            <button className="buttonWork">
-              <a target="_blank" href="https://github.com/Portals-Team/Game">
-                BRAINFLEX GITHUB REPO
-              </a>
-            </button>
-            <button className="buttonWork">
-              <a target="_blank" href="https://brainflex.onrender.com/">
-                VISIT BRAINFLEX
-              </a>
-            </button>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to load, thanks for your patience
-            </p>
           </section>
         </section>
+        <button className="buttonWork">
+          <a target="_blank" href="https://github.com/Portals-Team/Game">
+            BRAINFLEX GITHUB REPO
+          </a>
+        </button>
+        <button className="buttonWork">
+          <a target="_blank" href="https://brainflex.onrender.com/">
+            VISIT BRAINFLEX
+          </a>
+        </button>
+        <p className="projectParagraphNote">
+          *NOTE: Project may take a minute to load, thanks for your patience
+        </p>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}
