@@ -46,24 +46,24 @@ export default function Project2() {
               VIEW DEVELOPMENT PROCESS
               <HiMagnifyingGlassPlus className="magnify" />
             </div>
-            <button className="buttonWork">
-              <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
-                BOOK BUDDY GITHUB REPO
-              </a>
-            </button>
-            <button className="buttonWork">
-              <a
-                target="_blank"
-                href="https://main--courageous-pithivier-3563c9.netlify.app/"
-              >
-                VISIT BOOK BUDDY
-              </a>
-            </button>
-            <p className="projectParagraphNote">
-              *NOTE: Project may take a minute to load, thanks for your patience
-            </p>
           </section>
         </section>
+        <button className="buttonWork">
+          <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
+            BOOK BUDDY GITHUB REPO
+          </a>
+        </button>
+        <button className="buttonWork">
+          <a
+            target="_blank"
+            href="https://main--courageous-pithivier-3563c9.netlify.app/"
+          >
+            VISIT BOOK BUDDY
+          </a>
+        </button>
+        <p className="projectParagraphNote">
+          *NOTE: Project may take a minute to load, thanks for your patience
+        </p>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}
