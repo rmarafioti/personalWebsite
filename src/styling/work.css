@@ -4,14 +4,20 @@
 #projectBody {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 0.5rem;
 }
 
 .projectDescription {
-  margin: 1rem 1rem 0rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.featureHeaders {
+  display: flex;
+  align-items: flex-start;
 }
 
 #projectImage {
@@ -29,8 +35,26 @@
   font-weight: bold;
   font-style: italic;
   line-height: 1.5;
-  max-width: 480px;
-  margin-bottom: 10px;
+  margin-left: 1rem;
+  width: 480px;
+  margin-bottom: 1rem;
+}
+
+#contentHeader {
+  font-size: 40px;
+}
+
+#contentTag {
+  text-align: center;
+  font-size: 32px;
+  width: 700px;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: row;
 }
 
 .projectParagraph {
@@ -164,18 +188,40 @@
     flex-direction: column;
     align-items: center;
   }
+  #contentHeader {
+    text-align: center;
+  }
+  #contentTag {
+    width: 100%;
+    font-size: 22px;
+  }
+  .contentSection {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .projectContent, #contentTag {
+    width: 90%;
+  }
   #projectImage {
     width: 300px;
+  }
+  .devProcess {
+    display: flex;
+    justify-content: center;
   }
   .magnify {
     border: 2px solid wheat;
     background-color: wheat;
   }
   .buttonWork {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1rem;
   }
   .projectParagraphNote {
-    width: 100%;
+    width: 90%;
   }
 }
