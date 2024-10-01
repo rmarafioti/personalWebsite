@@ -17,9 +17,8 @@ export default function Project2() {
           Wild Wind Tattoo Website
         </h1>
         <p className="projectContent" id="contentTag">
-          Fully responsive custom website built using the Next.js, the site
-          features SEO customization, ensuring optimal search engine
-          performance.
+          Fully responsive custom website built using Next.js, the site features
+          SEO customization, ensuring optimal search engine performance.
         </p>
         <section className="contentSection">
           <div id="imageContainer">
