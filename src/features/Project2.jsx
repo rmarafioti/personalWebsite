@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { bookBuddyContent } from "./ProjectContent";
+import { wildWindContent } from "./ProjectContent";
 import Popup from "../hooks/PopUp";
 import usePopUp from "../hooks/usePopUp";
+import { TbPointFilled } from "react-icons/tb";
 import { HiMagnifyingGlassPlus } from "react-icons/hi2";
+
+import "../styling/project3.css";
 
 export default function Project2() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
@@ -11,37 +14,62 @@ export default function Project2() {
     <>
       <article id="projectBody">
         <h1 className="projectHeader" id="contentHeader">
-          Book Buddy:
+          Wild Wind Tattoo Website
         </h1>
         <p className="projectContent" id="contentTag">
-          Front-end developed app using an external API and token authentication
+          Fully responsive custom website built using Next.js, the site features
+          SEO customization, ensuring optimal search engine performance.
         </p>
         <section className="contentSection">
           <div id="imageContainer">
             <img
-              id="projectImage"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1713533942/personalWebsite/Untitled_Artwork_3_fxzlcc.png"
+              id="projectImageWWT"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1726971932/wildWindSite/screencapture-wildwindtattoo-2024-09-21-21_23_34-edit_wttdum.png"
               alt="image of landing page for project"
             />
           </div>
+
           <section className="projectDescription">
-            <p className="projectParagraph">
-              Welcome to BookBuddy, an online public library service that offers
-              a seamless browsing experience. This platform allows users to
-              navigate effortlessly through a collection of books from an
-              external database. BookBuddy enables searches by author or title
-              and in real-time keeps track of books that are available for
-              checkout. Additionally, each user’s account maintains a record of
-              their checked-out books and provides functionalities to return
-              them, ensuring a comprehensive and user-friendly service.
-            </p>
+            <h2 id="features">Features:</h2>
+            <section className="featureContent">
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Email.js Messaging
+              </p>
+              <p className="projectContent">
+                A custom contact form streamlines communication and appointment
+                booking.
+              </p>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Stripe API
+              </p>
+              <p className="projectContent">
+                Enables easy purchase of gift certificates, with potential for
+                future online store expansion.
+              </p>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                DocuSign Integration
+              </p>
+              <p className="projectContent">
+                Electronic waivers reduce paper waste and improve the client
+                experience.
+              </p>
+              <p className="featureHeaders">
+                <TbPointFilled />
+                Accessibility & Performance
+              </p>
+              <p className="projectContent">
+                Achieved perfect scores for SEO and Accessibility with
+                Lighthouse, and zero accessibility issues with Axe DevTools.
+              </p>
+            </section>
             <p>Created With:</p>
-            <p className="projectContent">
-              HTML, CSS, JAVASCRIPT, REACT & REDUX
-            </p>
+            <p className="projectContent">HTML, CSS, JAVASCRIPT, NEXT.JS</p>
             <div
               className="devProcess"
-              onClick={() => openPopUp(bookBuddyContent)}
+              onClick={() => openPopUp(wildWindContent)}
             >
               VIEW DEVELOPMENT PROCESS
               <HiMagnifyingGlassPlus className="magnify" />
@@ -49,21 +77,15 @@ export default function Project2() {
           </section>
         </section>
         <button className="buttonWork">
-          <a target="_blank" href="https://github.com/rmarafioti/bookBuddy">
-            BOOK BUDDY GITHUB REPO
+          <a target="_blank" href="https://github.com/rmarafioti/wildWindNext">
+            GITHUB REPO
           </a>
         </button>
         <button className="buttonWork">
-          <a
-            target="_blank"
-            href="https://main--courageous-pithivier-3563c9.netlify.app/"
-          >
-            VISIT BOOK BUDDY
+          <a target="_blank" href="https://wildwindtattoo.com">
+            VISIT WEBSITE
           </a>
         </button>
-        <p className="projectParagraphNote">
-          *NOTE: Project may take a minute to load, thanks for your patience
-        </p>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}

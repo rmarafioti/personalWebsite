@@ -58,7 +58,7 @@ export default function Navbar() {
               to="work"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
               onClick={() => setMenuOpen(!menuOpen)}
               className={activeSection === "work" ? "active" : ""}

@@ -28,12 +28,6 @@ export default function Work() {
     scrollToTop();
   };
 
-  /*const handlePrev = () => {
-    setActiveSlide(
-      (prev) => (prev - 1 + CarouselContent.length) % CarouselContent.length
-    );
-  };*/
-
   return (
     <motion.section
       ref={ref}

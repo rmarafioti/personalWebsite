@@ -81,18 +81,18 @@ export default function Project1() {
           </section>
         </section>
         <button className="buttonWork">
-          <a target="_blank" href="https://github.com/Portals-Team/Game">
+          <a target="_blank" href="https://github.com/rmarafioti/brainFlex">
             BRAINFLEX GITHUB REPO
           </a>
         </button>
         <button className="buttonWork">
-          <a target="_blank" href="https://brainflex.onrender.com/">
+          <a
+            target="_blank"
+            href="https://brainflex-f6df41499e88.herokuapp.com/"
+          >
             VISIT BRAINFLEX
           </a>
         </button>
-        <p className="projectParagraphNote">
-          *NOTE: Project may take a minute to load, thanks for your patience
-        </p>
       </article>
       <Popup isOpen={popUp} close={closePopUp}>
         {popUpContent}

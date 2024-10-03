@@ -26,25 +26,6 @@ export const brainFlexContent = (
   </section>
 );
 
-export const bookBuddyContent = (
-  <section id="projectSketches">
-    <div id="sketchContainer">
-      <img
-        src="https://res.cloudinary.com/dzpne110u/image/upload/v1713200554/personalWebsite/bookBuddyWireframe_ewlioy.jpg"
-        alt="website blueprint"
-      />
-    </div>
-    <h3 className="popUpHeader">Wireframe</h3>
-    <div className="wireFrameContainer">
-      <img
-        src="https://res.cloudinary.com/dzpne110u/image/upload/v1723128878/personalWebsite/bBwF_gfwxwx.png"
-        id="wireFrameImage"
-        alt="wireframe images for website project"
-      />
-    </div>
-  </section>
-);
-
 export const wildWindContent = (
   <section id="projectSketches">
     <div id="thumbnailContainer">
