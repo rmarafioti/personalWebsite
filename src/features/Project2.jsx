@@ -50,7 +50,7 @@ export default function Project2() {
               </p>
               <p className="featureHeaders">
                 <TbPointFilled />
-                DocuSign Integration
+                Custom Release Form
               </p>
               <p className="projectContent">
                 Electronic waivers reduce paper waste and improve the client
