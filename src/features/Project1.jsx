@@ -24,7 +24,7 @@ export default function Project1() {
           <div id="imageContainer">
             <img
               id="projectImageWWT"
-              src="https://res.cloudinary.com/dzpne110u/image/upload/v1727273494/personalWebsite/screencapture-brain-flex-vercel-app-2024-09-25-09_10_38-edit_dw7wnu.png"
+              src="https://res.cloudinary.com/dzpne110u/image/upload/v1728997805/personalWebsite/screencapture-brainflex-f6df41499e88-herokuapp-2024-10-15-08_08_12-edit_wtyxwa.png"
               alt="image of landing page for project"
             />
           </div>
