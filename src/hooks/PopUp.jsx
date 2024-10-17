@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import { SlClose } from "react-icons/sl";
 import ReactDOM from "react-dom";
 
+/**
+ *
+ * @component Popup contains the model for the pop up when it is active, disabling scrolling outside of the pop up window and allowing the pop up to live above the main document
+ *
+ */
 const Popup = ({ isOpen, close, children }) => {
   // Disable scrolling when the popup is open
   useEffect(() => {
