@@ -7,6 +7,10 @@ import { HiMagnifyingGlassPlus } from "react-icons/hi2";
 
 import "../styling/project3.css";
 
+/**
+ *
+ * @component features Project 2 displaying information, images, features and links for a user to learn about the project
+ */
 export default function Project2() {
   const { popUp, popUpContent, openPopUp, closePopUp } = usePopUp();
 

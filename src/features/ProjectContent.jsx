@@ -1,5 +1,6 @@
 import React from "react";
 
+//this file contains the data that is featured in the pop-up for each displayed project
 export const brainFlexContent = (
   <section id="projectSketches">
     <div id="thumbnailContainer">

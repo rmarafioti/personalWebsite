@@ -9,6 +9,11 @@ import { CarouselContent } from "./CarouselContent";
 import "../styling/carousel.css";
 import "../styling/work.css";
 
+/**
+ *
+ * @component features the Work section of this personal site
+ * displaying further information and contact info.
+ */
 export default function Work() {
   const { ref, controls, sectionVariants } = useScrollAnimation();
   const [activeSlide, setActiveSlide] = useState(0);

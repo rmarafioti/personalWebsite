@@ -4,6 +4,11 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 
 import "../styling/intro.css";
 
+/**
+ *
+ *@component features the Into section of this personal site
+ * displaying a hero section with copy.
+ */
 export default function Intro() {
   const { ref, controls, sectionVariants } = useScrollAnimation();
 
