@@ -180,7 +180,6 @@
 
 @media (max-width: 768px) {
   #work {
-    width: 100%;
     padding-top: 3rem;
   }
   #projectBody {
@@ -192,19 +191,16 @@
     text-align: center;
   }
   #contentTag {
-    width: 100%;
     font-size: 22px;
   }
   .contentSection {
     flex-direction: column;
     align-items: center;
-    width: 90%;
   }
-  .projectDescription {
+  .projectDescription,
+  #contentTag,
+  #work {
     width: 100%;
-  }
-  .projectContent, #contentTag {
-    width: 90%;
   }
   #projectImage {
     width: 300px;
@@ -218,10 +214,13 @@
     background-color: wheat;
   }
   .buttonWork {
-    width: 90%;
     margin-bottom: 1rem;
   }
-  .projectParagraphNote {
+  .projectParagraphNote,
+  .buttonWork,
+  .projectContent,
+  #contentTag,
+  .contentSection {
     width: 90%;
   }
 }

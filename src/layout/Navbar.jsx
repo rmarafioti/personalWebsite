@@ -7,7 +7,7 @@ import "./navbar.css";
 
 /**
  *
- * @component this file features the Navbar for the site which is displayed on every page of our site by importing it in the return of our Root file.
+ * @component features the Navbar for the site which is displayed on every page of our site by importing it in the return of our Root file.
  *
  */
 

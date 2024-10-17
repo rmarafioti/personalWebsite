@@ -8,10 +8,9 @@ import "../styling/about.css";
 
 /**
  *
- * @component this file features the About page of this personal site
+ * @component features the About section of this personal site
  * displaying further information and contact info.
  */
-
 export default function About() {
   const { ref, controls, sectionVariants } = useScrollAnimation();
   const [pdfWindow, setPdfWindow] = useState(null);

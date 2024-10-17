@@ -1,6 +1,10 @@
 import { useRef, useEffect } from "react";
 import { useAnimation, useInView } from "framer-motion";
 
+/**
+ *
+ * @returns functionality for the scroll animation in navbar which coincidences with the section the user is currently viewing
+ */
 const useScrollAnimation = (options = { once: false, amount: 0.2 }) => {
   const controls = useAnimation();
   const ref = useRef(null);
