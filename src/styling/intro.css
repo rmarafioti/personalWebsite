@@ -5,19 +5,23 @@
   margin-top: 5rem;
 }
 
+.heroSection {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
 #pitchSection {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   text-align: left;
-  margin-bottom: 1rem;
+  margin: 4rem 1rem 1rem 1rem;
 }
 
 .pitchSectionParagraph,
 .pitchSectionParagraphOne {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  width: 600px;
 }
 
 .pitchSectionParagraph {
@@ -26,7 +30,7 @@
 
 #welcomeLine,
 #missionLine,
-.work {
+.work, .underConstruction {
   color: rgb(117, 106, 187);
   font-size: 24px;
   line-height: 1.2;
@@ -51,7 +55,7 @@
 }
 
 #homePhotoContainer {
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 4rem 0rem 0rem 0rem;
 }
 
 #homePhotoContainer,
@@ -61,12 +65,34 @@
   max-width: 450px;
 }
 
+.underConstruction {
+ text-align: center;
+  max-width: 750px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+#homePhotoContainerTop, #homePhotoTop {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+  }
   #pitchSection {
     margin: 0rem 1rem 1rem 1rem;
   }
   #homePhotoContainer,
   #homePhoto {
+   display: none;
+  }
+  #homePhotoContainerTop {
+    display: block;
+  }
+  #homePhotoTop {
     width: auto;
     display: block;
     max-width: 380px;
@@ -77,5 +103,8 @@
   .homeContentOne,
   .homeContentTwo {
     font-size: 20px;
+  }
+  .pitchSectionParagraph, .pitchSectionParagraphOne {
+    width: 100%;
   }
 }

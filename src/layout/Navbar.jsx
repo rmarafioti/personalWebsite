@@ -33,7 +33,7 @@ export default function Navbar() {
         <h1 id="name">Rich Marafioti</h1>
         <h2 id="role"> Fullstack Developer</h2>
       </Link>
-      <section id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
+      {/*<section id="hamMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`menuButtonBurger ${menuOpen ? "open" : ""}`}></div>
         <menu className={`menu ${menuOpen ? "active" : ""}`}>
           <li className="navItem">
@@ -89,7 +89,7 @@ export default function Navbar() {
           </li>
         </menu>
         <div className={`overlay ${menuOpen ? "active" : ""}`}></div>
-      </section>
+      </section>*/}
     </nav>
   );
 }

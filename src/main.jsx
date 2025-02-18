@@ -10,8 +10,8 @@ export default function main() {
     <>
       <Navbar />
       <Intro />
-      <Work />
-      <About />
+      {/*<Work />
+      <About />*/}
       <Footer />
     </>
   );
